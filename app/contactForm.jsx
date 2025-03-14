@@ -85,7 +85,7 @@ function ContactForm() {
       <div className="form__header">
         <div className="form__header-text">
           <h4>Pide <br /> presupuesto</h4>
-          <p>o llama directamente al <Link href="tel:+34658677423">657 170 847</Link></p>
+          <p>o llama directamente al <Link href="tel:+34658677423">961 84 82 17</Link></p>
         </div>
         <Image id="iconpresu" src={IconPresupuesto} alt="Icono de Presupuesto" />
       </div>
@@ -110,15 +110,7 @@ function ContactForm() {
           required
           maxLength="9"
         />
-{/* 
-        <input
-          type="email" // Tipo email para validación automática
-          name="email" // Nombre del campo
-          placeholder="¿Cuál es tu correo?" // Placeholder solicitado
-          value={formData.email}
-          onChange={handleChange}
-          required
-        /> */}
+
 
         <input
           type="text"
@@ -130,17 +122,10 @@ function ContactForm() {
         />
 
 
-        <input
-          type="text"
-          name="location"
-          placeholder="¿En que municipio estás?"
-          value={formData.location}
-          onChange={handleChange}
-          required
-        />
+
 
         <input type="file" id="file-upload" name="image" multiple onChange={handleFileChange} style={{ display: 'none' }} />
-        <label htmlFor="file-upload" className="custom-file-upload">Haz click y sube fotos que nos ayuden a saber el estado del jardín</label>
+        <label htmlFor="file-upload" className="custom-file-upload">Haz click y sube fotos de las prendas</label>
         <div className="file-selected">
           {selectedFiles.length > 0 ? selectedFiles.join(', ') : 'Ninguna foto seleccionada'}
         </div>
@@ -157,7 +142,7 @@ function ContactForm() {
       </form>
 
       {status === 'success' && <p className="success-message">¡Qué bien! Hemos recibido tu mensaje.</p>}
-      {status === 'error' && <p className="error-message">¡Oh no! Algo ha fallado. Llámanos al 658 677 423.</p>}
+      {status === 'error' && <p className="error-message">¡Oh no! Algo ha fallado. Llámanos al 961 84 82 17.</p>}
     </div>
   );
 }

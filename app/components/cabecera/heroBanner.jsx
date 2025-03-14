@@ -11,7 +11,7 @@ function HeroBanner(){
 
         <div className="hero__master">
             <div className="hero__element hero__1">
-                <p>+20</p>
+                <p>+10</p>
                 <p>años de<br></br>experiencia</p>
             </div>
             <div className="hero__element hero__2">
@@ -19,7 +19,7 @@ function HeroBanner(){
                 <p>Profesionales<br></br>certificados</p>
             </div>
             <div className="hero__element hero__3">
-                <p>247</p>
+                <p>371</p>
                 <p>proyectos<br></br>exitosos<br></br>completados</p>
             </div>
             <div className="hero__element hero__4">

@@ -6,16 +6,21 @@ import './grid.scss';
 import Grid from './grid';
 
 // IMAGENES
-import podatala from '../../assets/img/poda-tala.jpg';
-import disenojardines from '../../assets/img/diseno-jardines.jpg';
-import paisajismo from '../../assets/img/paisajismo.jpg';
-import desrame from '../../assets/img/desrame.jpg';
-import recogidaresiduos from '../../assets/img/recogida-residuos.jpg';
-import parcelas from '../../assets/img/parcelas.jpg';
+import pantalones from '../../assets/img/pantalones.jpg';
+import camisas from '../../assets/img/camisas.jpg';
+import vestidos from '../../assets/img/vestidos.jpg';
+import faldas from '../../assets/img/faldas.jpg';
+import chaquetas from '../../assets/img/chaquetas.jpg';
+import traje from '../../assets/img/traje.jpg';
+import trabajo from '../../assets/img/trabajo.jpg';
+import zurcido from '../../assets/img/zurcido.jpg';
+import cremalleras from '../../assets/img/cremalleras.jpg';
+import botones from '../../assets/img/botones.jpg';
 
-import mantcesped from '../../assets/img/mant-cesped.jpg';
-import mantcomunidades from '../../assets/img/mant-comunidades.jpg';
-import mantareasverdes from '../../assets/img/mant-areasverdes.jpg';
+import novias from '../../assets/img/novias.jpg';
+import complementos from '../../assets/img/complementos.jpg';
+import invitadas from '../../assets/img/invitadas.jpg';
+
 
 import instalariego from '../../assets/img/instala-riego.jpg';
 import instalaluz from '../../assets/img/instala-luz.jpg';
@@ -34,49 +39,81 @@ function GridMaster({municipio}){
         <div className="gridmaster__elements">
 
         <Grid
-        service={`Poda y tala en altura ${municipio}`}
-        description="Nos especializamos en poda y tala en altura, empleando técnicas seguras para gestionar árboles grandes y en ubicaciones complicadas. Este servicio previene riesgos y promueve la salud y el buen crecimiento de tus árboles."
-        img={podatala}
-        top="block"
-        link="/poda-tala"
-        ></Grid>
-
-        <Grid
-        service={`Diseño y construcción de jardines ${municipio}`}
-        description="Ofrecemos servicios personalizados de diseño de jardines que transforman espacios exteriores en verdaderos oasis. Nuestros expertos trabajan contigo para crear diseños únicos, adaptados a tus gustos y las condiciones de tu entorno."
-        img={disenojardines}
-        top="none"
-        link="/"
-        ></Grid>
-
-        <Grid
-        service={`Paisajismo ${municipio}`}
-        description="Creamos paisajes impresionantes que complementan tu hogar y estilo de vida, utilizando un enfoque integrado que considera tanto la estética como la funcionalidad. Nuestro equipo utiliza su experiencia en horticultura para asegurar que cada elemento del paisaje esté en perfecta armonía."
-        img={paisajismo}
-        top="none"
-        link="/"
-        ></Grid>
-
-        <Grid
-        service={`Poda de palmeras ${municipio}`}
-        description="Realizamos poda de palmeras para mejorar su salud y estética, eliminando ramas innecesarias o enfermas de manera segura y eficiente. Este servicio ayuda a prevenir daños futuros y mejora la estructura general del árbol."
-        img={desrame}
-        top="none"
-        link="/"
-        ></Grid>
-
-        <Grid
-        service={`Recogida y disposición de residuos ${municipio}`}
-        description="Gestionamos la recogida y disposición de residuos de jardinería de forma responsable, asegurando que todos los desechos vegetales sean eliminados adecuadamente o reutilizados como compost. Este servicio no solo mantiene tu jardín limpio, sino que también contribuye a la sostenibilidad ambiental."
-        img={recogidaresiduos}
+        service={`Arreglo de pantalones ${municipio}`}
+        description="Ajustamos y arreglamos sus pantalones o faldas a la perfección. Ya sean de pana, vaqueros o chinos, conseguimos ese ajuste perfecto que estás buscando. El ribete lo ajustamos según tu forma. Y el largo se personaliza."
+        img={pantalones}
         top="block"
         link="/"
         ></Grid>
 
         <Grid
-        service={`Limpieza de parcelas ${municipio}`}
-        description="Ofrecemos un servicio completo de limpieza de parcelas, eliminando desechos, maleza y cualquier elemento no deseado para preparar el terreno para futuros proyectos o simplemente mantenerlo en óptimas condiciones. Este servicio es esencial para evitar plagas y fomentar un entorno más seguro y estético en tu propiedad."
-        img={parcelas}
+        service={`Arreglo de camisas ${municipio}`}
+        description="Desde camisas formales hasta casuales, ajustamos el cuello, los puños y la silueta para un look impecable. Personalizamos cada detalle para que te sientas seguro y con estilo en cualquier ocasión."
+        img={camisas}
+        top="none"
+        link="/"
+        ></Grid>
+
+        <Grid
+        service={`Ajustes de vestidos ${municipio}`}
+        description="Perfeccionamos tus vestidos para dejarlos a medida. Ya sean elegantes o casuales, ajustamos el escote y la cintura para un fit impecable. Personalizar el largo y los detalles para que brilles en cada ocasión."
+        img={vestidos}
+        top="none"
+        link="/"
+        ></Grid>
+
+        <Grid
+        service={`Arreglo de faldas ${municipio}`}
+        description="Adaptamos tus faldas para un ajuste impecable. Personalizamos los detalles que necesites para que brilles en cualquier contexto, demostrando una imagen única y auténtica."
+        img={faldas}
+        top="none"
+        link="/"
+        ></Grid>
+
+        <Grid
+        service={`Ajustes de chaquetas y abrigos ${municipio}`}
+        description="Transformamos tus chaquetas, anoraks y americanas para que se adapten perfectamente a ti. Tanto si son piezas de vestir elegantes como más informales, ajustamos el escote y la cintura para un calce impecable. Personalizamos el largo y los detalles para que luzcas espectacular."
+        img={chaquetas}
+        top="block"
+        link="/"
+        ></Grid>
+
+        <Grid
+        service={`Sastrería a medida de trajes ${municipio}`}
+        description="Perfeccionamos tu traje para un ajuste impecable. Desde entallar la chaqueta hasta ajustar los pantalones, nos aseguramos de que cada detalle resalte tu estilo y elegancia. Ya sea para una ocasión especial o para el día a día, personalizamos el fit y los acabados para que luzcas impecable y con total confianza."
+        img={traje}
+        top="none"
+        link="/"
+        ></Grid>
+
+        <Grid
+        service={`Ajustes de ropa de trabajo ${municipio}`}
+        description="Ajustamos y personalizamos tus prendas de ropa de trabajo, ya sean uniformes, trajes de oficina o vestimenta más informal. Logramos que te sientas cómodo y profesional, adaptando el fit a tus necesidades y estilo."
+        img={trabajo}
+        top="none"
+        link="/"
+        ></Grid>
+
+        <Grid
+        service={`Zurcido de vaqueros ${municipio}`}
+        description="Ajustamos y personalizamos tus prendas de ropa de trabajo, ya sean uniformes, trajes de oficina o vestimenta más informal. Logramos que te sientas cómodo y profesional, adaptando el fit a tus necesidades y estilo."
+        img={zurcido}
+        top="none"
+        link="/"
+        ></Grid>
+    
+        <Grid
+        service={`Reparación de cremalleras ${municipio}`}
+        description="Reemplazamos y reparamos cremalleras dañadas o atascadas, asegurando que tu prenda vuelva a funcionar a la perfección. Ya sea en chaquetas, pantalones, faldas o cualquier otra prenda, garantizamos un ajuste y funcionamiento impecable."
+        img={cremalleras}
+        top="none"
+        link="/"
+        ></Grid>
+
+        <Grid
+        service={`Reemplazo de botones ${municipio}`}
+        description="Reemplazamos botones rotos o faltantes en cualquier tipo de prenda. Ya sea en abrigos, camisas o pantalones, te ayudamos a recuperar la estética original de tu ropa, utilizando botones de alta calidad y diseño acorde a tu estilo."
+        img={botones}
         top="none"
         link="/"
         ></Grid>
@@ -86,30 +123,30 @@ function GridMaster({municipio}){
 
 
 
-        <h2 id="mantenimiento">Mantenimiento</h2>
+        <h2 id="bodas">Bodas</h2>
 
         <div className="gridmaster__elements">
 
         <Grid
-        service={`Mantenimiento de césped ${municipio}`}
-        description="Ofrecemos mantenimiento de césped integral, incluyendo corte regular, aireación y fertilización para garantizar un césped verde y saludable. Este servicio asegura la belleza y durabilidad de tu espacio verde durante todo el año."
-        img={mantcesped}
+        service={`Ajustes de vestidos de novia ${municipio}`}
+        description="Entallamos, acortamos y personalizamos tu vestido de novia para que se adapte a tu cuerpo y estilo. Ajustamos el corsé, las mangas, el largo y cualquier detalle para que luzcas perfecta en tu gran día."
+        img={novias}
         top="block"
         link="/"
         ></Grid>
 
         <Grid
-        service={`Mantenimiento de comunidades ${municipio}`}
-        description="Proporcionamos servicios de mantenimiento de comunidades, asegurando que las áreas verdes compartidas estén siempre en perfecto estado. Nos encargamos de todo, desde el cuidado del césped hasta la poda de árboles, para mejorar el entorno de todos los residentes."
-        img={mantcomunidades}
+        service={`Adaptación de velos y complementos ${municipio}`}
+        description="Transformamos y personalizamos tu velo, capa o estola para que encaje con tu vestido y refleje tu personalidad. También ajustamos guantes, cinturones y otros complementos para un look armonioso."
+        img={complementos}
         top="block"
         link="/"
         ></Grid>
 
         <Grid
-        service={`Limpieza de áreas verdes ${municipio}`}
-        description="Realizamos la limpieza de áreas verdes, eliminando residuos y desechos para mantener los espacios exteriores limpios y atractivos. Este servicio es esencial para preservar la belleza y la funcionalidad de parques y jardines."
-        img={mantareasverdes}
+        service={`Arreglo de vestidos de damas de honor e invitadas ${municipio}`}
+        description="Ajustamos y adaptamos vestidos de damas de honor e invitadas para que cada detalle sea perfecto. Desde entallar la cintura hasta modificar el escote o el largo, logramos que cada prenda se ajuste a la ocasión."
+        img={invitadas}
         top="none"
         link="/"
         ></Grid>
@@ -118,35 +155,7 @@ function GridMaster({municipio}){
 
 
         
-        <h2 id="instalaciones">Instalaciones</h2>
-
-        <div className="gridmaster__elements">
-
-        <Grid
-        service={`Instalación de sistemas de riego por aspersión ${municipio}`}
-        description="Implementamos sistemas de riego por aspersión eficientes que garantizan una distribución uniforme del agua, optimizando el riego y la salud de tus plantas. Este sistema es ideal para mantener tu jardín hidratado sin esfuerzo excesivo."
-        img={instalariego}
-        top="block"
-        link="/"
-        ></Grid>
-
-        <Grid
-        service={`Instalación de iluminación para jardines ${municipio}`}
-        description="Instalamos iluminación para jardines, realzando la belleza de tu espacio exterior y aumentando la seguridad durante la noche. Nuestros sistemas de iluminación son tanto funcionales como decorativos, diseñados para complementar el paisaje de tu jardín."
-        img={instalaluz}
-        top="none"
-        link="/"
-        ></Grid>
-
-        <Grid
-        service={`Instalación de cercas, cipreses y muros verdes ${municipio}`}
-        description="Ofrecemos instalación de cercas, cipreses y muros verdes para añadir privacidad y belleza a tu jardín. Estos elementos no solo mejoran la estética del espacio, sino que también proporcionan soluciones prácticas para delimitar áreas y mejorar la seguridad."
-        img={instalacercas}
-        top="none"
-        link="/"
-        ></Grid>
-
-        </div>
+       
 
 </div>
 

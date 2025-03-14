@@ -23,14 +23,14 @@ function Grid({service, description, img, top, link}){
             <p className="grid__description">{description}</p>
             <div className="grid__buttons">
                 <StandardButton
-                link="https://wa.me/message/44EBMJCUV7LNO1"
+                link="https://api.whatsapp.com/message/MYIQ4MSADGWGP1"
                 title="Contactar"
                 style="standardButton">
                 </StandardButton>
 
                 <StandardButton
                 link="#presupuesto"
-                title="Presupuesto"
+                title="Precios"
                 style="emptyStandardButton">
                 </StandardButton>
             </div>

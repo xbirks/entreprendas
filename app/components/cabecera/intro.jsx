@@ -10,26 +10,26 @@ import HeroBanner from './heroBanner';
 function Intro({ municipio }) {
   return (
     <div className="intro__master">
-      <h1>Contrata <span className="intro__h1-high">los mejores</span> servicios de jardinería en {municipio}</h1>
+      <h1><span className="intro__h1-high">Arreglo de ropa barato</span> en {municipio}</h1>
       <div className="intro__mejores-servicios" id="presupuesto">
         <StandardButton
           link="/"
-          title="Creación y diseño de jardines"
+          title="Bajos de pantalones"
           style="emptyStandardButton"
         />
         <StandardButton
           link="/"
-          title="Mantenimiento de comunidades"
+          title="Vestidos de novia"
           style="emptyStandardButton"
         />
         <StandardButton
           link="/"
-          title="Montajes de riego por aspersión"
+          title="Trajes falleros"
           style="emptyStandardButton"
         />
         <StandardButton
           link="/"
-          title="Poda y tala en altura"
+          title="Ajustes en trajes"
           style="emptyStandardButton"
         />
       </div>

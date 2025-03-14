@@ -23,26 +23,26 @@ function Footer(){
         <div className="footer__master">
             <div className="footer__resume">
                 <div className="footer__logo">
-                    <Image src={HeaderLogoFooter} alt="logotipo para el footer de Gartalia" width={217} height={50} loading='lazy'></Image>
+                    <Image src={HeaderLogoFooter} alt="logotipo para el footer de Entre Prendas" width={217} height={50} loading='lazy'></Image>
                 </div>
                 <div className="header__nav">
                 <ImgButton
-                    link="/#servicios"
-                    title="Servicios"
+                    link="/#precios"
+                    title="Precios"
                     style="imgButton__white imgb1"
                     icon={IconServicios}
                 ></ImgButton>
 
                 <ImgButton
-                    link="/#mantenimiento"
-                    title="Mantenimiento"
+                    link="/#servicios"
+                    title="Servicios"
                     style="imgButton__white imgb2"
                     icon={IconMantenimiento}
                 ></ImgButton>
 
                 <ImgButton
-                    link="/#instalaciones"
-                    title="Instalaciones"
+                    link="/#bodas"
+                    title="Bodas"
                     style="imgButton__white imgb3"
                     icon={IconInstalaciones}
                 ></ImgButton>
@@ -50,7 +50,7 @@ function Footer(){
             </div>
             <HeroBanner></HeroBanner>
             <div className="footer__contacto">
-                <h4 className="footer__contacto-title">Somos jardineros, <span>¿podemos ayudarte?</span></h4>
+                <h4 className="footer__contacto-title">Somos modistas, <span>¿podemos ayudarte?</span></h4>
                 <StandardButton
                 link="tel:+34658677423"
                 title="Contactar"

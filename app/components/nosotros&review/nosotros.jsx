@@ -6,7 +6,7 @@ import './nosotros.scss';
 
 import StandardButton from '../../buttons/standardButton.jsx';
 import Review from './review.jsx';
-import Carlos from '../../assets/img/carlos-correa.jpg'
+import Nora from '../../assets/img/nora.jpg'
 
 
 function nosotros(){
@@ -15,15 +15,15 @@ function nosotros(){
         <div className="nosotros__master">
             <h2 className="nosotros__title">Confía en nosotros</h2>
             <div className="nosotros__tarjeta">
-                <Image src={Carlos} alt=""></Image>
+                <Image src={Nora} alt=""></Image>
                 <div className="nosotros__tarjeta-info">
-                    <p><strong>CEO</strong> - Carlos Correa</p>
+                    <p><strong>Modista</strong> - Nora Montoya</p>
                 </div>
             </div>
             <p className="nosotros__description">
-                <strong>Carlos Correa</strong> es un jardinero con 20 años de experiencia, especializado y certificado en poda y tala en altura. Conocido por su <strong>honestidad y rapidez</strong>, Carlos es un profesional serio que aborda cada tarea con el máximo compromiso y eficiencia. Este enfoque le ha permitido ganarse una sólida reputación como uno de los jardineros más confiables de la provincia de Valencia.
+                <strong>Nora Montoya</strong> es una modista con 10 años de experiencia, especializada en arreglos de ropa a medida. Conocida por su atención al detalle y creatividad, Nora es una profesional comprometida que aborda cada prenda con dedicación y esmero. Su enfoque personalizado le ha permitido ganarse una sólida reputación como una de las modistas más confiables de Valencia.
                 <br></br><br></br>
-                Entre sus clientes más destacados se encuentran el Ayuntamiento de La Eliana, el Ayuntamiento de Liria, así como empresas reconocidas como El Oasis en La Eliana y el Club de Tenis El Collao. Carlos se dedica a ofrecer un servicio que no solo cumple, sino que supera las expectativas, manteniendo siempre un trato cercano y humano con todos sus clientes, sean empresas o particulares. Su <strong>capacidad para conectar con las personas y entender sus necesidades</strong> es lo que realmente distingue su servicio frente al resto de competencia.  
+                Entre sus clientes más destacados se encuentran empresas como Álvaro Moliner, para la confección de trajes de fallera, y diversas tiendas de ropa de renombre. Nora se dedica a ofrecer un servicio que cumple y supera las expectativas, siempre con un trato cercano y personalizado. Su habilidad para captar las necesidades de cada cliente, gracias a su gran empatía, es la que la consigue diferenciar de su competencia. 
                 </p>
                 <div className="location__buttons">
                 <StandardButton
