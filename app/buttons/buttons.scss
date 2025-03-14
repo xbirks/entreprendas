@@ -1,0 +1,200 @@
+@import '../styles/variables.scss';
+
+
+//IMAGE BUTTON
+
+
+
+.imgButton__white{
+    display: inline-flex;
+    gap: 16px;
+    justify-content: space-between;
+    background-color: $blanco-verde;
+    padding: 4px 5px;
+    border: 1.5px solid $botella;
+    border-radius: 60px;
+    transition: $transition-short;
+
+    .imgButton__title{
+        color: $botella;
+        text-align: center;
+        font-family: $neue;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        margin-left: 12px;
+    }
+
+    .imgButton__icon{
+        height: 30px;
+        width: 30px;
+
+        img{
+            transform: rotate(0deg);
+            transition: ease-in-out 3.6s;
+        }
+    }
+
+    &:hover{
+            background-color: $botella;
+
+        .imgButton__title{
+            color: $blanco-verde;
+        }
+
+        .imgButton__icon img{
+            transform: rotate(360deg);
+            transition: ease-in-out 1.6s;
+        }
+    }
+}
+
+@media only screen and (max-width: 920px) {
+    
+    .imgb3{
+        display: none;
+    }
+  }
+
+  @media only screen and (max-width: 734px) {
+    
+    .imgb2{
+        display: none;
+    }
+  }
+
+  @media only screen and (max-width: 550px) {
+    
+    .imgb1{
+        display: none;
+    }
+  }
+
+
+
+
+
+
+
+
+
+//STANDARD BUTTON
+
+.standardButton{
+    padding: 4px 20px;
+    border-radius: 60px;
+    background-color: $esmeralda;
+    display: inline-flex;
+    min-width: 70px;
+    height: 35px;
+    justify-content: center;
+    align-items: center;
+    transition: $transition-short;
+
+    a{
+        text-decoration: none;
+    }
+
+    p{
+        color: $botella;
+        text-align: center;
+        font-family: $neue;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        text-align: center;
+    }
+
+    &:hover{
+        background-color: $botella;
+
+        p{
+            color: $esmeralda;
+        }
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    
+    .standardButton{
+        padding: 4px 20px;
+        border-radius: 60px;
+        background-color: $esmeralda;
+        display: inline-flex;
+        min-width: 60px;
+        height: 30px;
+        transition: $transition-short;
+   
+    
+        p{
+            font-size: 16px;
+            font-weight: 400;
+            line-height: normal;
+        }
+
+  }
+
+}
+
+
+
+
+//EMPTY BUTTON
+
+.emptyStandardButton{
+    padding: 4px 20px;
+    border-radius: 60px;
+    background-color: $blanco-verde;
+    border: 1.5px solid $botella;
+    display: inline-flex;
+    min-width: 70px;
+    height: 33px;
+    justify-content: center;
+    align-items: center;
+    transition: $transition-short;
+
+    @include media600px {
+        padding: 4px 20px;
+        border-radius: 60px;
+        min-width: 70px;
+        height: 28px;
+    }
+
+    a{
+        text-decoration: none;
+    }
+
+    p{
+        color: $botella;
+        text-align: center;
+        font-family: $neue;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 18px;
+        text-align: center;
+
+        
+        @include media600px {
+            color: $botella;
+            text-align: center;
+            font-family: $neue;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 18px;
+            text-align: center;
+        }
+    }
+
+    &:hover{
+        background-color: $botella;
+
+        p{
+            color: $esmeralda;
+        }
+    }
+}
+

@@ -1,0 +1,66 @@
+@import '../../../styles/variables.scss';
+
+.empresas__master{
+    background-color: $botella;
+    border-radius: 40px;
+    margin-top: 12vh;
+    padding: 80px 30px;
+
+    &:hover{
+        .empresas__title{
+            color: $destacado;
+        }
+    }
+
+    .empresas__title{
+        color: $esmeralda;
+        text-align: center;
+        font-family: $halyard;
+        font-size: 70px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 100.905%;
+
+        @include media1458px {
+            font-size: 55px;
+        }
+
+        @include media990px {
+            font-size: 40px;
+        }
+    }
+
+    .empresas__img{
+        margin: 60px 0px 0px 0px;
+        display: flex;
+        text-align: center;
+        justify-content: space-around;
+        align-content: center;
+        vertical-align: center;
+
+        @include media700px {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            justify-content: space-between;
+            row-gap: 75px;
+            column-gap: 25px;
+            justify-items: center;
+        }
+
+
+        img{
+            width: 150px;
+            height: 150px;
+
+            @include media1390px {
+                width: 120px;
+                height: 120px;
+            }
+
+            @include media990px {
+                width: 100px;
+                height: 100px;
+            }
+        }
+    }
+}

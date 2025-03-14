@@ -1,0 +1,63 @@
+@import '../../styles/variables.scss';
+
+.masterOther{
+    width: 70%;
+    margin: 0 auto;
+    padding-bottom: 60px;
+
+    @include media2200px {
+        width: 80%;
+    }
+
+    @include media1200px {
+        width: 90%;
+    }
+}
+
+.other{
+    background-color: $botella;
+
+    .master{
+        padding-bottom: 50px;
+    }
+
+    h2{
+        color: $blanco-verde;
+        padding-top: 40px;
+    }
+
+    .gridmaster__elements .grid__master{
+
+        .grid__service{
+            color: $blanco-verde;
+        }
+
+        .grid__description{
+            color: $blanco-verde;
+        }
+
+        .standardButton{
+            &:hover{
+                background-color: $blanco-verde;
+            }
+        }
+
+        .emptyStandardButton{
+            background-color: $botella;
+            border: 1px solid $blanco-verde;
+
+            p{
+                color: $blanco-verde;
+            }
+
+            &:hover{
+                background-color: $esmeralda;
+                border: 1px solid $botella;
+
+                p{
+                    color: $botella;
+                }
+            }
+        }
+    }
+}

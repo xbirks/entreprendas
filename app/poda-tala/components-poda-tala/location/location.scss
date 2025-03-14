@@ -1,0 +1,117 @@
+@import '../../../styles/variables.scss';
+
+.location__master{
+    background-color: $esmeralda;
+    border-radius: 40px;
+    margin-top: 4vh;
+    padding: 80px 30px;
+
+    .location__title{
+        color: $botella;
+        text-align: center;
+        font-family: $halyard;
+        font-size: 70px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 100.905%;
+        margin-bottom: 40px;
+
+        @include media1458px {
+            font-size: 55px;
+        }
+
+        @include media990px {
+            font-size: 40px;
+        }
+    }
+
+    .location__description{
+        color: $botella;
+        text-align: center;
+        font-family: $neue;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 20px;
+        max-width: 1000px;
+        margin: 0 auto 40px auto;
+
+        strong{
+            font-style: normal;
+            font-weight: 700;
+        }
+
+        @include media700px {
+            font-size: 14px;
+            line-height: 18px;
+        }
+    }
+
+
+
+    .location__buttons{
+
+        display: flex;
+        justify-content: center;
+        margin-bottom: 60px;
+
+        .standardButton{
+            background-color: $blanco-verde;
+            margin-right: 5px;
+
+            &:hover{
+                background-color: $botella;
+                color: $esmeralda;
+            }
+        }
+    
+        .emptyStandardButton{
+            background-color: $esmeralda;
+
+            &:hover{
+                background-color: $botella;
+                color: $esmeralda;
+            }
+        }
+    }
+
+
+
+    .location__seo-link{
+
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        justify-content: space-between;
+        row-gap: 15px;
+        column-gap: 15px;
+        justify-items: center;
+
+        @include media990px {
+            grid-template-columns: 1fr 1fr 1fr;
+        }
+
+        @include media600px {
+            grid-template-columns: 1fr 1fr;
+        }
+
+        a{
+        color: $blanco-verde;
+        font-family: $neue;
+        font-size: 16px;
+        font-style: normal;
+        text-align: center;
+        font-weight: 300;
+        line-height: 100.905%;
+        text-decoration-line: underline;
+
+        &:hover{
+            color: $botella;
+        }
+
+        @include media700px {
+            font-size: 14px;
+            line-height: 18px;
+        }
+        }
+    }
+}

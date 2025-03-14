@@ -1,0 +1,253 @@
+@import '../../../styles/variables.scss';
+
+//NOSOTROS
+
+.nosotros__master{
+
+
+    .nosotros__title{
+        color: $botella;
+        text-align: center;
+        font-family: $halyard;
+        font-size: 130px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 100.905%;
+        margin-top: 90px;
+
+        @include media990px {
+            font-size: 100px;
+        }
+
+        @include media700px {
+            font-size: 80px;
+        }
+
+        @include media600px {
+            font-size: 60px;
+        }
+
+        @include media450px {
+            font-size: 50px;
+        }
+
+        @include media390px {
+            font-size: 12vw;
+        }
+    }
+
+    .nosotros__tarjeta{
+
+        margin-top: 60px;
+        margin-bottom: 40px;
+
+        img{
+            width: 300px;
+            height: 300px;
+            border-radius: 30px;
+            display: block;
+            margin: 0 auto;
+        }
+
+        .nosotros__tarjeta-info{
+            color: $botella;
+            font-family: $neue;
+            font-size: 18px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+            border-radius: 60px;
+            background: $destacado;
+            max-width: 300px;
+            text-align: center;
+            display: block;
+            margin: 10px auto 0px auto;
+        }
+    }
+
+    .nosotros__description{
+        color: $botella;
+        text-align: center;
+        font-family: $neue;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 20px;
+        margin-bottom: 30px;
+        max-width: 1000px;
+        margin: 0 auto 40px auto;
+
+        @include media700px {
+            font-size: 14px;
+            line-height: 16px;
+        }
+    }
+
+    .location__buttons{
+        display: flex;
+        justify-content: center;
+
+        .standardButton{
+            margin-right: 5px;
+        }
+    }
+}
+
+
+
+
+
+//REVIEW
+
+.nosotros__master{
+
+    .review__title{
+        color: $botella;
+        text-align: center;
+        font-family: $halyard;
+        font-size: 130px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 100.905%; 
+        margin: 80px 0px 60px 0px;
+
+        @include media990px {
+            font-size: 100px;
+        }
+
+        @include media700px {
+            font-size: 80px;
+        }
+
+        @include media600px {
+            font-size: 60px;
+        }
+
+        @include media450px {
+            font-size: 50px;
+        }
+
+        @include media390px {
+            font-size: 12vw;
+        }
+    }
+
+    .review__list{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 25px;
+
+        
+        @include media990px {
+            grid-template-columns: 1fr 1fr ;
+        }
+
+        @include media700px {
+            grid-template-columns: 1fr;
+        }
+
+        .review__tarjeta{
+            background-color: $botella;
+            border-radius: 30px;
+            padding: 20px;
+
+            .review__tarjeta-star{
+                display: flex;
+                justify-content: space-between;
+            }
+
+            .review__author{
+                color: $blanco-verde;
+                font-family: $neue;
+                font-size: 18px;
+                font-style: normal;
+                font-weight: 700;
+                line-height: normal;
+                margin-top: 30px;
+
+                @include media700px {
+                    font-size: 16px;
+                    line-height: 16px;
+                }
+
+            }
+
+            .review__description{
+                color: $blanco-verde;
+                font-family: $neue;
+                font-size: 16px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 20px; 
+                margin-top: 10px;
+
+                @include media700px {
+                    font-size: 14px;
+                    line-height: 16px;
+                }
+            }
+
+            .review__time{
+                color:#90A495;
+                font-family: $neue;
+                font-size: 16px;
+                font-style: italic;
+                font-weight: 350;
+                line-height: 20px;
+                margin-top: 10px;
+
+                @include media700px {
+                    font-size: 14px;
+                    line-height: 16px;
+                }
+            }
+
+            .emptyStandardButton{
+                margin-top: 20px;
+                background-color: $botella;
+                border: 1px solid $blanco-verde;
+
+                &:hover{
+                    background-color: $esmeralda;
+                    border: 1px solid $botella;
+                }
+
+                p{
+                    color: $blanco-verde;
+
+                    &:hover{
+                        color: $botella;
+                    }
+                }
+            }
+        }
+    }
+
+    .review__ask-review{
+        color: $botella;
+        text-align: center;
+        font-family: $neue;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 20px;
+        max-width: 1000px;
+        margin: 0 auto;
+        margin-top: 40px;
+
+        @include media700px {
+            font-size: 14px;
+            line-height: 16px;
+        }
+    }
+
+    .review__buttons{
+        display: flex;
+        justify-content: center;
+        margin-top: 30px;
+
+        .standardButton{
+            margin-right: 5px;
+        }
+    }
+}

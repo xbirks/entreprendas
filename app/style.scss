@@ -1,0 +1,496 @@
+@import '../app/styles/variables.scss';
+@import './buttons/buttons.scss';
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+
+html {
+	scroll-behavior: smooth;
+  }
+  
+
+
+body{
+    background-color: $blanco-verde;
+}
+
+strong{
+	font-weight: 700;
+}
+
+.header__master{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: $blanco-verde;
+    padding: 10px 15px;
+    border-radius: 50px;
+    margin-top: 4px;
+    margin-left: 4px;
+    margin-right: 4px;
+
+	@include media390px {
+		margin-left: 6px;	
+		padding: 10px 4px;
+	}
+
+}
+
+.header__logo{
+
+	.header__var-logo1{
+		display: block;
+
+		@include media390px {
+			display: none;
+		}
+	}
+
+	.header__var-logo2{
+		display: none;
+
+		@include media390px {
+			display: block;
+		}
+
+		@include media300px {
+			display: none;
+		}
+	}
+
+	.header__var-logo3{
+		display: none;
+
+		@include media300px {
+			display: block;
+		}
+	}
+}
+
+.header__nav{
+    display: flex;
+    gap: 8px;
+}
+
+.master{
+	width: 70%;
+	margin: 0 auto 60px auto;
+
+	@include media2200px {
+		width: 80%;
+	}
+
+	@include media1200px {
+		width: 90%;
+	}
+}
+
+.faq__banner{
+	background-color: $destacado;
+	padding: 20px 0 20px 0;
+	color: $botella;
+	text-align: center;
+	font-family: $halyard;
+	font-size: 30px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 100.905%;
+
+	a{
+		font-weight: 500;
+			}
+
+	@include media700px {
+		font-size: 26px;
+		line-height: 30px;
+	}
+
+	@include media600px {
+		font-size: 22px;
+		line-height: 34px;
+	}
+}
+
+
+
+
+
+  //FOOTER
+
+  .footer__master{
+	width: 70%;
+	margin: 0 auto 15px auto;
+
+	@include media2200px {
+		width: 80%;
+	}
+
+	@include media1200px {
+		width: 90%;
+	}
+
+	.footer__resume{
+		display: flex;
+		align-items: center;
+		margin-bottom: 10px;
+
+		.footer__logo{
+			background-color: $esmeralda;
+			border-radius: 50px;
+			height: 40px;
+			padding: 8px 40px 12px 40px;
+			margin-right: 10px;
+
+			@include media800px {
+				width: 100%;
+				text-align: center;
+            }
+
+			img{
+				width: 130px;
+			}
+		}
+
+		.header__nav{
+			background-color: $esmeralda;
+			border-radius: 50px;
+			height: 40px;
+			padding: 10px 40px;
+			width: 100%;
+			justify-content: center;
+
+			.imgButton__white{
+				background-color: $esmeralda;
+			}
+
+			@include media800px {
+				display: none;
+            }
+
+			
+		}
+	}
+
+	.footer__contacto{
+		background-color: $botella;
+		border-radius: 30px;
+		text-align: center;
+
+		.footer__contacto-title{
+			color: $blanco-verde;
+			text-align: center;
+			font-family: $halyard;
+			font-size: 70px;
+			font-style: normal;
+			font-weight: 400;
+			line-height: 100.905%;
+			max-width: 700px;
+			margin:  10px auto 10px auto;
+			padding-top: 30px;
+			padding-bottom: 50px;
+
+			@include media1200px {
+				font-size: 60px;
+				line-height: 68px;
+            }
+
+			@include media700px {
+				font-size: 50px;
+				line-height: 56px;
+				max-width: 90%;
+            }
+
+			@include media600px {
+				font-size: 32px;
+				line-height: 34px;
+            }
+
+			span{
+				color: $esmeralda;
+			}
+		}
+
+		form{
+			margin-top: 80px;
+			display: grid;
+			padding: 0 30% 0 30%;
+
+			@include media1200px {
+				padding: 0 20% 0 20%;
+            }
+
+			@include media700px {
+				padding: 0 10% 0 10%;
+            }
+
+			button{
+			}
+
+			input{
+				all: unset;
+		
+				background-color: $blanco-verde;
+				width: auto;
+				height: 40px;
+				border-radius: 50px;
+				font-family: $neue;
+				font-size: 18px;
+				padding-left: 20px;
+		
+				@include media600px {
+					width: 95%;
+				}
+		
+				&::placeholder{
+					color: $gris-verde;
+					font-family: $neue;
+					font-size: 18px;
+					font-style: normal;
+					font-weight: 400;
+					line-height: normal;
+				
+				}
+		
+				&:focus{
+					color: $botella;
+					font-family: $neue;
+					font-size: 18px;
+					font-style: normal;
+					font-weight: 400;
+					line-height: normal;
+					
+					position: relative;
+				}
+		
+				&:active{
+					color: $esmeralda;
+					font-family: $neue;
+					font-size: 18px;
+					font-style: normal;
+					font-weight: 400;
+					line-height: normal;
+					
+					position: relative;
+				}
+		
+				&:valid{
+					background-color: $menta;
+				}
+		
+			}
+
+			.form__send-button{
+				all: unset;
+	
+				background-color: $esmeralda;
+				width: auto;
+				height: 30px;
+				border-radius: 50px;
+				font-family: $neue;
+				font-size: 18px;
+				padding-left: 20px;
+				padding-top: 10px;
+				margin-top: 10px;
+				color: $botella;
+				text-align: center;
+	
+				p{
+					position: relative;
+					top: -5px;
+				}
+	
+				&:hover{
+					color: $botella;
+					cursor: pointer;
+					background-color: $destacado;
+					transition: $transition-short;
+				}
+	
+				&:disabled{
+					background-color: $gris-verde;
+					&:hover{
+						background-color: $gris-verde;
+						transition: 0s;
+						color: $gris-verde;
+					}
+				}
+	
+			}
+		}
+
+		.footer__legal{
+			font-family:$neue;
+			color: $blanco-verde;
+			font-size: 12px;
+			font-style: normal;
+			font-weight: 400;
+			line-height: 143.326%;
+			padding-left: 10px;
+			margin-top: 10px;
+			margin-bottom: 60px;
+		}
+
+		.success-message{
+			background-color: $destacado;
+			font-family: $neue;
+			align-content: center;
+			font-size: 14px;
+			color: $botella;
+			text-align: center;
+			max-width: 90%;
+			margin: 0 auto;
+			height: 30px;
+			border-radius: 20px;
+			position: relative;
+			bottom: 20px;
+			padding: 5px 15px;
+		}
+	
+		.error-message{
+			background-color: red;
+			font-family: $neue;
+			align-content: center;
+			font-size: 14px;
+			color: $botella;
+			text-align: center;
+			max-width: 90%;
+			margin: 0 auto;
+			height: 30px;
+			border-radius: 20px;
+			position: relative;
+			bottom: 20px;
+		}
+	
+
+	}
+
+	.footer__seo-anchor{
+		padding: 50px;
+		display: grid;
+		grid-template-columns: 1fr 1fr 1fr 1fr;
+		text-align: center;
+		justify-content: space-around;
+		gap: 10px;
+
+		@include media990px {
+			grid-template-columns: 1fr 1fr 1fr;
+		}
+
+		@include media700px {
+			grid-template-columns: 1fr 1fr;
+		}
+
+		@include media450px {
+			grid-template-columns: 1fr;
+			gap: 4px;
+		}
+
+		a{
+			color: $botella;
+			text-align: center;
+			font-family: $neue;
+			font-size: 14px;
+			font-style: normal;
+			font-weight: 400;
+			line-height: 20px; /* 125% */
+			text-decoration-line: underline;
+
+			&:hover{
+				color: $esmeralda;
+				font-size: 15px;
+			}
+
+			@include media450px {
+				font-size: 12px;
+			}
+		}
+	}
+
+	.footer__politicas{
+		background-color: $esmeralda;
+		border-radius: 50px;
+		padding: 10px;
+		align-items: center;
+		justify-content: center;
+		display: flex;
+
+		@include media600px {
+			display: grid;
+			grid-template-columns: 1fr;
+			text-align: center;
+			border-radius: 20px;
+
+		}
+
+		.emptyStandardButton{
+			margin-right: 5px;
+			margin-bottom: 5px;
+			background-color: $esmeralda;
+			height: 20px;
+
+			&:hover{
+				background-color: $botella;
+				color: $esmeralda;
+			}
+
+			p{
+				font-size: 14px;
+			}
+		}
+	}
+  }
+
+
+  .p_pol{
+	color: #0D403B;
+    font-family: neue-haas-unica, Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px;
+    max-width: 95%;
+    margin-top: 12px;
+  }
