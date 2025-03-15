@@ -10,7 +10,7 @@ import HeroBanner from './heroBanner';
 function Intro({ municipio }) {
   return (
     <div className="intro__master">
-      <h1><span className="intro__h1-high">Arreglo de ropa barato</span> en {municipio}</h1>
+      <h1>Composturas y <span className="intro__h1-high">arreglo de ropa barato</span> en {municipio}</h1>
       <div className="intro__mejores-servicios" id="presupuesto">
         <StandardButton
           link="/"

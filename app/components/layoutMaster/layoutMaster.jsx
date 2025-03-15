@@ -5,7 +5,7 @@ import Header from '../header.jsx';
 import Footer from '../footer.jsx';
 
 const LayoutMaster = ({ children, municipio }) => {
-  const title = `GARTALIA | Jardinería en ${municipio} para particulares y empresas`;
+  const title = `ENTRE PRENDAS | Arreglo de ropa barato en ${municipio}. 10 años de experiencia.`;
   const description = `Información sobre jardinería en ${municipio}. Ofrecemos poda en altura, diseño de jardines, y mantenimiento integral para particulares y empresas en ${municipio}.`;
   const keywords = [
     `jardinero particular en ${municipio}`, 

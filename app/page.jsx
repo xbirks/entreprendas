@@ -9,6 +9,7 @@ import Nosotros from "./components/nosotros&review/nosotros";
 import Other from "./components/other/other";
 import FaqMaster from "./components/faq/faqmaster";
 import SeoCards from "./components/seo-cards/seocards";
+import PreciosMaster from "./components/precios/preciosMaster";
  
 
 export default function HomePage() {
@@ -18,6 +19,7 @@ export default function HomePage() {
         <Intro municipio="Valencia"></Intro>
         <GridMaster municipio=""></GridMaster>
         <Empresas></Empresas>
+        <PreciosMaster></PreciosMaster>
         <Location></Location>
         <Nosotros></Nosotros>
       </div>
