@@ -1,7 +1,8 @@
 @import '../../styles/variables.scss';
 
 .preciosmaster{
-    margin-top: 10vh;
+    margin-top: 15vh;
+    margin-bottom: 15vh;
 
     h2{
         color: $botella;
@@ -52,6 +53,7 @@
 
     @include media600px {
         grid-template-columns: 1fr;
+        row-gap: 45px;
     }
 }
 
@@ -61,7 +63,7 @@
     h3{
         color: $botella;
         font-family: $halyard;
-        font-size: 28px;
+        font-size: 30px;
         font-style: normal;
         font-weight: 500;
         line-height: 34px;
@@ -70,12 +72,12 @@
         max-width: 90%;
 
         @include media700px {
-            font-size: 24px;
+            font-size: 28px;
         }
 
         @include media600px {
             font-size: 28px;
-            text-align: center;
+            text-align: left;
             max-width: 100%;
         }
     }
@@ -107,10 +109,35 @@
             font-size: 18px;
             text-align: center;
             max-width: 100%;
+            line-height: 24px;
         }
     }
 
     .price{
         color: $esmeralda;
+        white-space: nowrap;
+    }
+}
+
+.precios__disclaimer{
+    color: $botella;
+    font-family: $neue;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px; 
+    max-width: 95%;
+    margin-top: 32px;
+    letter-spacing: -0.4px;
+    text-align: center;
+
+    @include media700px {
+        font-size: 14px;
+        line-height: 18px; 
+    }
+
+    @include media600px {
+        text-align: center;
+        max-width: 100%;
     }
 }

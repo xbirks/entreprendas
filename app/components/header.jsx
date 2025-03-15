@@ -23,19 +23,19 @@ function Header() {
 
             <div className="header__nav">
                 <ImgButton
-                    link="/#servicios"
+                    link="/#precios"
                     title="Precios"
                     style="imgButton__white imgb1"
                     icon={IconServicios}
                 />
                 <ImgButton
-                    link="/#mantenimiento"
+                    link="/#servicios"
                     title="Servicios"
                     style="imgButton__white imgb2"
                     icon={IconMantenimiento}
                 />
                 <ImgButton
-                    link="/#instalaciones"
+                    link="/#bodas"
                     title="Bodas"
                     style="imgButton__white imgb3"
                     icon={IconInstalaciones}

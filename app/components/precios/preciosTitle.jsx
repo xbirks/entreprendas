@@ -17,6 +17,7 @@ function PreciosTitle({ categories }) {
         <div key={index} className="precios__categoria">
 
           <h3 className="">{category.title}</h3>
+          
           <div className="precios__categoria-map">
             {category.services.map((service, idx) => (
               <Precio key={idx} clothes={service.name} price={service.price} />
