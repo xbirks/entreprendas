@@ -29,7 +29,7 @@ function Grid({service, description, img, top, link}){
                 </StandardButton>
 
                 <StandardButton
-                link="#presupuesto"
+                link="#precios"
                 title="Precios"
                 style="emptyStandardButton">
                 </StandardButton>
