@@ -21,9 +21,11 @@ function nosotros(){
                 </div>
             </div>
             <p className="nosotros__description">
-                <strong>Nora Montoya</strong> es una modista con 10 años de experiencia, especializada en arreglos de ropa a medida. Conocida por su atención al detalle y creatividad, Nora es una profesional comprometida que aborda cada prenda con dedicación y esmero. Su enfoque personalizado le ha permitido ganarse una sólida reputación como una de las modistas más confiables de Valencia.
-                <br></br><br></br>
-                Entre sus clientes más destacados se encuentran empresas como Álvaro Moliner, para la confección de trajes de fallera, y diversas tiendas de ropa de renombre. Nora se dedica a ofrecer un servicio que cumple y supera las expectativas, siempre con un trato cercano y personalizado. Su habilidad para captar las necesidades de cada cliente, gracias a su gran empatía, es la que la consigue diferenciar de su competencia. 
+            <strong>Nora Montoya es de esas modistas que hacen su trabajo con el corazón.</strong> Lleva más de 10 años dedicándose al arreglo de ropa a medida, cuidando cada prenda como si fuera suya. No solo cose y ajusta, sino que escucha, aconseja y se asegura de que cada detalle quede perfecto.
+            <br></br><br></br>
+            Muchas personas han llegado a ella con un vestido que no les encajaba o un traje que necesitaba un arreglo urgente, y siempre encuentran paciencia, dedicación y una solución impecable. <strong>Si hay que probarse la prenda tres veces para que quede perfecta, ella lo hace encantada.</strong>
+            <br></br><br></br>
+            Ha trabajado para empresas como Álvaro Moliner con trajes de fallera y para muchas tiendas de ropa, pero lo que más le gusta es ayudar a cada persona a sentirse bien con su ropa. <strong>Si necesitas un arreglo con mimo y profesionalidad, Nora es la persona en la que puedes confiar.</strong>
                 </p>
                 <div className="location__buttons">
                 <StandardButton
