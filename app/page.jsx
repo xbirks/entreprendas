@@ -15,7 +15,7 @@ export default function HomePage() {
   return (
     <div className="Gartalia">
       <div className="master">
-        <Intro municipio=""></Intro>
+        <Intro municipio="Valencia"></Intro>
         <GridMaster municipio=""></GridMaster>
         <Location></Location>
         <PreciosMaster></PreciosMaster>

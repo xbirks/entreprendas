@@ -6,6 +6,6 @@ export default function robots() {
           allow: ['/'],
         },
       ],
-      sitemap: 'https://gartalia.com/sitemap.xml',
+      sitemap: 'https://entreprendas.es/sitemap.xml',
     }
   }
