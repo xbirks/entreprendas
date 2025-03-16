@@ -15,8 +15,8 @@ export default function HomePage() {
   return (
     <div className="Gartalia">
       <div className="master">
-        <Intro municipio="Valencia"></Intro>
-        <GridMaster municipio="en Valencia"></GridMaster>
+        <Intro municipio=""></Intro>
+        <GridMaster municipio=""></GridMaster>
         <Location></Location>
         <PreciosMaster></PreciosMaster>
         
@@ -24,7 +24,7 @@ export default function HomePage() {
       </div>
       <div className="other">
         <div className="masterOther">
-          <Other municipio="en Valencia"></Other>
+          <Other municipio=""></Other>
         </div>
       </div><div className="faq">
         <div className="masterFaq">
@@ -36,7 +36,7 @@ export default function HomePage() {
       </div>
 
       <div className="master">
-        <SeoCards  municipio="en Valencia" ></SeoCards>
+        <SeoCards  municipio="" ></SeoCards>
       </div>
     </div>
     
