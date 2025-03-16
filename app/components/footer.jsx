@@ -67,39 +67,25 @@ function Footer(){
             </div>
 
             <div className="footer__seo-anchor">
-            <SeoAnchor link="/municipios/eliana" pueblo="La Eliana"></SeoAnchor>
-            <SeoAnchor link="/municipios/cullera" pueblo="Cullera"></SeoAnchor>
-            <SeoAnchor link="/municipios/cheste" pueblo="Cheste"></SeoAnchor>
-            <SeoAnchor link="/municipios/benifaio" pueblo="Benifaió"></SeoAnchor>
-            <SeoAnchor link="/municipios/alboraya" pueblo="Alboraya"></SeoAnchor>
-            <SeoAnchor link="/municipios/rocafort" pueblo="Rocafort"></SeoAnchor>
-            <SeoAnchor link="/municipios/gandia" pueblo="Gandia"></SeoAnchor>
-            <SeoAnchor link="/municipios/godella" pueblo="Godella"></SeoAnchor>
-            <SeoAnchor link="/municipios/alzira" pueblo="Alzira"></SeoAnchor>
-            <SeoAnchor link="/municipios/chiva" pueblo="Chiva"></SeoAnchor>
-            <SeoAnchor link="/municipios/pobla-de-vallbona" pueblo="Pobla de Vallbona"></SeoAnchor>
-            <SeoAnchor link="/municipios/moncada" pueblo="Moncada"></SeoAnchor>
-            <SeoAnchor link="/municipios/paterna" pueblo="Paterna"></SeoAnchor>
-            <SeoAnchor link="/municipios/ribarroja" pueblo="Ribarroja del Turia"></SeoAnchor>
-            <SeoAnchor link="/municipios/pucol" pueblo="Puçol"></SeoAnchor>
-            <SeoAnchor link="/municipios/montserrat" pueblo="Montserrat"></SeoAnchor>
-            <SeoAnchor link="/municipios/alfafar" pueblo="Alfafar"></SeoAnchor>
-            <SeoAnchor link="/municipios/mascamarena" pueblo="Mas Camarena"></SeoAnchor>
-            <SeoAnchor link="/municipios/vilamarxant" pueblo="Vilamarxant"></SeoAnchor>
-            <SeoAnchor link="/municipios/naquera" pueblo="Náquera"></SeoAnchor>
-            <SeoAnchor link="/municipios/burjassot" pueblo="Burjassot"></SeoAnchor>
             <SeoAnchor link="/municipios/manises" pueblo="Manises"></SeoAnchor>
-            <SeoAnchor link="/municipios/silla" pueblo="Silla"></SeoAnchor>
-            <SeoAnchor link="/municipios/benaguasil" pueblo="Benaguasil"></SeoAnchor>
-            <SeoAnchor link="/municipios/picassent" pueblo="Picassent"></SeoAnchor>
-            <SeoAnchor link="/municipios/alginet" pueblo="Alginet"></SeoAnchor>
-            <SeoAnchor link="/municipios/liria" pueblo="Liria"></SeoAnchor>
-            <SeoAnchor link="/municipios/torrent" pueblo="Torrent"></SeoAnchor>
             <SeoAnchor link="/municipios/mislata" pueblo="Mislata"></SeoAnchor>
-            <SeoAnchor link="/municipios/albal" pueblo="Albal"></SeoAnchor>
+            <SeoAnchor link="/municipios/quart-de-poblet" pueblo="Quart de Poblet"></SeoAnchor>
+            <SeoAnchor link="/municipios/paterna" pueblo="Paterna"></SeoAnchor>
+            <SeoAnchor link="/municipios/burjassot" pueblo="Burjassot"></SeoAnchor>
+            <SeoAnchor link="/municipios/aldaia" pueblo="Aldaia"></SeoAnchor>
+            <SeoAnchor link="/municipios/xirivella" pueblo="Xirivella"></SeoAnchor>
+            <SeoAnchor link="/municipios/torrent" pueblo="Torrent"></SeoAnchor>
+            <SeoAnchor link="/municipios/alaquas" pueblo="Alaquàs"></SeoAnchor>
+            <SeoAnchor link="/municipios/paiporta" pueblo="Paiporta"></SeoAnchor>
+            <SeoAnchor link="/municipios/benetusser" pueblo="Benetússer"></SeoAnchor>
+            <SeoAnchor link="/municipios/rocafort" pueblo="Rocafort"></SeoAnchor>
+            <SeoAnchor link="/municipios/massarojos" pueblo="Massarrojos"></SeoAnchor>
+            <SeoAnchor link="/municipios/moncada" pueblo="Moncada"></SeoAnchor>
+            <SeoAnchor link="/municipios/alfafar" pueblo="Alfafar"></SeoAnchor>
             <SeoAnchor link="/municipios/sedavi" pueblo="Sedaví"></SeoAnchor>
+            <SeoAnchor link="/municipios/albal" pueblo="Albal"></SeoAnchor>
+        </div>
 
-            </div>
 
             <div className="footer__politicas">
                 <StandardButton

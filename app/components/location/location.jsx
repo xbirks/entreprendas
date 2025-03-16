@@ -12,11 +12,13 @@ function Location(){
         <div className="location__master">
             <h3 className="location__title">¿Dónde necesitas que vayamos?</h3>
             <p className="location__description">
-                En <strong>Gartalia</strong>, cubrimos toda la provincia de Valencia, desde la ciudad hasta los pueblos más pequeños. Atendemos a lugares como <strong>Llíria, Bétera, Paterna, La Pobla de Vallbona, Ribarroja del Turia, Benaguacil, Godella, La Eliana, Casinos, Marines, Olocau y Náquera</strong>. Nos adaptamos a cada área para ofrecer el mejor servicio posible, manteniendo jardines y áreas verdes en condiciones óptimas. Estamos siempre disponibles para ofrecerte soluciones personalizadas, sea donde sea que te encuentres <strong>en Valencia</strong>.
+                En <strong>nuestro servicio de arreglos de ropa</strong>, llegamos a donde nos necesites en la provincia de Valencia. Atendemos a clientes en <strong>Manises, Mislata, Quart de Poblet, Paterna, Burjassot, Aldaia, Xirivella, Torrent, Alaquàs y Paiporta</strong>. Nos desplazamos para ofrecerte un servicio cómodo y a medida, asegurándonos de que tu ropa tenga el ajuste perfecto sin que tengas que moverte de casa.  
                 <br></br><br></br>
-                Además, estamos comprometidos con ofrecer <strong>servicios de jardinería accesibles y eficientes</strong>, lo que nos permite responder rápidamente a las necesidades de nuestros clientes en cualquier parte de la provincia. Nuestro equipo se desplaza con todo el equipo necesario para asegurar que cada proyecto se complete a la perfección, independientemente de la ubicación. 
+                Nuestro compromiso es hacer que el proceso de arreglos de ropa sea <strong>accesible y sin complicaciones</strong>. Nos encargamos de recoger las prendas, realizar las modificaciones necesarias y entregarlas listas para que las disfrutes. Así, puedes contar con un servicio rápido y eficiente sin salir de tu hogar.  
                 <br></br><br></br>
-                Este enfoque flexible y dedicado nos ha permitido construir relaciones duraderas con nuestros clientes, quienes confían en nosotros para mantener sus espacios verdes saludables y atractivos año tras año.</p>
+                Gracias a esta atención personalizada, nuestros clientes confían en nosotros para dar una segunda vida a sus prendas y garantizar un ajuste impecable en cada trabajo. Si necesitas un arreglo, <strong>nosotros nos encargamos de todo</strong>.  Consulta los precios del desplazamiento.
+                </p>
+
 
             <div className="location__buttons">
                 <StandardButton
@@ -33,31 +35,23 @@ function Location(){
             </div>
 
             <div className="location__seo-link">
-                <Link href="/">Jardineros en Valencia</Link>
-                <Link href="/municipios/manises">Jardineros en Manises</Link>
-                <Link href="/municipios/eliana">Jardineros en La Eliana</Link>
-                <Link href="/municipios/godella">Jardineros en Godella</Link>
-                <Link href="/municipios/mascamarena">Jardineros en Mas Camarena</Link>
-                <Link href="/municipios/betera">Jardineros en Bétera</Link>
-                <Link href="/municipios/torreconill">Jardineros en Torre en Conill</Link>
-                <Link href="/municipios/benaguasil">Jardineros en Benaguacil</Link>
-                <Link href="/municipios/casinos">Jardineros en Casinos</Link>
-                <Link href="/municipios/turis">Jardineros en Turis</Link>
-                <Link href="/municipios/marines">Jardineros en Marines</Link>
-                <Link href="/municipios/naquera">Jardineros en Náquera</Link>
-                <Link href="/municipios/pobla-de-vallbona">Jardineros en La Pobla de Vallbona</Link>
-                <Link href="/municipios/paterna">Jardineros en Paterna</Link>
-                <Link href="/municipios/canada">Jardineros en La Cañada</Link>
-                <Link href="/municipios/rocafort">Jardineros en Rocafort</Link>
-                <Link href="/municipios/massarojos">Jardineros en Massarrojos</Link>
-                <Link href="/municipios/burjassot">Jardineros en Burjassot</Link>
-                <Link href="/municipios/olocau">Jardineros en Olocau</Link>
-                <Link href="/municipios/liria">Jardineros en Liria</Link>
-                <Link href="/municipios/campoolivar">Jardineros en Campo Olivar</Link>
-                <Link href="/municipios/campoolivar">Jardineros en Campo Olivar</Link>
-                <Link href="/municipios/santabarbara">Jardineros en Santa Bárbara</Link>
-                <Link href="/municipios/calicanto">Jardineros en Calicanto</Link>
+                <Link href="/">Arreglos de ropa en Valencia</Link>
+                <Link href="/municipios/manises">Arreglos de ropa en Manises</Link>
+                <Link href="/municipios/mislata">Arreglos de ropa en Mislata</Link>
+                <Link href="/municipios/quart-de-poblet">Arreglos de ropa en Quart de Poblet</Link>
+                <Link href="/municipios/paterna">Arreglos de ropa en Paterna</Link>
+                <Link href="/municipios/burjassot">Arreglos de ropa en Burjassot</Link>
+                <Link href="/municipios/aldaia">Arreglos de ropa en Aldaia</Link>
+                <Link href="/municipios/xirivella">Arreglos de ropa en Xirivella</Link>
+                <Link href="/municipios/torrent">Arreglos de ropa en Torrent</Link>
+                <Link href="/municipios/alaquas">Arreglos de ropa en Alaquàs</Link>
+                <Link href="/municipios/paiporta">Arreglos de ropa en Paiporta</Link>
+                <Link href="/municipios/benetusser">Arreglos de ropa en Benetússer</Link>
+                <Link href="/municipios/rocafort">Arreglos de ropa en Rocafort</Link>
+                <Link href="/municipios/massarojos">Arreglos de ropa en Massarrojos</Link>
+                <Link href="/municipios/campanar">Arreglos de ropa en Campanar</Link>
             </div>
+
 
 
         </div>

@@ -6,9 +6,9 @@ import './other.scss';
 import Grid from '../grid/grid';
 
 //IMG
-import jardinesverticales from '../../assets/img/jardines-verticales.jpg';
-import fitosanitario from '../../assets/img/fitosanitario.jpg';
-import ramaspeligrosas from '../../assets/img/ramas-peligrosas.jpg';
+import falleras from '../../assets/img/falleras.jpg';
+import lactancia from '../../assets/img/lactancia.jpg';
+import mascotas from '../../assets/img/mascotas.jpg';
 
 function Other({municipio}){
 
@@ -20,24 +20,24 @@ function Other({municipio}){
             <div className="gridmaster__elements">
 
             <Grid
-            service={`Control fitosanitario ${municipio}`}
-            description="Es esencial para mantener tus plantas saludables y libres de plagas y enfermedades. Utiliza una combinación de técnicas, desde pesticidas hasta métodos más verdes como el control biológico, para proteger tus cultivos y jardines."
-            img={fitosanitario}
+            service={`Arreglo de trajes falleros ${municipio}`}
+            description="Preserva la tradición con un ajuste perfecto para tu traje fallero. Desde modificaciones en la silueta hasta restauración de detalles, nos aseguramos de que cada prenda luzca impecable y fiel a su estilo original. También los protegemos de la lluvia con capas de plástico resistente."
+            img={falleras}
             top="block"
             ></Grid>
 
             <Grid
-            service={`Instalación de jardines verticales ${municipio}`}
-            description="Creación de muros verdes tanto en interiores como exteriores, aprovechando espacios reducidos y mejorando la calidad del aire."
-            img={jardinesverticales}
+            service={`Ropa de lactancia personalizada ${municipio}`}
+            description="Facilita la lactancia con prendas diseñadas para la comodidad y el estilo. Adaptamos camisetas, vestidos y blusas con aperturas discretas y cierres prácticos para un acceso rápido y sencillo sin comprometer la estética."
+            img={lactancia}
             top="none"
             ></Grid>
 
             <Grid
-            service={`Poda de seguridad para ramas peligrosas ${municipio}`}
-            description="La poda de seguridad se centra en eliminar ramas que pueden ser un riesgo para personas y propiedades, previniendo accidentes y manteniendo la salud del árbol."
-            img={ramaspeligrosas}
-            top="block"
+            service={`Arreglo de ropa para mascotas ${municipio}`}
+            description="Dale una nueva vida a la ropa de tu mascota con ajustes a medida. Desde la reparación de abrigos hasta la personalización de prendas, aseguramos comodidad y estilo para tu compañero de cuatro patas."
+            img={mascotas}
+            top="none"
             ></Grid>
 
             </div>

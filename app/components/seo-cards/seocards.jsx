@@ -6,9 +6,9 @@ import './seocards.scss';
 import Card from './card';
 
 //IMG
-import seo1 from '../../assets/img/seo-1.jpg';
-import seo2 from '../../assets/img/seo-2.jpg';
-import seo3 from '../../assets/img/seo-3.jpg';
+import seo1 from '../../assets/img/falleras.jpg';
+import seo2 from '../../assets/img/novias.jpg';
+import seo3 from '../../assets/img/traje.jpg';
 
 
 function SeoCards({municipio}){
@@ -17,32 +17,24 @@ function SeoCards({municipio}){
 
         <div className="seoCards">
             <Card
-            title={`¿Estás buscando un jardinero barato y rápido ${municipio}?`}
-            info="Combinamos calidad con asequibilidad para ofrecerte servicios de jardinería profesionales sin sobrepasar tu presupuesto. Nuestro equipo está dedicado a proporcionar soluciones efectivas y eficientes, asegurando que cada proyecto, grande o pequeño, se maneje con el mismo nivel de cuidado y atención al detalle.
-            
-            Entendemos que encontrar un servicio que sea tanto económico como de alta calidad puede ser un desafío. Por eso, nos esforzamos por mantener nuestros precios transparentes y competitivos, mientras garantizamos resultados que superan tus expectativas. Si buscas un jardinero que no solo cuide de tu jardín, sino que también cuide de tu bolsillo, somos la elección perfecta en Valencia."
+            title={`Protege tu traje de fallera en días lluviosos`}
+            info="El traje de fallera es una prenda tradicional valiosa y delicada, por lo que en días lluviosos es fundamental protegerlo adecuadamente. Un chubasquero transparente se convierte en el mejor aliado: cubre el vestido por completo y evita que se moje, a la vez que permite lucir todos los detalles del diseño sin ocultarlos. Esta capa impermeable resguarda las telas y bordados de la lluvia, preservando su esplendor y evitando daños. Si no tienes un chubasquero, toma otras precauciones: camina con cuidado evitando charcos que puedan salpicar la falda y cubre las zonas más delicadas (como encajes o la manteleta) con un plástico o pañuelo al desplazarte. Con estas medidas, tu traje de fallera permanecerá seco y en perfectas condiciones incluso bajo la lluvia, listo para seguir brillando en la celebración."
             img={seo1}
-            alt="Trabajador de Gartalia cortando el césped en Resort El Oasis La Eliana"
+            alt="Modista de Entre Prendas mostrando un chubasquero para trajes de fallera"
             >
             </Card>
 
             <Card
-            title={`Damos un servicio de Poda y Tala Profesional ${municipio}`}
-            info="En nuestra empresa, entendemos la importancia de mantener los árboles de tu jardín no solo hermosos, sino también seguros. Por eso ofrecemos un servicio profesional de poda y tala en La Eliana, donde cada intervención es realizada con el máximo cuidado y respeto hacia la naturaleza y el entorno de nuestros clientes. 
-
-            Sabemos que cada árbol es único y cada cliente tiene necesidades particulares, por eso nos adaptamos a cada situación con un enfoque personalizado. Puedes confiar en nosotros para realizar un trabajo meticuloso y eficiente, siempre con una sonrisa y el mayor respeto por tu espacio personal."
+            title={`Ajustamos tu vestido de novia ${municipio}`}
+            info="El vestido de novia es más que una prenda: es un sueño hecho realidad que refleja la personalidad de quien lo lleva. Por ello, ajustarlo a la medida y al gusto de cada novia es esencial para que se sienta única, cómoda y radiante en su gran día. Del mismo modo, las damas de honor e invitadas también merecen vestidos que les queden impecables y se adapten a su estilo, permitiéndoles lucir elegantes sin perder comodidad. Los complementos adecuados —desde un velo o unas joyas delicadas hasta un chal a juego o el calzado ideal— terminan de completar el look, aportando ese toque personal que realza la belleza de cada mujer. En conjunto, un vestido bien ajustado y los accesorios correctos logran que la novia, sus damas de honor e incluso las invitadas se sientan seguras, especiales y fieles a sí mismas."
             img={seo2}
             alt="Trabajador de Gartalia cortando el césped en Resort El Oasis La Eliana"
             >
             </Card>
 
             <Card
-            title={`¿Necesitas un jardinero particular ${municipio} que cuide de tu jardín?`}
-            info="¿Necesitas alguien que cuide de tu jardín con la misma dedicación y cariño que tú le darías?
-
-Entendemos que tu jardín es más que solo un espacio verde; es un lugar de encuentro para la familia, un refugio para relajarte y disfrutar de la naturaleza. Por eso, ofrecemos jardineros particulares que se dedican a cuidar cada detalle, asegurando que tu jardín se mantenga vibrante, hermoso y saludable.
-
-Sabemos que cada planta y cada rincón de tu jardín tiene sus propias necesidades. Por ello, nuestro enfoque es personalizado y atento. Nuestros jardineros no solo realizan tareas como podar, plantar y mantener el césped, sino que también se toman el tiempo para entender el ecosistema de tu jardín y cómo mejorar su salud y belleza de manera sostenible. "
+            title={`Ajustamos tu traje ${municipio} para que siempre lo luzcas perfecto`}
+            info="En el ámbito profesional, la importancia de un traje bien ajustado no puede subestimarse. Un buen fit transmite seguridad y profesionalidad, marcando la diferencia en reuniones, eventos o negociaciones importantes. Además, un traje entallado a medida proyecta una imagen cuidada y demuestra atención al detalle, lo que te hace lucir más seguro de ti mismo. Para lograr ese look impecable, a menudo es necesario realizar ajustes en chaquetas y pantalones: por ejemplo, acortar el largo de las mangas de la chaqueta, entallar el cuerpo para que no sobre tela, y en el pantalón ajustar la cintura y el bajo a la altura correcta. Estos arreglos comunes aseguran que el traje quede como un guante, mejorando tu presencia y confianza en el entorno empresarial."
             img={seo3}
             alt="Trabajador de Gartalia cortando el césped en Resort El Oasis La Eliana"
             >

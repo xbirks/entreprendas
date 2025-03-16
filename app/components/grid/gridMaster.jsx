@@ -22,9 +22,6 @@ import complementos from '../../assets/img/complementos.jpg';
 import invitadas from '../../assets/img/invitadas.jpg';
 
 
-import instalariego from '../../assets/img/instala-riego.jpg';
-import instalaluz from '../../assets/img/instala-luz.jpg';
-import instalacercas from '../../assets/img/instala-cercas.jpg';
 
 
 

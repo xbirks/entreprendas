@@ -27,7 +27,7 @@ function nosotros(){
                 </p>
                 <div className="location__buttons">
                 <StandardButton
-                link="https://wa.me/message/44EBMJCUV7LNO1"
+                link="https://api.whatsapp.com/message/MYIQ4MSADGWGP1"
                 title="Contactar"
                 style="standardButton">
                 </StandardButton>
@@ -44,39 +44,42 @@ function nosotros(){
 
             <div className="review__list">
                 <Review
-                title="El Oasis - Villa Resort"
-                review="Trabajar con Carlos ha sido un cambio radical para nuestro negocio. Desde que empezó a encargarse del mantenimiento de nuestros jardines, hemos escalado del puesto 50 en Booking al primero o segundo. Su dedicación, paciencia y saber hacer nos han hecho crecer a los grande. Crack!!! Gracias"
-                time="Escrito el 24/02/2024">
+                title="Silvia Plaza"
+                review="Nora es una modista profesional y excelente a parte de una grandísima persona! Fue rápida y me dejo el vestido perfecto!  El trato con ella es lo mejor que puedes encontrar!! Cariñosa, amable y pendiente de que todo esté perfecto ! Sin duda repetiré! Eres un ejemplo a seguir Nora! Espero que estes por muchos años más y puedas ser tú quien me arregle mis vestidos ajjajaja! Mil gracias por todo! Contentísima"
+                time="Escrito el 24/08/2024">
                 </Review>
 
                 <Review
-                title="Toni Medina G."
-                review="Carlos lleva cuidando varios meses de la piscina y el jardin del chalet. Trabajo meticuloso y profesional. Es un placer ver cómo luce impecable durante todo el año. Recomendadisimos Carlos y su equipo para que cuiden de vuestras casas."
-                time="Escrito el 04/11/2023">
+                title="Sonia Rivero"
+                review="Una suerte encontrar a Nora a través de Google. Además de una profesional, es una persona muy amable y paciente. Me probé el vestido hasta en 3 ocasiones para que quedara perfecto y así fue como quedó; perfecto. ¡Muchas gracias!"
+                time="Escrito el 19/04/2024">
                 </Review>
 
                 <Review
-                title="Miguel Ángel Contreras"
-                review="Carlitos hizo magia con un terreno que estaba casi abandonado. Primero lo limpió todo y luego nos puso unas palmeras preciosas, grama nueva y hasta una valla de cipreses que quedó espectacular. En casa no nos imaginábamos que el terreno pudiera quedar tan increíble. Estamos encantados."
-                time="Escrito el 26/03/2024">
+                title="Elena Vilanova"
+                review="Nora es una profesional impecable, el trabajo de ajustar una chaqueta y pantalón de traje no es tarea fácil y le quedó de 10.  Además de que repasó los botones y lo planchó. Más contenta no podía estar. Además de que tuvo que realizarlo en tiempo record, puesto que lo necesitaba para la graduación y lo tuvo listo en un par de días con prueba incluida, se comprometió conmigo sin conocerme de nada y eso es de agradecer. Es una persona empática, comprometida, atenta, amable y cariñosa y con unas manos muy habilitosas. La recomendaré a mis conocidos y sin duda volveré a llamarla si necesito hacer cualquier compostura. Gracias por todo Nora. Un placer."
+                time="Escrito el 26/03/2023">
                 </Review>
             </div>
 
-             <p className="review__ask-review">
-             Si te han gustado las historias sobre cómo hemos transformado jardines, <strong>anímate a dejarnos una reseña</strong> contando tu experiencia. Tus palabras ayudan mucho y pueden animar a alguien más a dar el paso para mejorar su jardín. Te dejamos un botón para leer más reseñas y conocer mejor nuestro trabajo. 
+            <p className="review__ask-review">
+            Si te ha gustado conocer cómo hemos transformado y mejorado prendas, <strong>anímate a dejarnos una reseña</strong> contando tu experiencia. Tus palabras son de gran ayuda y pueden motivar a alguien más a confiar en nuestros servicios de arreglos y ajustes de ropa. 
 
-            Y si ya estás listo para transformar tu espacio, también encontrarás un botón para <strong>contratar nuestro servicio ahora mismo</strong>. Todo a un clic de distancia para que puedas empezar a disfrutar de un jardín espectacular cuanto antes.
-             </p>
+            Te dejamos un botón para leer más reseñas y descubrir cómo trabajamos.  
+
+            Y si ya estás listo para darle una nueva vida a tu prenda favorita, también encontrarás un botón para <strong>solicitar nuestro servicio ahora mismo</strong>. Todo a un clic de distancia para que puedas lucir tus prendas con un ajuste perfecto cuanto antes.
+            </p>
+
 
              <div className="review__buttons">
                 <StandardButton
-                link="https://g.page/r/CbwuUZbFLjXpEAE/review"
+                link="https://g.page/r/CdBglo7b1CdaEAE/review"
                 title="Review"
                 style="standardButton">
                 </StandardButton>
 
                 <StandardButton
-                link="https://maps.app.goo.gl/bnh6pKARVGWfLXUK8"
+                link="https://maps.app.goo.gl/g268QnDV95jQY6Vc7"
                 title="Google Maps"
                 style="emptyStandardButton">
                 </StandardButton>

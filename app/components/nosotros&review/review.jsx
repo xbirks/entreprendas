@@ -15,7 +15,7 @@ function Review( {title, review, time}){
 
         <div className="review__tarjeta">
             <div className="review__tarjeta-star">
-                <Image className="review__stars" src={stars} alt={`esta reseña ha conseguido 5 estrellas de parte de ${title}`} width={170} height={40}></Image>
+                <Image className="review__stars" src={stars} alt={`esta reseña de Entre Prendas ha conseguido 5 estrellas de parte de ${title}`} width={170} height={40}></Image>
                 <Image className="review__google" src={google} alt="logotipo de Google" width={40} height={40}></Image>
             </div>
 
@@ -25,7 +25,7 @@ function Review( {title, review, time}){
 
             
             <StandardButton
-            link="https://maps.app.goo.gl/bnh6pKARVGWfLXUK8"
+            link="https://maps.app.goo.gl/g268QnDV95jQY6Vc7"
             title="Leer en Maps"
             style="emptyStandardButton">
             </StandardButton>

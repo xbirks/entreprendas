@@ -3,7 +3,6 @@ import Link from 'next/link';
 import '../app/style.scss';
 import Intro from "./components/cabecera/intro";
 import GridMaster from "./components/grid/gridMaster";
-import Empresas from "./components/empresas/empresas";
 import Location from "./components/location/location";
 import Nosotros from "./components/nosotros&review/nosotros";
 import Other from "./components/other/other";
@@ -17,15 +16,15 @@ export default function HomePage() {
     <div className="Gartalia">
       <div className="master">
         <Intro municipio="Valencia"></Intro>
-        <GridMaster municipio=""></GridMaster>
-        <Empresas></Empresas>
-        <PreciosMaster></PreciosMaster>
+        <GridMaster municipio="en Valencia"></GridMaster>
         <Location></Location>
+        <PreciosMaster></PreciosMaster>
+        
         <Nosotros></Nosotros>
       </div>
       <div className="other">
         <div className="masterOther">
-          <Other></Other>
+          <Other municipio="en Valencia"></Other>
         </div>
       </div><div className="faq">
         <div className="masterFaq">
@@ -33,11 +32,11 @@ export default function HomePage() {
         </div>
       </div>
       <div className="faq__banner">
-      <span>¿Más preguntas? <Link href="tel:+34657170847">657 170 847</Link></span>
+      <span>¿Más preguntas? <Link href="tel:+34680593195">680 593 195</Link></span>
       </div>
 
       <div className="master">
-        <SeoCards  municipio="" ></SeoCards>
+        <SeoCards  municipio="en Valencia" ></SeoCards>
       </div>
     </div>
     
