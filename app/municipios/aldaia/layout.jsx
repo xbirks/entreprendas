@@ -2,7 +2,7 @@ import "../../style.scss";
 import Header from '../../components/header.jsx';
 import Footer from "../../components/footer.jsx";
 
-const municipio = "Godella";
+const municipio = "Aldaia";
 
 export const metadata = {
   title: `ENTRE PRENDAS | Arreglo de ropa en ${municipio} y alrededores`,
