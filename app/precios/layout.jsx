@@ -8,7 +8,7 @@ export const metadata = {
   //GENERIC
   title: 'Arreglo de ropa BARATO en Valencia y alrededores | ENTRE PRENDAS',
   description: '10 años de experiencia como modista en Valencia. Ofrecemos composturas de pantalones, camisas, faldas, vestidos de novia, trajes de fallera... Servicio barato y eficiente.',
-  applicationName: 'GARTALIA',
+  applicationName: 'ENTREPRENDAS',
   keywords: [
     'arreglo de ropa en Manises',
     'ajuste de vestidos en Mislata',
@@ -63,8 +63,8 @@ export const metadata = {
   // TWITTER
   twitter: {
     card: 'summary_large_image',
-    site: '@gartalia',
-    creator: '@gartalia',
+    site: '@entreprendas.es',
+    creator: '@entreprendas.es',
     title: 'Arreglo de ropa BARATO en Valencia y alrededores | ENTRE PRENDAS',
     description: '10 años de experiencia como modista en Valencia. Ofrecemos composturas de pantalones, camisas, faldas, vestidos de novia, trajes de fallera... Servicio barato y eficiente.',
     image: 'https://entreprendas.es/seo/twitter-1200-600.jpg',
@@ -114,15 +114,15 @@ export default function RootLayout({ children }) {
               {
                 "@context": "http://schema.org",
                 "@type": "WebSite",
-                "url": "https://gartalia.com",
-                "name": "Gartalia"
+                "url": "https://entreprendas.es",
+                "name": "Entre Prendas"
               },
               {
                 "@context": "http://schema.org",
                 "@type": "Organization",
-                "name": "Gartalia",
+                "name": "Entre Prendas",
                 "description": "Arreglo de ropa BARATO en Valencia con 10 años de experiencia",
-                "email": "jardin@gartalia.com",
+                "email": "hola@soyandres.es",
                 "logo": "https://entreprendas.es/seo/favicon_500x500.jpg",
                 "url": "https://entreprendas.es"
               },
@@ -130,12 +130,12 @@ export default function RootLayout({ children }) {
                 "@context": "http://schema.org",
                 "@type": "LocalBusiness",
                 "logo": "https://entreprendas.es/seo/favicon_500x500.jpg",
-                "name": "Gartalia",
+                "name": "Entre Prendas",
                 "description": "Arreglo de ropa BARATO en Valencia con 10 años de experiencia",
                 "image": "https://entreprendas.es/seo/meta-1200x630.jpg",
                 "url": "https://entreprendas.es",
                 "hasMap": "#",
-                "telephone": " 961848217",
+                "telephone": "680593195",
                 "priceRange": "$",
                 "address": {
                   "@type": "PostalAddress",

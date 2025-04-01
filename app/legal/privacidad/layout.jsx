@@ -5,9 +5,9 @@ import Footer from "../../components/footer.jsx";
 
 
 export const metadata = {
-  title: `GARTALIA | Política de privaciadad`,
-  description: `Consulta la política de privacidad de Jardinería Gartalia`,
-  applicationName: 'GARTALIA',
+  title: `ENTRE PRENDAS | Política de privaciadad`,
+  description: `Consulta la política de privacidad de Entre Prendas`,
+  applicationName: 'ENTRE PRENDAS',
   keywords: [
   ],
 };

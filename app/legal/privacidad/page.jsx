@@ -10,20 +10,20 @@ export default function Privacidad(){
       
       <h1>Política de privacidad de Gartalia</h1>
 
-      <br></br><br></br><br></br><p className="p_pol">En Jardinería Gartalia (en adelante, nosotros), nos comprometemos a proteger su privacidad y garantizar el cumplimiento de la normativa vigente en materia de protección de datos personales, incluyendo el Reglamento General de Protección de Datos (RGPD).</p>
+      <br></br><br></br><br></br><p className="p_pol">En Entre Prendas (en adelante, nosotros), nos comprometemos a proteger su privacidad y garantizar el cumplimiento de la normativa vigente en materia de protección de datos personales, incluyendo el Reglamento General de Protección de Datos (RGPD).</p>
 
       <br></br><br></br>
 
       <h2>1. Responsable del Tratamiento</h2>
-      <p className="p_pol">Nombre: <strong>Jardinería Gartalia</strong> <br></br>
-      Dirección: <strong>Av. de l&apos;Equador, 103, Benicalap, 46025 València, Valencia</strong><br></br>
-      Teléfono: <strong>657 170 847</strong><br></br>
-      Correo Electrónico: <strong>gartalia.contacto@gmail.com</strong><br></br>
-      Responsable: <strong>Carlos Correa</strong></p>
+      <p className="p_pol">Nombre: <strong>Entre Prendas</strong> <br></br>
+      Dirección: <strong>Pl. Rafael Atard, 20A, piso 2 puerta 3</strong><br></br>
+      Teléfono: <strong>680 593 195</strong><br></br>
+      Correo Electrónico: <strong>hola@soyandres.es</strong><br></br>
+      Responsable: <strong>Andrés Ortega Montoya</strong></p>
 
 
       <h2>2. Datos Personales Recopilados</h2>
-      <p className="p_pol">A través de nuestro formulario de contacto en <a href="https://gartalia.com" target="_blank" rel="noopener noreferrer"> https://gartalia.com</a>, podemos recopilar los siguientes datos personales:<br></br><br></br>
+      <p className="p_pol">A través de nuestro formulario de contacto en <a href="https://entreprendas.es" target="_blank" rel="noopener noreferrer"> https://entreprendas.es</a>, podemos recopilar los siguientes datos personales:<br></br><br></br>
       - Nombre y apellidos<br></br>
       - Dirección de correo electrónico<br></br>
       - Número de teléfono<br></br>
@@ -46,7 +46,7 @@ export default function Privacidad(){
       <p className="p_pol">Sus datos personales serán conservados durante un período máximo de 14 días desde su recepción. Pasado este tiempo, los datos serán eliminados de nuestros sistemas y no serán utilizados para ningún otro fin.</p>
 
       <h2>6. Destinatarios de los Datos</h2>
-      <p className="p_pol">No compartimos ni cedemos sus datos personales a terceros bajo ninguna circunstancia. Los datos serán utilizados únicamente por Jardinería Gartalia para las finalidades mencionadas.</p>
+      <p className="p_pol">No compartimos ni cedemos sus datos personales a terceros bajo ninguna circunstancia. Los datos serán utilizados únicamente por Entre Prendas para las finalidades mencionadas.</p>
 
       <h2>7. Derechos del Usuario</h2>
       <p className="p_pol">Usted tiene derecho a:<br></br><br></br>
@@ -60,8 +60,8 @@ export default function Privacidad(){
         
         Para ejercer estos derechos, puede contactarnos a través de:<br></br><br></br>
 
-        - Correo Electrónico: gartalia.contacto@gmail.com<br></br>
-        - Teléfono: 657 170 847</p>
+        - Correo Electrónico: hola@soyandres.es<br></br>
+        - Teléfono: 680 593 195</p>
 
       <h2>8. Seguridad de los Datos</h2>
       <p className="p_pol">Implementamos medidas técnicas y organizativas adecuadas para proteger sus datos personales contra pérdida, uso indebido, acceso no autorizado, divulgación y alteración.</p>
@@ -75,9 +75,9 @@ export default function Privacidad(){
       <h2>11. Contacto</h2>
       <p className="p_pol">Si tiene alguna pregunta o inquietud sobre nuestra Política de Privacidad o el tratamiento de sus datos personales, no dude en contactarnos:<br></br><br></br>
 
-      - Dirección: Av. de l&apos;Equador, 103, Benicalap, 46025 València, Valencia<br></br>
-      - Teléfono: 657 170 847<br></br>
-      - Correo Electrónico: gartalia.contacto@gmail.com</p>
+      - Dirección: Pl. Rafael Atard, 20A, piso 2 puerta 3<br></br>
+      - Teléfono: 680 593 195<br></br>
+      - Correo Electrónico: hola@soyandres.es</p>
 
 
       <br></br><br></br><br></br><br></br><br></br><br></br><br></br>
