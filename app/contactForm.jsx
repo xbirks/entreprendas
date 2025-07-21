@@ -85,7 +85,7 @@ function ContactForm() {
       <div className="form__header">
         <div className="form__header-text">
           <h4>Pide <br /> presupuesto</h4>
-          <p>o llama directamente al <Link href="tel:+34961848217">961 84 82 17</Link></p>
+          <p>o llama directamente al <Link href="tel:+34680593195">680 593 195</Link></p>
         </div>
         <Image id="iconpresu" src={IconPresupuesto} alt="Icono de Presupuesto" />
       </div>
@@ -142,7 +142,7 @@ function ContactForm() {
       </form>
 
       {status === 'success' && <p className="success-message">¡Qué bien! Hemos recibido tu mensaje.</p>}
-      {status === 'error' && <p className="error-message">¡Oh no! Algo ha fallado. Llámanos al 961 84 82 17.</p>}
+      {status === 'error' && <p className="error-message">¡Oh no! Algo ha fallado. Llámanos al 680 593 195.</p>}
     </div>
   );
 }
