@@ -8,7 +8,7 @@ export default function Privacidad(){
     <div className="gartalia">
       <div className="master">
       
-      <h1>Política de privacidad de Gartalia</h1>
+      <h1>Política de privacidad de Entre Prendas</h1>
 
       <br></br><br></br><br></br><p className="p_pol">En Entre Prendas (en adelante, nosotros), nos comprometemos a proteger su privacidad y garantizar el cumplimiento de la normativa vigente en materia de protección de datos personales, incluyendo el Reglamento General de Protección de Datos (RGPD).</p>
 
