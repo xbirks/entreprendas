@@ -54,13 +54,12 @@ export default async function handler(req, res) {
 
   const mailOptions = {
     from: process.env.SMTP_USER,
-    to: 'andres03ortega@gmail.com',
+    to: 'andres03ortega@gmail.com, norainesmontoya@hotmail.com',
     subject: `NUEVO TRABAJO para ${name}`,
     html: `
       <p>Nombre: ${name}</p>
-      <p>Teléfono: ${tel}</p>
+      <p>Teléfono: https://wa.me/34${tel}</p>
       <p>Servicio: ${service}</p>
-      <p>Ubicación: ${location}</p>
     `,
     attachments
   };
