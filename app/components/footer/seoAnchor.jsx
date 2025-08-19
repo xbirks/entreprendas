@@ -6,7 +6,7 @@ import '../../style.scss';
 function SeoAnchor({pueblo, link}){
     
     return(<div>
-        <Link href={link}>Jardineros en {pueblo}</Link>
+        <Link href={link}>Arreglo de ropa en {pueblo}</Link>
     </div>)
 };
 
