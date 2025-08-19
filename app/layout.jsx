@@ -103,7 +103,7 @@ export default function RootLayout({ children }) {
        
         <meta name="theme-color" content="#6BDB8A" />
         <meta name="background-color" content="#0D403B" />
-        <link rel="canonical" href="https://entreprendas.es" hrefLang="es-ES" />
+        
         <meta name="robots" content="index, follow" />
         <link rel="icon" href="https://entreprendas.es/seo/favicon_500x500.jpg" title="Ícono de la pestaña" type="image/png" />
         <link rel="apple-touch-icon" sizes="180x180" href="https://entreprendas.es/seo/ios_180x180.jpg" />

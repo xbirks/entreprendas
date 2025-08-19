@@ -80,7 +80,7 @@ function Footer() {
       <div className="footer__seo-anchor">
         <SeoAnchor link="/municipios/manises" pueblo="Manises"></SeoAnchor>
         <SeoAnchor link="/municipios/mislata" pueblo="Mislata"></SeoAnchor>
-        <SeoAnchor link="/municipios/quart-de-poblet" pueblo="Quart de Poblet"></SeoAnchor>
+        <SeoAnchor link="/municipios/quart-poblet" pueblo="Quart de Poblet"></SeoAnchor>
         <SeoAnchor link="/municipios/paterna" pueblo="Paterna"></SeoAnchor>
         <SeoAnchor link="/municipios/burjassot" pueblo="Burjassot"></SeoAnchor>
         <SeoAnchor link="/municipios/aldaia" pueblo="Aldaia"></SeoAnchor>
@@ -90,11 +90,6 @@ function Footer() {
         <SeoAnchor link="/municipios/paiporta" pueblo="Paiporta"></SeoAnchor>
         <SeoAnchor link="/municipios/benetusser" pueblo="Benetússer"></SeoAnchor>
         <SeoAnchor link="/municipios/rocafort" pueblo="Rocafort"></SeoAnchor>
-        <SeoAnchor link="/municipios/massarojos" pueblo="Massarrojos"></SeoAnchor>
-        <SeoAnchor link="/municipios/moncada" pueblo="Moncada"></SeoAnchor>
-        <SeoAnchor link="/municipios/alfafar" pueblo="Alfafar"></SeoAnchor>
-        <SeoAnchor link="/municipios/sedavi" pueblo="Sedaví"></SeoAnchor>
-        <SeoAnchor link="/municipios/albal" pueblo="Albal"></SeoAnchor>
       </div>
 
       <div className="footer__politicas">

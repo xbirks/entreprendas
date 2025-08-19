@@ -1,6 +1,6 @@
 import "../../style.scss";
 
-const municipio = "Mislata";
+const municipio = "Quart de Poblet";
 
 export const metadata = {
   title: `Arreglo de ropa en ${municipio} y alrededores | ENTRE PRENDAS`,
@@ -26,9 +26,9 @@ export const metadata = {
     `transformación de prendas en ${municipio}`
   ],
   alternates: {
-    canonical: "https://entreprendas.es/municipios/mislata",   // ✅ canonical correcto
+    canonical: "https://entreprendas.es/municipios/quart-poblet",   // ✅ canonical correcto
     languages: {
-      "es-ES": "https://entreprendas.es/municipios/mislata",   // ✅ hreflang aquí
+      "es-ES": "https://entreprendas.es/municipios/quart-poblet",   // ✅ hreflang aquí
     },
   },
 };
