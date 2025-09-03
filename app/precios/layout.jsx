@@ -28,10 +28,7 @@ export const metadata = {
     "transformación de prendas en Catarroja",
   ],
   alternates: {
-    canonical: "/",
-    languages: {
-      "es-ES": "/",
-    },
+    canonical: "/precios",
   },
   openGraph: {
     type: "website",
@@ -117,8 +114,7 @@ export default function RootLayout({ children }) {
         <meta name="background-color" content="#0D403B" />
 
         {/* Hreflang separado del canonical */}
-        <link rel="canonical" href="https://entreprendas.es/" />
-        <link rel="alternate" hrefLang="es-ES" href="https://entreprendas.es/" />
+        <link rel="canonical" href="https://entreprendas.es/precios" />
 
         {/* Favicon correcto */}
         <link

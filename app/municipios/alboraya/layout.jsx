@@ -26,9 +26,9 @@ export const metadata = {
     `transformación de prendas en ${municipio}`
   ],
   alternates: {
-    canonical: "https://entreprendas.es/alboraya",   // ✅ canonical correcto
+    canonical: "https://entreprendas.es/municipios/alboraya",   // ✅ canonical correcto
     languages: {
-      "es-ES": "https://entreprendas.es/alboraya",   // ✅ hreflang aquí
+      "es-ES": "https://entreprendas.es/municipios/alboraya",   // ✅ hreflang aquí
     },
   },
 };

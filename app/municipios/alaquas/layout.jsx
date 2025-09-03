@@ -26,9 +26,9 @@ export const metadata = {
     `transformación de prendas en ${municipio}`
   ],
   alternates: {
-    canonical: "https://entreprendas.es/alaquas",   // ✅ canonical correcto
+    canonical: "https://entreprendas.es/municipios/alaquas",   // ✅ canonical correcto
     languages: {
-      "es-ES": "https://entreprendas.es/alaquas",   // ✅ hreflang aquí
+      "es-ES": "https://entreprendas.es/municipios/alaquas",   // ✅ hreflang aquí
     },
   },
 };
