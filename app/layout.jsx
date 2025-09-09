@@ -1,6 +1,7 @@
 import "./style.scss";
 import Header from './components/header.jsx';
 import Footer from "./components/footer.jsx";
+import './globals.css'; 
  
 
 export const metadata = {

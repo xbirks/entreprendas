@@ -3,7 +3,7 @@
 import React from 'react';
 import "../../style.scss";
 import "./intro.scss";
-import StandardButton from '@/app/buttons/standardButton';
+import StandardButton from '../../../app/buttons/standardButton';
 import ContactForm from '../../contactForm';
 import HeroBanner from './heroBanner';
 

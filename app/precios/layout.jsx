@@ -33,7 +33,7 @@ export const metadata = {
   openGraph: {
     type: "website",
     locale: "es_ES",
-    url: "https://entreprendas.es",
+    url: "https://entreprendas.es/precios",
     siteName: "ENTRE PRENDAS",
     title:
       "Precios de arreglos de ropa en Valencia | ENTRE PRENDAS",
@@ -113,10 +113,7 @@ export default function RootLayout({ children }) {
         <meta name="theme-color" content="#6BDB8A" />
         <meta name="background-color" content="#0D403B" />
 
-        {/* Hreflang separado del canonical */}
-        <link rel="canonical" href="https://entreprendas.es/precios" />
-
-        {/* Favicon correcto */}
+              {/* Favicon correcto */}
         <link
           rel="icon"
           href="https://entreprendas.es/seo/favicon_500x500.png"
