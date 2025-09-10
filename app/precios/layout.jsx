@@ -1,7 +1,7 @@
 // app/precios/layout.jsx
 import "../../style.scss";
-import Header from "../../components/header.jsx";
-import Footer from "../../components/footer.jsx";
+import Header from "../components/header.jsx";
+import Footer from "../components/footer.jsx";
 
 export const metadata = {
   // Host preferido con www para coherencia en todas las señales
