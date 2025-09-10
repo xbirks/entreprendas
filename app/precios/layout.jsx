@@ -1,10 +1,11 @@
-// app/layout.jsx
-import "../style.scss";
-import Header from "../components/header.jsx";
-import Footer from "../components/footer.jsx";
+// app/precios/layout.jsx
+import "../../style.scss";
+import Header from "../../components/header.jsx";
+import Footer from "../../components/footer.jsx";
 
 export const metadata = {
-  metadataBase: new URL("https://entreprendas.es"),
+  // Host preferido con www para coherencia en todas las señales
+  metadataBase: new URL("https://www.entreprendas.es"),
   title: "Precios de arreglos de ropa BARATO en Valencia | ENTRE PRENDAS",
   description:
     "Consulta precios orientativos de arreglos de ropa en Valencia: bajos de pantalón, entalles, cremalleras, ajustes de vestidos, trajes de fallera y más. Servicio rápido y económico.",
@@ -28,20 +29,20 @@ export const metadata = {
     "transformación de prendas en Catarroja",
   ],
   alternates: {
-    canonical: "/precios",
+    // Canónica ABSOLUTA con www
+    canonical: "https://www.entreprendas.es/precios",
   },
   openGraph: {
     type: "website",
     locale: "es_ES",
-    url: "https://entreprendas.es/precios",
+    url: "https://www.entreprendas.es/precios",
     siteName: "ENTRE PRENDAS",
-    title:
-      "Precios de arreglos de ropa en Valencia | ENTRE PRENDAS",
+    title: "Precios de arreglos de ropa en Valencia | ENTRE PRENDAS",
     description:
       "10 años de experiencia como modista en Valencia. Composturas de pantalones, camisas, faldas, vestidos de novia, trajes de fallera...",
     images: [
       {
-        url: "https://entreprendas.es/seo/meta-1200x630.jpg",
+        url: "https://www.entreprendas.es/seo/meta-1200x630.jpg",
         width: 1200,
         height: 630,
         alt: "Arreglos de ropa a domicilio en Valencia",
@@ -50,30 +51,27 @@ export const metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    site: "@entreprendas.es",     
-    creator: "@entreprendas.es",  
-    title:
-      "Precios de arreglos de ropa en Valencia | ENTRE PRENDAS",
+    site: "@entreprendas.es",
+    creator: "@entreprendas.es",
+    title: "Precios de arreglos de ropa en Valencia | ENTRE PRENDAS",
     description:
       "10 años de experiencia como modista en Valencia. Composturas de pantalones, camisas, faldas, vestidos de novia, trajes de fallera...",
-    images: ["https://entreprendas.es/seo/twitter-1200-600.jpg"],
+    images: ["https://www.entreprendas.es/seo/twitter-1200-600.jpg"],
   },
   robots: { index: true, follow: true },
   icons: {
-    icon: [
-      { url: "/seo/favicon_500x500.png", type: "image/png", sizes: "any" },
-    ],
+    icon: [{ url: "/seo/favicon_500x500.png", type: "image/png", sizes: "any" }],
     apple: [{ url: "/seo/ios_180x180.png", sizes: "180x180" }],
   },
 };
 
-export default function RootLayout({ children }) {
+export default function PreciosLayout({ children }) {
   const orgSchema = {
     "@context": "https://schema.org",
     "@type": "Organization",
     name: "Entre Prendas",
-    url: "https://entreprendas.es",
-    logo: "https://entreprendas.es/seo/favicon_500x500.png",
+    url: "https://www.entreprendas.es",
+    logo: "https://www.entreprendas.es/seo/favicon_500x500.png",
     email: "hola@soyandres.es",
     sameAs: [
       "https://www.facebook.com/entreprendas.es",
@@ -85,8 +83,8 @@ export default function RootLayout({ children }) {
     "@context": "https://schema.org",
     "@type": "LocalBusiness",
     name: "Entre Prendas",
-    url: "https://entreprendas.es",
-    image: "https://entreprendas.es/seo/meta-1200x630.jpg",
+    url: "https://www.entreprendas.es",
+    image: "https://www.entreprendas.es/seo/meta-1200x630.jpg",
     telephone: "+34680593195",
     priceRange: "€",
     address: {
@@ -105,6 +103,7 @@ export default function RootLayout({ children }) {
         <meta charSet="utf-8" />
         <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
+
         {/* Tipografías */}
         <link rel="preconnect" href="https://use.typekit.net" />
         <link rel="stylesheet" href="https://use.typekit.net/usg7enf.css" />
@@ -113,10 +112,10 @@ export default function RootLayout({ children }) {
         <meta name="theme-color" content="#6BDB8A" />
         <meta name="background-color" content="#0D403B" />
 
-              {/* Favicon correcto */}
+        {/* Favicon correcto */}
         <link
           rel="icon"
-          href="https://entreprendas.es/seo/favicon_500x500.png"
+          href="https://www.entreprendas.es/seo/favicon_500x500.png"
           type="image/png"
         />
 
@@ -125,7 +124,7 @@ export default function RootLayout({ children }) {
           httpEquiv="Content-Security-Policy"
           content="
             default-src 'self';
-            img-src 'self' https://entreprendas.es data:;
+            img-src 'self' https://www.entreprendas.es data:;
             script-src 'self' https://apis.google.com;
             style-src 'self' 'unsafe-inline' https://use.typekit.net;
             font-src 'self' https://use.typekit.net data:;
