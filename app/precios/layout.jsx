@@ -1,5 +1,5 @@
 // app/precios/layout.jsx
-import "../../style.scss";
+import "../style.scss";
 import Header from "../components/header.jsx";
 import Footer from "../components/footer.jsx";
 
