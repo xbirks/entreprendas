@@ -4,7 +4,7 @@ import nodemailer from 'nodemailer';
 export const config = {
   api: {
     bodyParser: {
-      sizeLimit: '7mb',
+      sizeLimit: '7mb', // Cambia aquí el límite de tamaño del cuerpo
     },
   },
 };
@@ -15,86 +15,60 @@ export default async function handler(req, res) {
     return res.status(405).end(`Method ${req.method} Not Allowed`);
   }
 
-  const { name, tel, service, images } = req.body;
-  // Lee la clave secreta desde las variables de entorno de Vercel
-  const WEBHOOK_API_KEY = process.env.WEBHOOK_API_KEY;
+  const { name, tel, service, location, images } = req.body; // Incluye email
 
-  // 1. Envío del Webhook a la App del Taller
-  try {
-    if (!WEBHOOK_API_KEY) {
-        throw new Error("API Key is not configured on the server.");
+  const transporter = nodemailer.createTransport({
+    host: process.env.SMTP_HOST,
+    port: parseInt(process.env.SMTP_PORT, 10),
+    secure: process.env.SMTP_SECURE === 'true',
+    auth: {
+      user: process.env.SMTP_USER,
+      pass: process.env.SMTP_PASS
     }
-    const whatsappLink = `https://wa.me/34${tel.replace(/\s+/g, '')}`;
-    const webhookUrl = 'https://us-central1-entreprendas-ticket-manager.cloudfunctions.net/addPendingTicketFlow';
+  });
 
-    const webhookResponse = await fetch(webhookUrl, {
-      method: 'POST',
-      headers: { 
-        'Content-Type': 'application/json',
-        'x-api-key': WEBHOOK_API_KEY // <-- Usamos la variable de entorno
-      },
-      body: JSON.stringify({
-        clientName: name,
-        requestedService: service,
-        whatsappLink: whatsappLink,
-      }),
-    });
-
-    if (!webhookResponse.ok) {
-      const errorText = await webhookResponse.text();
-      throw new Error(`Webhook failed with status ${webhookResponse.status}: ${errorText}`);
+  const attachments = await Promise.all(images.map(async (image, index) => {
+    const matches = image.match(/^data:([A-Za-z-+\/]+);base64,(.+)$/);
+    if (!matches) {
+      console.error("Invalid image data for image index " + index);
+      return null; // Continuar con el siguiente archivo.
     }
-  } catch (webhookError) {
-    console.error('CRITICAL: Error sending data to workshop app:', webhookError);
-  }
 
-  // 2. Envío del Email (continúa aunque el webhook falle)
-  try {
-    const transporter = nodemailer.createTransport({
-      host: process.env.SMTP_HOST,
-      port: parseInt(process.env.SMTP_PORT, 10),
-      secure: process.env.SMTP_SECURE === 'true',
-      auth: {
-        user: process.env.SMTP_USER,
-        pass: process.env.SMTP_PASS,
-      },
-    });
+    let buffer = Buffer.from(matches[2], 'base64');
+    const imageType = matches[1].split('/')[1].toLowerCase(); // Manejar 'jpeg', 'jpg', 'png', etc.
 
-    const attachments = await Promise.all(
-      (images || []).map(async (image, index) => {
-        const matches = image.match(/^data:([A-Za-z-+\/]+);base64,(.+)$/);
-        if (!matches) return null;
-        let buffer = Buffer.from(matches[2], 'base64');
-        buffer = await sharp(buffer)
-          .resize(900)
-          .jpeg({ quality: 40 })
-          .toBuffer();
-        return {
-          filename: `Image${index + 1}.jpeg`,
-          content: buffer,
-        };
-      }).filter(Boolean)
-    );
+    // Convertir HEIC a JPEG y reducir tamaño
+    if (imageType === 'heic' || imageType === 'jpeg' || imageType === 'jpg' || imageType === 'png') {
+      buffer = await sharp(buffer)
+        .resize(900) // Cambia el ancho a 900px, ajustando la altura para mantener la proporción.
+        .jpeg({ quality: 40 }) // Cambiar la calidad a 40 para reducir tamaño.
+        .toBuffer();
+    }
 
-    const mailOptions = {
-      from: process.env.SMTP_USER,
-      to: 'andres03ortega@gmail.com, norainesmontoya@hotmail.com, norainesmontoya67@gmail.com',
-      subject: `NUEVO TRABAJO para ${name}`,
-      html: `
-        <p>Nombre: ${name}</p>
-        <p>Teléfono: https://wa.me/34${tel}</p>
-        <p>Servicio: ${service}</p>
-      `,
-      attachments,
+    return {
+      filename: `Image${index + 1}.${imageType === 'heic' ? 'jpeg' : imageType}`,
+      content: buffer,
+      encoding: 'base64'
     };
+  }).filter(x => x)); // Filtra cualquier null que pueda haber sido añadido.
 
+  const mailOptions = {
+    from: process.env.SMTP_USER,
+    to: 'andres03ortega@gmail.com, norainesmontoya@hotmail.com, norainesmontoya67@gmail.com',
+    subject: `NUEVO TRABAJO para ${name}`,
+    html: `
+      <p>Nombre: ${name}</p>
+      <p>Teléfono: https://wa.me/34${tel}</p>
+      <p>Servicio: ${service}</p>
+    `,
+    attachments
+  };
+
+  try {
     await transporter.sendMail(mailOptions);
-  } catch (emailError) {
-    console.error('Error sending email:', emailError);
-    // Solo devolvemos error si el email falla. La app es secundaria.
-    return res.status(500).json({ message: 'Failed to send email', detail: emailError.toString() });
+    res.status(200).json({ message: "Email sent successfully" });
+  } catch (error) {
+    console.error('Error sending email:', error);
+    res.status(500).json({ message: "Failed to send email", detail: error.toString() });
   }
-  
-  // 3. Respuesta final de éxito
-  return res.status(200).json({ message: 'Request processed successfully' });
 }
