@@ -71,4 +71,35 @@ export default async function handler(req, res) {
     console.error('Error sending email:', error);
     res.status(500).json({ message: "Failed to send email", detail: error.toString() });
   }
+
+  // --- INICIO DEL CÓDIGO A AÑADIR ---
+    // Después de enviar el email, mandamos los datos a la app del taller
+    try {
+        const { name, service, tel } = req.body;
+        
+        // Creamos un enlace directo a WhatsApp
+        const whatsappLink = `https://wa.me/34${tel.replace(/\s+/g, '')}`;
+
+        // Esta es la URL segura y única de tu app (el "buzón digital")
+        // Te la proporcionaré cuando la creemos. Será algo como:
+        // const webhookUrl = 'https://us-central1-tu-proyecto.cloudfunctions.net/addPendingTicket';
+
+        await fetch(webhookUrl, { // Usamos la URL que te daré
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({
+                clientName: name,
+                requestedService: service,
+                whatsappLink: whatsappLink
+            })
+        });
+    } catch (webhookError) {
+        // Si falla el envío a la app, no pasa nada. El correo ya se envió.
+        // Podemos registrar el error para saber qué ha pasado.
+        console.error('Error sending data to workshop app:', webhookError);
+    }
+    // --- FIN DEL CÓDIGO A AÑADIR ---
+
+    res.status(200).json({ message: 'Email successfully sent', info: info.response });
+
 }
