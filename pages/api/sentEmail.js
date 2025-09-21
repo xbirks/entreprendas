@@ -16,10 +16,14 @@ export default async function handler(req, res) {
   }
 
   const { name, tel, service, images } = req.body;
-  const WEBHOOK_API_KEY = 'clave-secreta-para-mi-webhook-12345'; // <-- ¡LA MISMA CLAVE SECRETA!
+  // Lee la clave secreta desde las variables de entorno de Vercel
+  const WEBHOOK_API_KEY = process.env.WEBHOOK_API_KEY;
 
   // 1. Envío del Webhook a la App del Taller
   try {
+    if (!WEBHOOK_API_KEY) {
+        throw new Error("API Key is not configured on the server.");
+    }
     const whatsappLink = `https://wa.me/34${tel.replace(/\s+/g, '')}`;
     const webhookUrl = 'https://us-central1-entreprendas-ticket-manager.cloudfunctions.net/addPendingTicketFlow';
 
@@ -27,7 +31,7 @@ export default async function handler(req, res) {
       method: 'POST',
       headers: { 
         'Content-Type': 'application/json',
-        'x-api-key': WEBHOOK_API_KEY // <-- AÑADIMOS LA LLAVE
+        'x-api-key': WEBHOOK_API_KEY // <-- Usamos la variable de entorno
       },
       body: JSON.stringify({
         clientName: name,
@@ -37,14 +41,14 @@ export default async function handler(req, res) {
     });
 
     if (!webhookResponse.ok) {
-      const errorData = await webhookResponse.json();
-      throw new Error(errorData.message || 'Webhook failed');
+      const errorText = await webhookResponse.text();
+      throw new Error(`Webhook failed with status ${webhookResponse.status}: ${errorText}`);
     }
   } catch (webhookError) {
     console.error('CRITICAL: Error sending data to workshop app:', webhookError);
   }
 
-  // 2. Envío del Email
+  // 2. Envío del Email (continúa aunque el webhook falle)
   try {
     const transporter = nodemailer.createTransport({
       host: process.env.SMTP_HOST,
@@ -87,6 +91,7 @@ export default async function handler(req, res) {
     await transporter.sendMail(mailOptions);
   } catch (emailError) {
     console.error('Error sending email:', emailError);
+    // Solo devolvemos error si el email falla. La app es secundaria.
     return res.status(500).json({ message: 'Failed to send email', detail: emailError.toString() });
   }
   
