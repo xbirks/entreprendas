@@ -4,7 +4,7 @@ import nodemailer from 'nodemailer';
 export const config = {
   api: {
     bodyParser: {
-      sizeLimit: '7mb', // Cambia aquí el límite de tamaño del cuerpo
+      sizeLimit: '7mb',
     },
   },
 };
@@ -15,91 +15,81 @@ export default async function handler(req, res) {
     return res.status(405).end(`Method ${req.method} Not Allowed`);
   }
 
-  const { name, tel, service, location, images } = req.body; // Incluye email
+  const { name, tel, service, images } = req.body;
 
-  const transporter = nodemailer.createTransport({
-    host: process.env.SMTP_HOST,
-    port: parseInt(process.env.SMTP_PORT, 10),
-    secure: process.env.SMTP_SECURE === 'true',
-    auth: {
-      user: process.env.SMTP_USER,
-      pass: process.env.SMTP_PASS
-    }
-  });
-
-  const attachments = await Promise.all(images.map(async (image, index) => {
-    const matches = image.match(/^data:([A-Za-z-+\/]+);base64,(.+)$/);
-    if (!matches) {
-      console.error("Invalid image data for image index " + index);
-      return null; // Continuar con el siguiente archivo.
-    }
-
-    let buffer = Buffer.from(matches[2], 'base64');
-    const imageType = matches[1].split('/')[1].toLowerCase(); // Manejar 'jpeg', 'jpg', 'png', etc.
-
-    // Convertir HEIC a JPEG y reducir tamaño
-    if (imageType === 'heic' || imageType === 'jpeg' || imageType === 'jpg' || imageType === 'png') {
-      buffer = await sharp(buffer)
-        .resize(900) // Cambia el ancho a 900px, ajustando la altura para mantener la proporción.
-        .jpeg({ quality: 40 }) // Cambiar la calidad a 40 para reducir tamaño.
-        .toBuffer();
-    }
-
-    return {
-      filename: `Image${index + 1}.${imageType === 'heic' ? 'jpeg' : imageType}`,
-      content: buffer,
-      encoding: 'base64'
-    };
-  }).filter(x => x)); // Filtra cualquier null que pueda haber sido añadido.
-
-  const mailOptions = {
-    from: process.env.SMTP_USER,
-    to: 'andres03ortega@gmail.com, norainesmontoya@hotmail.com, norainesmontoya67@gmail.com',
-    subject: `NUEVO TRABAJO para ${name}`,
-    html: `
-      <p>Nombre: ${name}</p>
-      <p>Teléfono: https://wa.me/34${tel}</p>
-      <p>Servicio: ${service}</p>
-    `,
-    attachments
-  };
-
+  // 1. Envío del Webhook a la App del Taller
   try {
-    await transporter.sendMail(mailOptions);
-    res.status(200).json({ message: "Email sent successfully" });
-  } catch (error) {
-    console.error('Error sending email:', error);
-    res.status(500).json({ message: "Failed to send email", detail: error.toString() });
+    const whatsappLink = `https://wa.me/34${tel.replace(/\s+/g, '')}`;
+    const webhookUrl = 'https://us-central1-entreprendas-ticket-manager.cloudfunctions.net/addPendingTicketFlow';
+
+    const webhookResponse = await fetch(webhookUrl, {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({
+        clientName: name,
+        requestedService: service,
+        whatsappLink: whatsappLink,
+      }),
+    });
+
+    if (!webhookResponse.ok) {
+      const errorData = await webhookResponse.json();
+      throw new Error(errorData.message || 'Webhook failed');
+    }
+  } catch (webhookError) {
+    console.error('CRITICAL: Error sending data to workshop app:', webhookError);
+    // Aunque falle el webhook, intentamos enviar el email como respaldo
   }
 
-  // --- INICIO DEL CÓDIGO A AÑADIR ---
-    // Después de enviar el email, mandamos los datos a la app del taller
-    try {
-        const { name, service, tel } = req.body;
-        
-        // Creamos un enlace directo a WhatsApp
-        const whatsappLink = `https://wa.me/34${tel.replace(/\s+/g, '')}`;
+  // 2. Envío del Email (siempre se intenta)
+  try {
+    const transporter = nodemailer.createTransport({
+      host: process.env.SMTP_HOST,
+      port: parseInt(process.env.SMTP_PORT, 10),
+      secure: process.env.SMTP_SECURE === 'true',
+      auth: {
+        user: process.env.SMTP_USER,
+        pass: process.env.SMTP_PASS,
+      },
+    });
 
-        // Esta es la URL segura y única de tu app (el "buzón digital")
-        // Te la proporcionaré cuando la creemos. Será algo como:
-        // const webhookUrl = 'https://us-central1-tu-proyecto.cloudfunctions.net/addPendingTicket';
+    const attachments = await Promise.all(
+      (images || []).map(async (image, index) => {
+        const matches = image.match(/^data:([A-Za-z-+\/]+);base64,(.+)$/);
+        if (!matches) return null;
+        let buffer = Buffer.from(matches[2], 'base64');
+        const imageType = matches[1].split('/')[1].toLowerCase();
+        buffer = await sharp(buffer)
+          .resize(900)
+          .jpeg({ quality: 40 })
+          .toBuffer();
+        return {
+          filename: `Image${index + 1}.jpeg`,
+          content: buffer,
+        };
+      }).filter(Boolean)
+    );
 
-        await fetch(webhookUrl, { // Usamos la URL que te daré
-            method: 'POST',
-            headers: { 'Content-Type': 'application/json' },
-            body: JSON.stringify({
-                clientName: name,
-                requestedService: service,
-                whatsappLink: whatsappLink
-            })
-        });
-    } catch (webhookError) {
-        // Si falla el envío a la app, no pasa nada. El correo ya se envió.
-        // Podemos registrar el error para saber qué ha pasado.
-        console.error('Error sending data to workshop app:', webhookError);
-    }
-    // --- FIN DEL CÓDIGO A AÑADIR ---
+    const mailOptions = {
+      from: process.env.SMTP_USER,
+      to: 'andres03ortega@gmail.com, norainesmontoya@hotmail.com, norainesmontoya67@gmail.com',
+      subject: `NUEVO TRABAJO para ${name}`,
+      html: `
+        <p>Nombre: ${name}</p>
+        <p>Teléfono: https://wa.me/34${tel}</p>
+        <p>Servicio: ${service}</p>
+      `,
+      attachments,
+    };
 
-    res.status(200).json({ message: 'Email successfully sent', info: info.response });
-
+    await transporter.sendMail(mailOptions);
+  } catch (emailError) {
+    console.error('Error sending email:', emailError);
+    // Si el email falla después de un webhook exitoso, la solicitud ya está en la app.
+    // Si ambos fallan, devolvemos un error.
+    return res.status(500).json({ message: 'Failed to send email', detail: emailError.toString() });
+  }
+  
+  // 3. Respuesta final de éxito
+  return res.status(200).json({ message: 'Request processed successfully' });
 }
