@@ -16,6 +16,7 @@ export default async function handler(req, res) {
   }
 
   const { name, tel, service, images } = req.body;
+  const WEBHOOK_API_KEY = 'clave-secreta-para-mi-webhook-12345'; // <-- ¡LA MISMA CLAVE SECRETA!
 
   // 1. Envío del Webhook a la App del Taller
   try {
@@ -24,7 +25,10 @@ export default async function handler(req, res) {
 
     const webhookResponse = await fetch(webhookUrl, {
       method: 'POST',
-      headers: { 'Content-Type': 'application/json' },
+      headers: { 
+        'Content-Type': 'application/json',
+        'x-api-key': WEBHOOK_API_KEY // <-- AÑADIMOS LA LLAVE
+      },
       body: JSON.stringify({
         clientName: name,
         requestedService: service,
@@ -38,10 +42,9 @@ export default async function handler(req, res) {
     }
   } catch (webhookError) {
     console.error('CRITICAL: Error sending data to workshop app:', webhookError);
-    // Aunque falle el webhook, intentamos enviar el email como respaldo
   }
 
-  // 2. Envío del Email (siempre se intenta)
+  // 2. Envío del Email
   try {
     const transporter = nodemailer.createTransport({
       host: process.env.SMTP_HOST,
@@ -58,7 +61,6 @@ export default async function handler(req, res) {
         const matches = image.match(/^data:([A-Za-z-+\/]+);base64,(.+)$/);
         if (!matches) return null;
         let buffer = Buffer.from(matches[2], 'base64');
-        const imageType = matches[1].split('/')[1].toLowerCase();
         buffer = await sharp(buffer)
           .resize(900)
           .jpeg({ quality: 40 })
@@ -85,8 +87,6 @@ export default async function handler(req, res) {
     await transporter.sendMail(mailOptions);
   } catch (emailError) {
     console.error('Error sending email:', emailError);
-    // Si el email falla después de un webhook exitoso, la solicitud ya está en la app.
-    // Si ambos fallan, devolvemos un error.
     return res.status(500).json({ message: 'Failed to send email', detail: emailError.toString() });
   }
   
