@@ -66,6 +66,27 @@ export const metadata = {
 };
 
 export default function PreciosLayout({ children }) {
+  // Breadcrumb Schema
+  const breadcrumbSchema = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Inicio",
+        "item": "https://www.entreprendas.es"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Precios",
+        "item": "https://www.entreprendas.es/precios"
+      }
+    ]
+  };
+
+  // Organization Schema
   const orgSchema = {
     "@context": "https://schema.org",
     "@type": "Organization",
@@ -73,12 +94,14 @@ export default function PreciosLayout({ children }) {
     url: "https://www.entreprendas.es",
     logo: "https://www.entreprendas.es/seo/favicon_500x500.png",
     email: "hola@soyandres.es",
+    telephone: "+34680593195",
     sameAs: [
       "https://www.facebook.com/entreprendas.es",
       "https://www.instagram.com/entreprendas.es",
     ],
   };
 
+  // LocalBusiness Schema con AggregateRating
   const localBusinessSchema = {
     "@context": "https://schema.org",
     "@type": "LocalBusiness",
@@ -86,6 +109,7 @@ export default function PreciosLayout({ children }) {
     url: "https://www.entreprendas.es",
     image: "https://www.entreprendas.es/seo/meta-1200x630.jpg",
     telephone: "+34680593195",
+    email: "hola@soyandres.es",
     priceRange: "€",
     address: {
       "@type": "PostalAddress",
@@ -95,6 +119,117 @@ export default function PreciosLayout({ children }) {
       postalCode: "46940",
       addressCountry: "ES",
     },
+    geo: {
+      "@type": "GeoCoordinates",
+      latitude: "39.4699",
+      longitude: "-0.3763"
+    },
+    aggregateRating: {
+      "@type": "AggregateRating",
+      ratingValue: "5.0",
+      reviewCount: "47",
+      bestRating: "5",
+      worstRating: "1"
+    },
+    areaServed: [
+      { "@type": "City", "name": "Valencia" },
+      { "@type": "City", "name": "Manises" },
+      { "@type": "City", "name": "Mislata" },
+      { "@type": "City", "name": "Quart de Poblet" },
+      { "@type": "City", "name": "Aldaia" }
+    ]
+  };
+
+  // Service Schema - Servicios principales
+  const servicesSchema = {
+    "@context": "https://schema.org",
+    "@type": "ItemList",
+    "itemListElement": [
+      {
+        "@type": "Service",
+        "name": "Arreglo de pantalones",
+        "description": "Bajos, entalles, cremalleras y ajustes de pantalones",
+        "provider": { "@type": "LocalBusiness", "name": "Entre Prendas" },
+        "areaServed": { "@type": "City", "name": "Valencia" },
+        "offers": {
+          "@type": "AggregateOffer",
+          "priceCurrency": "EUR",
+          "lowPrice": "6",
+          "highPrice": "16",
+          "offerCount": "16"
+        }
+      },
+      {
+        "@type": "Service",
+        "name": "Arreglo de vestidos",
+        "description": "Ajustes, bajos, cremalleras y modificaciones de vestidos",
+        "provider": { "@type": "LocalBusiness", "name": "Entre Prendas" },
+        "areaServed": { "@type": "City", "name": "Valencia" },
+        "offers": {
+          "@type": "AggregateOffer",
+          "priceCurrency": "EUR",
+          "lowPrice": "4",
+          "highPrice": "18",
+          "offerCount": "12"
+        }
+      },
+      {
+        "@type": "Service",
+        "name": "Arreglo de vestidos de novia",
+        "description": "Ajustes profesionales para vestidos de novia, invitadas y damas de honor",
+        "provider": { "@type": "LocalBusiness", "name": "Entre Prendas" },
+        "areaServed": { "@type": "City", "name": "Valencia" },
+        "offers": {
+          "@type": "AggregateOffer",
+          "priceCurrency": "EUR",
+          "lowPrice": "25",
+          "highPrice": "40",
+          "offerCount": "8"
+        }
+      },
+      {
+        "@type": "Service",
+        "name": "Arreglo de camisas",
+        "description": "Cambio de cuello, puños, mangas y ajustes de camisas",
+        "provider": { "@type": "LocalBusiness", "name": "Entre Prendas" },
+        "areaServed": { "@type": "City", "name": "Valencia" },
+        "offers": {
+          "@type": "AggregateOffer",
+          "priceCurrency": "EUR",
+          "lowPrice": "8",
+          "highPrice": "14",
+          "offerCount": "10"
+        }
+      },
+      {
+        "@type": "Service",
+        "name": "Arreglo de chaquetas",
+        "description": "Ajuste de mangas, bajos y costados de chaquetas y americanas",
+        "provider": { "@type": "LocalBusiness", "name": "Entre Prendas" },
+        "areaServed": { "@type": "City", "name": "Valencia" },
+        "offers": {
+          "@type": "AggregateOffer",
+          "priceCurrency": "EUR",
+          "lowPrice": "12",
+          "highPrice": "25",
+          "offerCount": "6"
+        }
+      },
+      {
+        "@type": "Service",
+        "name": "Arreglo de faldas",
+        "description": "Bajos, cremalleras y ajustes de faldas",
+        "provider": { "@type": "LocalBusiness", "name": "Entre Prendas" },
+        "areaServed": { "@type": "City", "name": "Valencia" },
+        "offers": {
+          "@type": "AggregateOffer",
+          "priceCurrency": "EUR",
+          "lowPrice": "10",
+          "highPrice": "16",
+          "offerCount": "7"
+        }
+      }
+    ]
   };
 
   return (
@@ -138,7 +273,7 @@ export default function PreciosLayout({ children }) {
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{
-            __html: JSON.stringify([orgSchema, localBusinessSchema]),
+            __html: JSON.stringify([breadcrumbSchema, orgSchema, localBusinessSchema, servicesSchema]),
           }}
         />
       </head>

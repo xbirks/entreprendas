@@ -31,7 +31,7 @@ function Footer() {
 
         <div className="header__nav">
           <ImgButton
-            link="/#precios"
+            link="/precios"
             title="Precios"
             style="imgButton__white imgb1"
             icon={IconServicios}

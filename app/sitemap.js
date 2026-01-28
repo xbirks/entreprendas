@@ -3,10 +3,11 @@ export default function sitemap() {
 
     // Lista de municipios que REALMENTE existen en tu app
     const municipios = [
-        'alaquas', 'alboraya', 'aldaia', 'burjassot', 'canada',
-        'eliana', 'godella', 'manises', 'mislata', 'paiporta',
-        'paterna', 'picana', 'quart-poblet', 'ribarroja', 'rocafort',
-        'torrente', 'valencia', 'xirivella'
+        'alaquas', 'alboraya', 'aldaia', 'benetusser', 'burjassot', 
+        'canada', 'catarroja', 'eliana', 'godella', 'manises', 
+        'mislata', 'montcada', 'paiporta', 'paterna', 'picana', 
+        'quart-poblet', 'ribarroja', 'rocafort', 'torrente', 
+        'valencia', 'xirivella'
     ];
 
     const currentDate = new Date().toISOString();

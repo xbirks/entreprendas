@@ -15,7 +15,7 @@ const priceData = [
       { name: "Chándal de punto", price: 10 },
       { name: "Ampliar o estrechar cintura", price: 15 },
       { name: "Estrechar pierna", price: 14 },
-      { name: "Bajo de vaqueros", price: 10 },            
+      { name: "Bajo de vaqueros", price: 10 },
       { name: "Vaquero: estrechar cintura", price: 15 },
       { name: "Vaquero: estrechar pierna", price: 14 },
       { name: "Zurcir vaquero", price: 8 },
@@ -112,8 +112,8 @@ const priceData = [
     services: [
       { name: "Coser roto", price: 6 },
       { name: "Botones (unidad)", price: 4 },
-      { name: "Acortar tirantes de bikini", price: 6 },  
-      { name: "Cremallera de cojín", price: 15 }, 
+      { name: "Acortar tirantes de bikini", price: 6 },
+      { name: "Cremallera de cojín", price: 15 },
       { name: "Bajo de cortinas (ancho 130 cm)", price: 14 },
     ],
   },
@@ -127,6 +127,22 @@ function PreciosMaster() {
       <p className="precios__disclaimer">
         Todos los precios pueden variar dependiendo de las características de cada prenda. Consulta con nosotros.
       </p>
+      <div style={{ textAlign: 'center', marginTop: '30px' }}>
+        <Link href="/precios" style={{
+          backgroundColor: '#68F5BC',
+          color: '#0D403B',
+          padding: '12px 30px',
+          borderRadius: '50px',
+          textDecoration: 'none',
+          fontFamily: 'neue-haas-unica, Arial, sans-serif',
+          fontSize: '16px',
+          fontWeight: '500',
+          display: 'inline-block',
+          transition: 'all 0.3s ease'
+        }}>
+          Ver todos los precios →
+        </Link>
+      </div>
     </div>
   );
 }
