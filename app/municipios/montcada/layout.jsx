@@ -4,7 +4,7 @@ const municipio = "Montcada";
 
 export const metadata = {
   title: `Arreglo de ropa en ${municipio} y alrededores | ENTRE PRENDAS`,
-  description: `10 años de experiencia como modista en ${municipio}. Realizamos composturas de pantalones, camisas, faldas, vestidos de novia, trajes de fallera y mucho más. Servicio profesional y eficiente.`,
+  description: `Arreglo de ropa profesional en ${municipio}. Bajos, ajustes, cremalleras, vestidos de novia. 10 años de experiencia. Servicio rápido y económico.`,
   applicationName: "ENTRE PRENDAS",
   keywords: [
     `arreglo de ropa en ${municipio}`,
@@ -26,9 +26,9 @@ export const metadata = {
     `transformación de prendas en ${municipio}`
   ],
   alternates: {
-    canonical: "https://www.entreprendas.es/municipios/Montcada",   // ✅ canonical correcto
+    canonical: "https://www.entreprendas.es/municipios/montcada",
     languages: {
-      "es-ES": "https://www.entreprendas.es/municipios/Montcada",   // ✅ hreflang aquí
+      "es-ES": "https://www.entreprendas.es/municipios/montcada",
     },
   },
 };
@@ -37,9 +37,9 @@ export default function MontcadaLayout({ children }) {
   const localBusinessSchema = {
     "@context": "https://schema.org",
     "@type": "LocalBusiness",
-    "name": "Entre Prendas - Arreglo de ropa en Montcada",
-    "description": "Servicio profesional de arreglo de ropa en Montcada con 10 años de experiencia. Ajustes, composturas y arreglos de todo tipo de prendas.",
-    "url": "https://www.entreprendas.es/municipios/Montcada",
+    "name": `Entre Prendas - Arreglo de ropa en ${municipio}`,
+    "description": `Servicio profesional de arreglo de ropa en ${municipio} con 10 años de experiencia. Ajustes, composturas y arreglos de todo tipo de prendas.`,
+    "url": "https://www.entreprendas.es/municipios/montcada",
     "telephone": "+34680593195",
     "email": "hola@soyandres.es",
     "image": "https://www.entreprendas.es/seo/meta-1200x630.jpg",
@@ -59,7 +59,7 @@ export default function MontcadaLayout({ children }) {
     "areaServed": [
       {
         "@type": "City",
-        "name": "Montcada"
+        "name": municipio
       },
       {
         "@type": "City",
@@ -89,8 +89,8 @@ export default function MontcadaLayout({ children }) {
       {
         "@type": "ListItem",
         "position": 2,
-        "name": "Montcada",
-        "item": "https://www.entreprendas.es/municipios/Montcada"
+        "name": municipio,
+        "item": "https://www.entreprendas.es/municipios/montcada"
       }
     ]
   };

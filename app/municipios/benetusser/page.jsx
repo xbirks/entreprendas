@@ -10,8 +10,8 @@ import SeoCards from '../../components/seo-cards/seocards';
 import SedaviLayout from './layout';
 
 const Sedavi = () => {
-  const municipio = "Benetússer";
-  const enmunicipio = "en Benetússer";
+  const municipio = "Valencia";
+  const enmunicipio = "en Valencia";
 
   return (
     <div className="gartalia">
