@@ -1,14 +1,14 @@
 import "./style.scss";
 import Header from './components/header.jsx';
 import Footer from "./components/footer.jsx";
-import './globals.css'; 
- 
+import './globals.css';
+
 
 export const metadata = {
 
   //GENERIC
   title: 'Arreglo de ropa BARATO en Valencia y alrededores | ENTRE PRENDAS',
-  description: '10 años de experiencia como modista en Valencia. Ofrecemos composturas de pantalones, camisas, faldas, vestidos de novia, trajes de fallera... Servicio barato y eficiente.',
+  description: '10 años de experiencia como modista en Valencia. Arreglo de pantalones, vestidos, trajes de fallera y más. Servicio rápido y económico.',
   applicationName: 'ENTREPRENDAS',
   keywords: [
     'arreglo de ropa en Manises',
@@ -29,7 +29,7 @@ export const metadata = {
     'ajuste de ropa de fiesta en Benetússer',
     'transformación de prendas en Catarroja'
   ],
-  
+
   authors: [{ name: 'Andrés Ortega', url: 'https://www.ermo.es' }],
   creator: 'Andrés Ortega',
   publisher: 'Andrés Ortega',
@@ -42,7 +42,7 @@ export const metadata = {
   },
   contentLanguage: 'es',
   language: 'es',
-  
+
   // META
   openGraph: {
     title: 'Arreglo de ropa BARATO en Valencia y alrededores | ENTRE PRENDAS',
@@ -73,24 +73,24 @@ export const metadata = {
   },
 
   //APPLE
-  appleTouchIcon: 'https://entreprendas.es/seo/favicon_500x500.png', 
+  appleTouchIcon: 'https://entreprendas.es/seo/favicon_500x500.png',
   appleTouchStartupImage: 'https://entreprendas.es/seo/favicon_500x500.png',
 
-  
+
 
 
 
   //SECURITY
   contentSecurityPolicy: "default-src 'self'; img-src 'self' https://www.entreprendas.es; script-src 'self' https://apis.google.com",
-  referrerPolicy: 'no-referrer-when-downgrade', 
-  xContentTypeOptions: 'nosniff', 
-  xFrameOptions: 'DENY', 
+  referrerPolicy: 'no-referrer-when-downgrade',
+  xContentTypeOptions: 'nosniff',
+  xFrameOptions: 'DENY',
   xXssProtection: '1; mode=block',
   permissionsPolicy: "geolocation=(self)",
 
-  
+
 }
- 
+
 
 export default function RootLayout({ children }) {
   return (
@@ -101,10 +101,10 @@ export default function RootLayout({ children }) {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="stylesheet" href="https://use.typekit.net/usg7enf.css"></link>
 
-       
+
         <meta name="theme-color" content="#6BDB8A" />
         <meta name="background-color" content="#0D403B" />
-        
+
         <meta name="robots" content="index, follow" />
         <link rel="icon" href="https://entreprendas.es/seo/favicon_500x500.jpg" title="Ícono de la pestaña" type="image/png" />
         <link rel="apple-touch-icon" sizes="180x180" href="https://entreprendas.es/seo/ios_180x180.jpg" />
@@ -152,14 +152,14 @@ export default function RootLayout({ children }) {
       </head>
       <body>
 
- 
+
 
 
 
         <div className="master__gartalia">
-        <Header />
+          <Header />
           {children}
-        <Footer />
+          <Footer />
         </div>
       </body>
     </html>

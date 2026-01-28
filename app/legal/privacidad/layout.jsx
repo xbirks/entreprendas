@@ -5,11 +5,12 @@ import Footer from "../../components/footer.jsx";
 
 
 export const metadata = {
-  title: `ENTRE PRENDAS | Política de privaciadad`,
-  description: `Consulta la política de privacidad de Entre Prendas`,
-  applicationName: 'ENTRE PRENDAS',
-  keywords: [
-  ],
+  title: 'Política de Privacidad | ENTRE PRENDAS',
+  description: 'Consulta la política de privacidad de Entre Prendas. Información sobre cómo tratamos tus datos personales.',
+  robots: 'noindex, follow',
+  alternates: {
+    canonical: 'https://entreprendas.es/legal/privacidad',
+  },
 };
 
 export default function PrivacidadLayout({ children }) {

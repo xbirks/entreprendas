@@ -33,10 +33,79 @@ export const metadata = {
   },
 };
 
-export default function SedaviLayout({ children }) {
+export default function ValenciaLayout({ children }) {
+  const localBusinessSchema = {
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    "name": "Entre Prendas - Arreglo de ropa en Valencia",
+    "description": "Servicio profesional de arreglo de ropa en Valencia con 10 años de experiencia. Ajustes, composturas y arreglos de todo tipo de prendas.",
+    "url": "https://entreprendas.es/municipios/valencia",
+    "telephone": "+34680593195",
+    "email": "hola@soyandres.es",
+    "image": "https://entreprendas.es/seo/meta-1200x630.jpg",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Pl. Rafael Atard, 20A, piso 2 puerta 3",
+      "addressLocality": "Manises",
+      "addressRegion": "València",
+      "postalCode": "46940",
+      "addressCountry": "ES"
+    },
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": "39.4699",
+      "longitude": "-0.3763"
+    },
+    "areaServed": [
+      {
+        "@type": "City",
+        "name": "Valencia"
+      },
+      {
+        "@type": "City",
+        "name": "Manises"
+      }
+    ],
+    "priceRange": "€€",
+    "aggregateRating": {
+      "@type": "AggregateRating",
+      "ratingValue": "5.0",
+      "reviewCount": "47",
+      "bestRating": "5",
+      "worstRating": "1"
+    }
+  };
+
+  const breadcrumbSchema = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Inicio",
+        "item": "https://entreprendas.es"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Valencia",
+        "item": "https://entreprendas.es/municipios/valencia"
+      }
+    ]
+  };
+
   return (
     <div className="master__gartalia">
       {children}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(localBusinessSchema) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
+      />
     </div>
   );
 }

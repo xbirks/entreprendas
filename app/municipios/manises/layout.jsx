@@ -33,10 +33,81 @@ export const metadata = {
   },
 };
 
-export default function SedaviLayout({ children }) {
+export default function ManisesLayout({ children }) {
+  const localBusinessSchema = {
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    "name": "Entre Prendas - Arreglo de ropa en Manises",
+    "description": "Servicio profesional de arreglo de ropa en Manises con 10 años de experiencia. Ajustes, composturas y arreglos de todo tipo de prendas.",
+    "url": "https://entreprendas.es/municipios/manises",
+    "telephone": "+34680593195",
+    "email": "hola@soyandres.es",
+    "image": "https://entreprendas.es/seo/meta-1200x630.jpg",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Pl. Rafael Atard, 20A, piso 2 puerta 3",
+      "addressLocality": "Manises",
+      "addressRegion": "València",
+      "postalCode": "46940",
+      "addressCountry": "ES"
+    },
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": "39.4858",
+      "longitude": "-0.4668"
+    },
+    "areaServed": {
+      "@type": "City",
+      "name": "Manises"
+    },
+    "priceRange": "€€",
+    "openingHoursSpecification": [
+      {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+        "opens": "09:00",
+        "closes": "19:00"
+      }
+    ],
+    "aggregateRating": {
+      "@type": "AggregateRating",
+      "ratingValue": "5.0",
+      "reviewCount": "47",
+      "bestRating": "5",
+      "worstRating": "1"
+    }
+  };
+
+  const breadcrumbSchema = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Inicio",
+        "item": "https://entreprendas.es"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Manises",
+        "item": "https://entreprendas.es/municipios/manises"
+      }
+    ]
+  };
+
   return (
     <div className="master__gartalia">
       {children}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(localBusinessSchema) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
+      />
     </div>
   );
 }

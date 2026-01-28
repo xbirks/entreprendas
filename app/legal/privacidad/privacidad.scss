@@ -1,0 +1,119 @@
+@import '../../styles/variables.scss';
+
+.gartalia {
+    .master {
+        h1 {
+            color: $botella;
+            font-family: $halyard;
+            font-size: 60px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 110%;
+            margin-bottom: 30px;
+            margin-top: 40px;
+
+            @include media1200px {
+                font-size: 50px;
+            }
+
+            @include media700px {
+                font-size: 40px;
+                line-height: 44px;
+            }
+
+            @include media600px {
+                font-size: 32px;
+                line-height: 36px;
+            }
+
+            @include media390px {
+                font-size: 28px;
+                line-height: 32px;
+            }
+        }
+
+        h2 {
+            color: $botella;
+            font-family: $halyard;
+            font-size: 28px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 120%;
+            margin-top: 30px;
+            margin-bottom: 12px;
+
+            @include media700px {
+                font-size: 24px;
+            }
+
+            @include media600px {
+                font-size: 20px;
+            }
+
+            @include media390px {
+                font-size: 18px;
+            }
+        }
+
+        .p_pol {
+            color: $botella;
+            font-family: $neue;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 24px;
+            max-width: 100%;
+            margin-top: 12px;
+            margin-bottom: 12px;
+
+            @include media600px {
+                font-size: 15px;
+                line-height: 22px;
+            }
+
+            @include media390px {
+                font-size: 14px;
+                line-height: 20px;
+            }
+
+            a {
+                color: $esmeralda;
+                text-decoration: underline;
+
+                &:hover {
+                    color: $destacado;
+                }
+            }
+
+            strong {
+                font-weight: 700;
+            }
+        }
+
+        ul.p_pol {
+            margin-left: 20px;
+            margin-top: 8px;
+            margin-bottom: 12px;
+
+            li {
+                color: $botella;
+                font-family: $neue;
+                font-size: 16px;
+                line-height: 24px;
+                margin-bottom: 6px;
+                list-style-type: disc;
+                list-style-position: outside;
+
+                @include media600px {
+                    font-size: 15px;
+                    line-height: 22px;
+                }
+
+                @include media390px {
+                    font-size: 14px;
+                    line-height: 20px;
+                }
+            }
+        }
+    }
+}

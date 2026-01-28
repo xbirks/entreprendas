@@ -9,6 +9,12 @@
     margin-top: 6vh;
 
     h1{
+        color: $botella;
+        font-family: $halyard;
+        font-size: 130px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 100.905%;
         margin-bottom: 35px;
 
         @include media1390px {

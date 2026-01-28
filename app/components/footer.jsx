@@ -53,7 +53,7 @@ function Footer() {
         </div>
       </div>
 
-      
+
 
       <div className="footer__contacto">
         <h4 className="footer__contacto-title">
@@ -85,29 +85,18 @@ function Footer() {
         <SeoAnchor link="/municipios/burjassot" pueblo="Burjassot"></SeoAnchor>
         <SeoAnchor link="/municipios/aldaia" pueblo="Aldaia"></SeoAnchor>
         <SeoAnchor link="/municipios/xirivella" pueblo="Xirivella"></SeoAnchor>
-        <SeoAnchor link="/municipios/torrent" pueblo="Torrent"></SeoAnchor>
+        <SeoAnchor link="/municipios/torrente" pueblo="Torrent"></SeoAnchor>
         <SeoAnchor link="/municipios/alaquas" pueblo="Alaquàs"></SeoAnchor>
         <SeoAnchor link="/municipios/paiporta" pueblo="Paiporta"></SeoAnchor>
-        <SeoAnchor link="/municipios/benetusser" pueblo="Benetússer"></SeoAnchor>
         <SeoAnchor link="/municipios/rocafort" pueblo="Rocafort"></SeoAnchor>
+        <SeoAnchor link="/municipios/godella" pueblo="Godella"></SeoAnchor>
+        <SeoAnchor link="/municipios/valencia" pueblo="Valencia"></SeoAnchor>
       </div>
 
       <div className="footer__politicas">
         <StandardButton
-          link="/legal/aviso-legal"
-          title="Aviso legal"
-          style="emptyStandardButton"
-        >
-        </StandardButton>
-        <StandardButton
           link="/legal/privacidad"
           title="Política de privacidad"
-          style="emptyStandardButton"
-        >
-        </StandardButton>
-        <StandardButton
-          link="/legal/cookies"
-          title="Política de cookies"
           style="emptyStandardButton"
         >
         </StandardButton>
