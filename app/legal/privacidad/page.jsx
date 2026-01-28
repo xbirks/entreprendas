@@ -23,7 +23,7 @@ export default function Privacidad() {
         </p>
 
         <h2>2. Datos Personales Recopilados</h2>
-        <p className="p_pol">A través de nuestro formulario de contacto en <a href="https://entreprendas.es" target="_blank" rel="noopener noreferrer">https://entreprendas.es</a>, podemos recopilar los siguientes datos personales:</p>
+        <p className="p_pol">A través de nuestro formulario de contacto en <a href="https://www.entreprendas.es" target="_blank" rel="noopener noreferrer">https://www.entreprendas.es</a>, podemos recopilar los siguientes datos personales:</p>
         <ul className="p_pol">
           <li>Nombre y apellidos</li>
           <li>Dirección de correo electrónico</li>

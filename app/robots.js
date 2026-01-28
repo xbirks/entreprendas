@@ -7,7 +7,7 @@ export default function robots() {
                 disallow: ['/api/', '/admin/'],
             },
         ],
-        sitemap: 'https://entreprendas.es/sitemap.xml',
-        host: 'https://entreprendas.es',
+        sitemap: 'https://www.entreprendas.es/sitemap.xml',
+        host: 'https://www.entreprendas.es',
     };
 }

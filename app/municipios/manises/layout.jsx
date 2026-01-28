@@ -26,9 +26,9 @@ export const metadata = {
     `transformación de prendas en ${municipio}`
   ],
   alternates: {
-    canonical: "https://entreprendas.es/municipios/manises",   // ✅ canonical correcto
+    canonical: "https://www.entreprendas.es/municipios/manises",   // ✅ canonical correcto
     languages: {
-      "es-ES": "https://entreprendas.es/municipios/manises",   // ✅ hreflang aquí
+      "es-ES": "https://www.entreprendas.es/municipios/manises",   // ✅ hreflang aquí
     },
   },
 };
@@ -39,10 +39,10 @@ export default function ManisesLayout({ children }) {
     "@type": "LocalBusiness",
     "name": "Entre Prendas - Arreglo de ropa en Manises",
     "description": "Servicio profesional de arreglo de ropa en Manises con 10 años de experiencia. Ajustes, composturas y arreglos de todo tipo de prendas.",
-    "url": "https://entreprendas.es/municipios/manises",
+    "url": "https://www.entreprendas.es/municipios/manises",
     "telephone": "+34680593195",
     "email": "hola@soyandres.es",
-    "image": "https://entreprendas.es/seo/meta-1200x630.jpg",
+    "image": "https://www.entreprendas.es/seo/meta-1200x630.jpg",
     "address": {
       "@type": "PostalAddress",
       "streetAddress": "Pl. Rafael Atard, 20A, piso 2 puerta 3",
@@ -86,13 +86,13 @@ export default function ManisesLayout({ children }) {
         "@type": "ListItem",
         "position": 1,
         "name": "Inicio",
-        "item": "https://entreprendas.es"
+        "item": "https://www.entreprendas.es"
       },
       {
         "@type": "ListItem",
         "position": 2,
         "name": "Manises",
-        "item": "https://entreprendas.es/municipios/manises"
+        "item": "https://www.entreprendas.es/municipios/manises"
       }
     ]
   };

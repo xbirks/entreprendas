@@ -1,5 +1,5 @@
 export default function sitemap() {
-    const baseUrl = 'https://entreprendas.es';
+    const baseUrl = 'https://www.entreprendas.es';
 
     // Lista de municipios que REALMENTE existen en tu app
     const municipios = [

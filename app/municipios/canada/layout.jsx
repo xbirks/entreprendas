@@ -26,9 +26,9 @@ export const metadata = {
     `transformación de prendas en ${municipio}`
   ],
   alternates: {
-    canonical: "https://entreprendas.es/municipios/canada",   // ✅ canonical correcto
+    canonical: "https://www.entreprendas.es/municipios/canada",   // ✅ canonical correcto
     languages: {
-      "es-ES": "https://entreprendas.es/municipios/canada",   // ✅ hreflang aquí
+      "es-ES": "https://www.entreprendas.es/municipios/canada",   // ✅ hreflang aquí
     },
   },
 };

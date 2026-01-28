@@ -26,9 +26,9 @@ export const metadata = {
     `transformación de prendas en ${municipio}`
   ],
   alternates: {
-    canonical: "https://entreprendas.es/municipios/torrente",   // ✅ canonical correcto
+    canonical: "https://www.entreprendas.es/municipios/torrente",   // ✅ canonical correcto
     languages: {
-      "es-ES": "https://entreprendas.es/municipios/torrente",   // ✅ hreflang aquí
+      "es-ES": "https://www.entreprendas.es/municipios/torrente",   // ✅ hreflang aquí
     },
   },
 };

@@ -9,7 +9,7 @@ export const metadata = {
   description: 'Consulta la política de privacidad de Entre Prendas. Información sobre cómo tratamos tus datos personales.',
   robots: 'noindex, follow',
   alternates: {
-    canonical: 'https://entreprendas.es/legal/privacidad',
+    canonical: 'https://www.entreprendas.es/legal/privacidad',
   },
 };
 
