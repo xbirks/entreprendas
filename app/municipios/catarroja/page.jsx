@@ -7,9 +7,9 @@ import Nosotros from '../../components/nosotros&review/nosotros';
 import Other from '../../components/other/other';
 import FaqMaster from '../../components/faq/faqmaster';
 import SeoCards from '../../components/seo-cards/seocards';
-import SedaviLayout from './layout';
+import CatarrojaLayout from './layout';
 
-const Sedavi = () => {
+const Catarroja = () => {
   const municipio = "Catarroja";
   const enmunicipio = "en Catarroja";
 
@@ -33,7 +33,7 @@ const Sedavi = () => {
         </div>
       </div>
       <div className="faq__banner">
-      <span>¿Más preguntas? <Link href="tel:+34680593195">680 593 195</Link></span>
+        <span>¿Más preguntas? <Link href="tel:+34680593195">680 593 195</Link></span>
       </div>
       <div className="master">
         <SeoCards municipio={enmunicipio} />
@@ -42,8 +42,8 @@ const Sedavi = () => {
   );
 };
 
-Sedavi.getLayout = function getLayout(page) {
-  return <SedaviLayout>{page}</SedaviLayout>;
+Catarroja.getLayout = function getLayout(page) {
+  return <CatarrojaLayout>{page}</CatarrojaLayout>;
 };
 
-export default Sedavi;
+export default Catarroja;

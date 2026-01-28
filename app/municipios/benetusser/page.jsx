@@ -7,11 +7,11 @@ import Nosotros from '../../components/nosotros&review/nosotros';
 import Other from '../../components/other/other';
 import FaqMaster from '../../components/faq/faqmaster';
 import SeoCards from '../../components/seo-cards/seocards';
-import SedaviLayout from './layout';
+import BenetusserLayout from './layout';
 
-const Sedavi = () => {
-  const municipio = "Valencia";
-  const enmunicipio = "en Valencia";
+const Benetusser = () => {
+  const municipio = "Benetússer";
+  const enmunicipio = "en Benetússer";
 
   return (
     <div className="gartalia">
@@ -33,7 +33,7 @@ const Sedavi = () => {
         </div>
       </div>
       <div className="faq__banner">
-      <span>¿Más preguntas? <Link href="tel:+34680593195">680 593 195</Link></span>
+        <span>¿Más preguntas? <Link href="tel:+34680593195">680 593 195</Link></span>
       </div>
       <div className="master">
         <SeoCards municipio={enmunicipio} />
@@ -42,8 +42,8 @@ const Sedavi = () => {
   );
 };
 
-Sedavi.getLayout = function getLayout(page) {
-  return <SedaviLayout>{page}</SedaviLayout>;
+Benetusser.getLayout = function getLayout(page) {
+  return <BenetusserLayout>{page}</BenetusserLayout>;
 };
 
-export default Sedavi;
+export default Benetusser;
