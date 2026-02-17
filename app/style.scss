@@ -1,19 +1,87 @@
 @import '../app/styles/variables.scss';
 @import './buttons/buttons.scss';
 
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
 	margin: 0;
 	padding: 0;
 	border: 0;
@@ -22,24 +90,42 @@ time, mark, audio, video {
 	vertical-align: baseline;
 }
 
-article, aside, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section {
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
 	display: block;
 }
+
 body {
 	line-height: 1;
 }
-ol, ul {
+
+ol,
+ul {
 	list-style: none;
 }
-blockquote, q {
+
+blockquote,
+q {
 	quotes: none;
 }
-blockquote:before, blockquote:after,
-q:before, q:after {
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
 	content: '';
 	content: none;
 }
+
 table {
 	border-collapse: collapse;
 	border-spacing: 0;
@@ -49,39 +135,39 @@ table {
 
 html {
 	scroll-behavior: smooth;
-  }
-  
-
-
-body{
-    background-color: $blanco-verde;
 }
 
-strong{
+
+
+body {
+	background-color: $blanco-verde;
+}
+
+strong {
 	font-weight: 700;
 }
 
-.header__master{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: $blanco-verde;
-    padding: 10px 15px;
-    border-radius: 50px;
-    margin-top: 4px;
-    margin-left: 4px;
-    margin-right: 4px;
+.header__master {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	background-color: $blanco-verde;
+	padding: 10px 15px;
+	border-radius: 50px;
+	margin-top: 4px;
+	margin-left: 4px;
+	margin-right: 4px;
 
 	@include media390px {
-		margin-left: 6px;	
+		margin-left: 6px;
 		padding: 10px 4px;
 	}
 
 }
 
-.header__logo{
+.header__logo {
 
-	.header__var-logo1{
+	.header__var-logo1 {
 		display: block;
 
 		@include media390px {
@@ -89,7 +175,7 @@ strong{
 		}
 	}
 
-	.header__var-logo2{
+	.header__var-logo2 {
 		display: none;
 
 		@include media390px {
@@ -101,7 +187,7 @@ strong{
 		}
 	}
 
-	.header__var-logo3{
+	.header__var-logo3 {
 		display: none;
 
 		@include media300px {
@@ -110,12 +196,12 @@ strong{
 	}
 }
 
-.header__nav{
-    display: flex;
-    gap: 8px;
+.header__nav {
+	display: flex;
+	gap: 8px;
 }
 
-.master{
+.master {
 	width: 70%;
 	margin: 0 auto 60px auto;
 
@@ -128,7 +214,7 @@ strong{
 	}
 }
 
-.faq__banner{
+.faq__banner {
 	background-color: $destacado;
 	padding: 20px 0 20px 0;
 	color: $botella;
@@ -139,9 +225,9 @@ strong{
 	font-weight: 400;
 	line-height: 100.905%;
 
-	a{
+	a {
 		font-weight: 500;
-			}
+	}
 
 	@include media700px {
 		font-size: 26px;
@@ -158,9 +244,9 @@ strong{
 
 
 
-  //FOOTER
+//FOOTER
 
-  .footer__master{
+.footer__master {
 	width: 70%;
 	margin: 0 auto 15px auto;
 
@@ -172,12 +258,12 @@ strong{
 		width: 90%;
 	}
 
-	.footer__resume{
+	.footer__resume {
 		display: flex;
 		align-items: center;
 		margin-bottom: 10px;
 
-		.footer__logo{
+		.footer__logo {
 			background-color: $esmeralda;
 			border-radius: 50px;
 			height: 40px;
@@ -187,14 +273,14 @@ strong{
 			@include media800px {
 				width: 100%;
 				text-align: center;
-            }
+			}
 
-			img{
+			img {
 				width: 130px;
 			}
 		}
 
-		.header__nav{
+		.header__nav {
 			background-color: $esmeralda;
 			border-radius: 50px;
 			height: 40px;
@@ -202,24 +288,24 @@ strong{
 			width: 100%;
 			justify-content: center;
 
-			.imgButton__white{
+			.imgButton__white {
 				background-color: $esmeralda;
 			}
 
 			@include media800px {
 				display: none;
-            }
+			}
 
-			
+
 		}
 	}
 
-	.footer__contacto{
+	.footer__contacto {
 		background-color: $botella;
 		border-radius: 30px;
 		text-align: center;
 
-		.footer__contacto-title{
+		.footer__contacto-title {
 			color: $blanco-verde;
 			text-align: center;
 			font-family: $halyard;
@@ -228,50 +314,49 @@ strong{
 			font-weight: 400;
 			line-height: 100.905%;
 			max-width: 700px;
-			margin:  10px auto 10px auto;
+			margin: 10px auto 10px auto;
 			padding-top: 30px;
 			padding-bottom: 50px;
 
 			@include media1200px {
 				font-size: 60px;
 				line-height: 68px;
-            }
+			}
 
 			@include media700px {
 				font-size: 50px;
 				line-height: 56px;
 				max-width: 90%;
-            }
+			}
 
 			@include media600px {
 				font-size: 32px;
 				line-height: 34px;
-            }
+			}
 
-			span{
+			span {
 				color: $esmeralda;
 			}
 		}
 
-		form{
+		form {
 			margin-top: 80px;
 			display: grid;
 			padding: 0 30% 0 30%;
 
 			@include media1200px {
 				padding: 0 20% 0 20%;
-            }
+			}
 
 			@include media700px {
 				padding: 0 10% 0 10%;
-            }
-
-			button{
 			}
 
-			input{
+			button {}
+
+			input {
 				all: unset;
-		
+
 				background-color: $blanco-verde;
 				width: auto;
 				height: 40px;
@@ -279,52 +364,52 @@ strong{
 				font-family: $neue;
 				font-size: 18px;
 				padding-left: 20px;
-		
+
 				@include media600px {
 					width: 95%;
 				}
-		
-				&::placeholder{
+
+				&::placeholder {
 					color: $gris-verde;
 					font-family: $neue;
 					font-size: 18px;
 					font-style: normal;
 					font-weight: 400;
 					line-height: normal;
-				
+
 				}
-		
-				&:focus{
+
+				&:focus {
 					color: $botella;
 					font-family: $neue;
 					font-size: 18px;
 					font-style: normal;
 					font-weight: 400;
 					line-height: normal;
-					
+
 					position: relative;
 				}
-		
-				&:active{
+
+				&:active {
 					color: $esmeralda;
 					font-family: $neue;
 					font-size: 18px;
 					font-style: normal;
 					font-weight: 400;
 					line-height: normal;
-					
+
 					position: relative;
 				}
-		
-				&:valid{
+
+				&:valid {
 					background-color: $menta;
 				}
-		
+
 			}
 
-			.form__send-button{
+			.form__send-button {
 				all: unset;
-	
+
 				background-color: $esmeralda;
 				width: auto;
 				height: 30px;
@@ -336,33 +421,34 @@ strong{
 				margin-top: 10px;
 				color: $botella;
 				text-align: center;
-	
-				p{
+
+				p {
 					position: relative;
 					top: -5px;
 				}
-	
-				&:hover{
+
+				&:hover {
 					color: $botella;
 					cursor: pointer;
 					background-color: $destacado;
 					transition: $transition-short;
 				}
-	
-				&:disabled{
+
+				&:disabled {
 					background-color: $gris-verde;
-					&:hover{
+
+					&:hover {
 						background-color: $gris-verde;
 						transition: 0s;
 						color: $gris-verde;
 					}
 				}
-	
+
 			}
 		}
 
-		.footer__legal{
-			font-family:$neue;
+		.footer__legal {
+			font-family: $neue;
 			color: $blanco-verde;
 			font-size: 12px;
 			font-style: normal;
@@ -373,7 +459,7 @@ strong{
 			margin-bottom: 60px;
 		}
 
-		.success-message{
+		.success-message {
 			background-color: $destacado;
 			font-family: $neue;
 			align-content: center;
@@ -388,8 +474,8 @@ strong{
 			bottom: 20px;
 			padding: 5px 15px;
 		}
-	
-		.error-message{
+
+		.error-message {
 			background-color: red;
 			font-family: $neue;
 			align-content: center;
@@ -403,11 +489,11 @@ strong{
 			position: relative;
 			bottom: 20px;
 		}
-	
+
 
 	}
 
-	.footer__seo-anchor{
+	.footer__seo-anchor {
 		padding: 50px;
 		display: grid;
 		grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -428,17 +514,18 @@ strong{
 			gap: 4px;
 		}
 
-		a{
+		a {
 			color: $botella;
 			text-align: center;
 			font-family: $neue;
 			font-size: 14px;
 			font-style: normal;
 			font-weight: 400;
-			line-height: 20px; /* 125% */
+			line-height: 20px;
+			/* 125% */
 			text-decoration-line: underline;
 
-			&:hover{
+			&:hover {
 				color: $esmeralda;
 				font-size: 15px;
 			}
@@ -449,7 +536,7 @@ strong{
 		}
 	}
 
-	.footer__politicas{
+	.footer__politicas {
 		background-color: $esmeralda;
 		border-radius: 50px;
 		padding: 10px;
@@ -465,32 +552,32 @@ strong{
 
 		}
 
-		.emptyStandardButton{
+		.emptyStandardButton {
 			margin-right: 5px;
 			margin-bottom: 5px;
 			background-color: $esmeralda;
 			height: 20px;
 
-			&:hover{
+			&:hover {
 				background-color: $botella;
 				color: $esmeralda;
 			}
 
-			p{
+			p {
 				font-size: 14px;
 			}
 		}
 	}
-  }
+}
 
 
-  .p_pol{
-	color: #0D403B;
-    font-family: neue-haas-unica, Arial, Helvetica, sans-serif;
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 20px;
-    max-width: 95%;
-    margin-top: 12px;
-  }
+.p_pol {
+	color: $botella;
+	font-family: neue-haas-unica, Arial, Helvetica, sans-serif;
+	font-size: 16px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 20px;
+	max-width: 95%;
+	margin-top: 12px;
+}

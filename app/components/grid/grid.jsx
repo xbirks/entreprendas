@@ -7,33 +7,33 @@ import './grid.scss';
 import StandardButton from '../../buttons/standardButton.jsx';
 
 
-function Grid({service, description, img, top, link}){
+function Grid({ service, description, img, top, link }) {
 
-    return(
+    return (
 
         <div className="grid__master">
             <div className="grid__img">
-                <Image src={img} alt={`fotografía de ${service} hecho por Jardinería Gartalia en Valencia`}  width={733} height={490} loading="lazy"></Image>
+                <Image src={img} alt={`fotografía de ${service} hecho por Jardinería Gartalia en Valencia`} width={733} height={490} loading="lazy"></Image>
                 <div className="top-solicitado" style={{ display: top }}><p>TOP SOLICITADO</p></div>
             </div>
 
             <div className="grid__info">
 
-            <a href={link}><h3 className="grid__service">{service}</h3></a>
-            <p className="grid__description">{description}</p>
-            <div className="grid__buttons">
-                <StandardButton
-                link="https://api.whatsapp.com/message/MYIQ4MSADGWGP1"
-                title="Contactar"
-                style="standardButton">
-                </StandardButton>
+                <a href={link}><h3 className="grid__service">{service}</h3></a>
+                <p className="grid__description">{description}</p>
+                <div className="grid__buttons">
+                    <StandardButton
+                        link="https://api.whatsapp.com/message/MYIQ4MSADGWGP1"
+                        title="Contactar"
+                        style="standardButton">
+                    </StandardButton>
 
-                <StandardButton
-                link="#precios"
-                title="Precios"
-                style="emptyStandardButton">
-                </StandardButton>
-            </div>
+                    <StandardButton
+                        link="/precios"
+                        title="Precios"
+                        style="emptyStandardButton">
+                    </StandardButton>
+                </div>
 
             </div>
 

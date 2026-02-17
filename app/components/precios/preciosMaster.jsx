@@ -127,22 +127,7 @@ function PreciosMaster() {
       <p className="precios__disclaimer">
         Todos los precios pueden variar dependiendo de las características de cada prenda. Consulta con nosotros.
       </p>
-      <div style={{ textAlign: 'center', marginTop: '30px' }}>
-        <Link href="/precios" style={{
-          backgroundColor: '#68F5BC',
-          color: '#0D403B',
-          padding: '12px 30px',
-          borderRadius: '50px',
-          textDecoration: 'none',
-          fontFamily: 'neue-haas-unica, Arial, sans-serif',
-          fontSize: '16px',
-          fontWeight: '500',
-          display: 'inline-block',
-          transition: 'all 0.3s ease'
-        }}>
-          Ver todos los precios →
-        </Link>
-      </div>
+
     </div>
   );
 }

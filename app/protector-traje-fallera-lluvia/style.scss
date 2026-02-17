@@ -1,0 +1,112 @@
+@import '../styles/variables.scss';
+
+.protector-page {
+    width: 70%;
+    margin: 0 auto;
+    padding-top: 15vh;
+    padding-bottom: 15vh;
+
+    @include media2200px {
+        width: 80%;
+    }
+
+    @include media1200px {
+        width: 90%;
+    }
+
+    h1 {
+        color: $botella;
+        text-align: center;
+        font-family: $halyard;
+        font-size: 130px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 100.905%;
+        margin-bottom: 40px;
+
+        span {
+            color: $esmeralda;
+        }
+
+        @include media1390px {
+            font-size: 90px;
+        }
+
+        @include media600px {
+            font-size: 60px;
+            margin-bottom: 50px;
+        }
+
+        @include media390px {
+            font-size: 13vw;
+        }
+    }
+
+    .content-block {
+        max-width: 800px;
+        margin: 0 auto;
+
+        p {
+            color: $botella;
+            font-family: $neue;
+            font-size: 18px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 1.6;
+            margin-bottom: 30px;
+
+            @include media600px {
+                font-size: 16px;
+            }
+
+            strong {
+                font-weight: 700;
+            }
+        }
+
+        .img-container {
+            margin: 50px 0;
+            width: 100%;
+
+            img {
+                width: 100%;
+                height: auto;
+                border-radius: 30px;
+                display: block;
+                object-fit: cover;
+                max-height: 600px;
+
+                @include media600px {
+                    border-radius: 20px;
+                    max-height: 400px;
+                }
+            }
+        }
+
+        .cta-section {
+            margin-top: 60px;
+            text-align: center;
+
+            .standardButton {
+
+                // Rely on global .standardButton styles for consistency (35px height, etc.)
+                p {
+                    margin-bottom: 0;
+                    color: $botella;
+                }
+
+                @include media600px {
+                    height: 30px; // Match standardButton mobile height
+
+                    p {
+                        font-size: 16px;
+                    }
+                }
+
+                &:hover p {
+                    color: $esmeralda;
+                }
+            }
+        }
+    }
+}
