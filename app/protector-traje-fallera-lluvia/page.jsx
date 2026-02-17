@@ -80,7 +80,7 @@ export default function ProtectorTrajeFalleraPage() {
                     </div>
 
                     <p>
-                        Lo ideal es usarlo en <strong>modo "chubasquero"</strong>: si veis el cielo gris o el suelo está sucio y mojado (sobre todo para la Ofrenda, que ahí no te libras), os lo ponéis encima y listo. Tapa justo lo necesario para que el <strong>bajo no arrastre porquería</strong>, pero sin llegar al suelo para que no os tropecéis.
+                        Lo ideal es usarlo en <strong>modo &quot;chubasquero&quot;</strong>: si veis el cielo gris o el suelo está sucio y mojado (sobre todo para la Ofrenda, que ahí no te libras), os lo ponéis encima y listo. Tapa justo lo necesario para que el <strong>bajo no arrastre porquería</strong>, pero sin llegar al suelo para que no os tropecéis.
                     </p>
 
                     <p>
