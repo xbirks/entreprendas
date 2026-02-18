@@ -41,15 +41,28 @@ export default function ProtectorLayout({ children }) {
             "@type": "Brand",
             "name": "Entre Prendas"
         },
-        "offers": {
-            "@type": "Offer",
-            "url": url,
-            "priceCurrency": currency,
-            "price": price,
-            "priceValidUntil": "2026-03-20",
-            "availability": "https://schema.org/InStock",
-            "itemCondition": "https://schema.org/NewCondition"
-        }
+        "offers": [
+            {
+                "@type": "Offer",
+                "name": "Protector Talla Adulto",
+                "url": url,
+                "priceCurrency": currency,
+                "price": "35.00",
+                "priceValidUntil": "2026-03-20",
+                "availability": "https://schema.org/InStock",
+                "itemCondition": "https://schema.org/NewCondition"
+            },
+            {
+                "@type": "Offer",
+                "name": "Protector Talla Niña",
+                "url": url,
+                "priceCurrency": currency,
+                "price": "30.00",
+                "priceValidUntil": "2026-03-20",
+                "availability": "https://schema.org/InStock",
+                "itemCondition": "https://schema.org/NewCondition"
+            }
+        ]
     };
 
     // FAQ SCHEMA
@@ -57,6 +70,7 @@ export default function ProtectorLayout({ children }) {
         "@context": "https://schema.org",
         "@type": "FAQPage",
         "mainEntity": [
+
             {
                 "@type": "Question",
                 "name": "¿Sirve para cualquier talla de adulta o niña?",

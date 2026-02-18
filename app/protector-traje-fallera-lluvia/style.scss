@@ -3,7 +3,7 @@
 .protector-page {
     width: 70%;
     margin: 0 auto;
-    padding-top: 15vh;
+    padding-top: 5vh;
     padding-bottom: 15vh;
 
     @include media2200px {
@@ -87,12 +87,19 @@
             margin-top: 60px;
             text-align: center;
 
-            .standardButton {
+            .standardButton,
+            .emptyStandardButton {
 
-                // Rely on global .standardButton styles for consistency (35px height, etc.)
+                // Force consistent height and alignment for both buttons
+                height: 35px;
+                display: inline-flex;
+                align-items: center;
+                justify-content: center;
+
                 p {
                     margin-bottom: 0;
                     color: $botella;
+                    line-height: normal; // Override fixed line-height from global styles
                 }
 
                 @include media600px {

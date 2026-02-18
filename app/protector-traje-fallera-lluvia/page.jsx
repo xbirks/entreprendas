@@ -18,11 +18,16 @@ export default function ProtectorTrajeFalleraPage() {
                 <h1>Cómo <span>proteger tu traje</span> de fallera cuando llueve</h1>
 
                 <div className="content-block">
-                    <div className="cta-section" style={{ marginBottom: '50px', marginTop: '0' }}>
+                    <div className="cta-section" style={{ marginBottom: '50px', marginTop: '0', display: 'flex', gap: '10px', flexWrap: 'wrap', justifyContent: 'center' }}>
                         <StandardButton
                             link="https://api.whatsapp.com/message/MYIQ4MSADGWGP1"
-                            title="Comprar protector 40€"
+                            title="Comprar para adulto - 35€"
                             style="standardButton"
+                        />
+                        <StandardButton
+                            link="https://api.whatsapp.com/message/MYIQ4MSADGWGP1"
+                            title="Comprar para niño - 30€"
+                            style="emptyStandardButton"
                         />
                     </div>
 
@@ -42,11 +47,16 @@ export default function ProtectorTrajeFalleraPage() {
                         Por eso os insisto tanto con este <strong>cubrefaldas impermeable</strong>. No tiene mucho misterio, pero <strong>os salva la vida</strong>.
                     </p>
 
-                    <div className="cta-section" style={{ margin: '30px 0' }}>
+                    <div className="cta-section" style={{ margin: '30px 0', display: 'flex', gap: '10px', flexWrap: 'wrap', justifyContent: 'center' }}>
                         <StandardButton
                             link="https://api.whatsapp.com/message/MYIQ4MSADGWGP1"
-                            title="Comprar protector 40€"
+                            title="Comprar para adulto - 35€"
                             style="standardButton"
+                        />
+                        <StandardButton
+                            link="https://api.whatsapp.com/message/MYIQ4MSADGWGP1"
+                            title="Comprar para niño - 30€"
+                            style="emptyStandardButton"
                         />
                     </div>
 
@@ -67,11 +77,16 @@ export default function ProtectorTrajeFalleraPage() {
                         Lleva <strong>goma en la cintura</strong> para que sea cómodo y una <strong>puntilla en el bajo</strong> para que quede fino.
                     </p>
 
-                    <div className="cta-section" style={{ margin: '30px 0' }}>
+                    <div className="cta-section" style={{ margin: '30px 0', display: 'flex', gap: '10px', flexWrap: 'wrap', justifyContent: 'center' }}>
                         <StandardButton
                             link="https://api.whatsapp.com/message/MYIQ4MSADGWGP1"
-                            title="Comprar protector 40€"
+                            title="Comprar para adulto - 35€"
                             style="standardButton"
+                        />
+                        <StandardButton
+                            link="https://api.whatsapp.com/message/MYIQ4MSADGWGP1"
+                            title="Comprar para niño - 30€"
+                            style="emptyStandardButton"
                         />
                     </div>
 
@@ -95,11 +110,16 @@ export default function ProtectorTrajeFalleraPage() {
                         Si queréis <strong>asegurar el vuestro</strong> o tenéis dudas con la medida, escribidme un WhatsApp aquí mismo o pasaos por la tienda y lo dejamos solucionado ya. Así, si llueve, que llueva.
                     </p>
 
-                    <div className="cta-section">
+                    <div className="cta-section" style={{ display: 'flex', gap: '10px', flexWrap: 'wrap', justifyContent: 'center' }}>
                         <StandardButton
                             link="https://api.whatsapp.com/message/MYIQ4MSADGWGP1"
-                            title="Comprar protector 40€"
+                            title="Comprar para adulto - 35€"
                             style="standardButton"
+                        />
+                        <StandardButton
+                            link="https://api.whatsapp.com/message/MYIQ4MSADGWGP1"
+                            title="Comprar para niño - 30€"
+                            style="emptyStandardButton"
                         />
                     </div>
 
