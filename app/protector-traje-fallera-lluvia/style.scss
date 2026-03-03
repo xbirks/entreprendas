@@ -1,5 +1,259 @@
 @import '../styles/variables.scss';
 
+// ─── HERO SECTION ────────────────────────────────────────────────────────────
+
+.protector-hero {
+    // Mobile: single column
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    max-width: 480px;
+    margin: 0 auto;
+    padding-bottom: 8px;
+
+    // ── Desktop: two-column grid ───────────────────────────────────────────────
+    @media only screen and (min-width: 860px) {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto;
+        align-items: start;
+        gap: 0 64px;
+        max-width: 1100px;
+        padding-bottom: 0;
+    }
+
+    // ── Product image ────────────────────────────────────────────────────────
+    &__img-wrap {
+        position: relative;
+        border-radius: 25px;
+        overflow: hidden;
+        background: #f0f0ec;
+        margin-bottom: 32px;
+
+        @media only screen and (min-width: 860px) {
+            margin-bottom: 0;
+            border-radius: 30px;
+            // Sticky so image stays in view while scrolling the right column
+            position: sticky;
+            top: 100px;
+            align-self: start;
+        }
+    }
+
+    &__img {
+        width: 100%;
+        height: auto;
+        display: block;
+        object-fit: cover;
+        border-radius: 25px;
+
+        @media only screen and (min-width: 860px) {
+            border-radius: 30px;
+        }
+    }
+
+    &__badge {
+        position: absolute;
+        top: 16px;
+        right: 16px;
+        display: inline-flex;
+        align-items: center;
+        gap: 6px;
+        background: #fff;
+        border: 1px solid #d9d9d9;
+        border-radius: 20px;
+        padding: 5px 12px;
+        font-family: $halyard;
+        font-size: 12px;
+        color: $botella;
+    }
+
+    &__badge-dot {
+        width: 8px;
+        height: 8px;
+        border-radius: 50%;
+        background: $esmeralda;
+        flex-shrink: 0;
+    }
+
+    // ── Right-side info column (desktop only wrapper) ────────────────────────
+    &__info {
+        display: flex;
+        flex-direction: column;
+        align-items: stretch;
+
+        @media only screen and (min-width: 860px) {
+            padding-top: 8px;
+        }
+    }
+
+    // ── Headings & copy ──────────────────────────────────────────────────────
+    &__title {
+        font-family: $halyard;
+        font-size: 40px;
+        font-weight: 400;
+        line-height: 0.93;
+        color: $botella;
+        text-align: center;
+        margin-bottom: 24px;
+
+        span {
+            color: $esmeralda;
+        }
+
+        @media only screen and (min-width: 860px) {
+            font-size: 62px;
+            text-align: left;
+            line-height: 0.92;
+            margin-bottom: 28px;
+        }
+
+        @include media600px {
+            font-size: 32px;
+        }
+    }
+
+    &__features {
+        font-family: $halyard;
+        font-size: 12pt;
+        font-weight: 400;
+        color: #000;
+        text-align: center;
+        line-height: 1.5;
+        margin-bottom: 28px;
+
+        strong {
+            font-weight: 700;
+        }
+
+        @media only screen and (min-width: 860px) {
+            text-align: left;
+        }
+    }
+
+    &__label {
+        font-family: $halyard;
+        font-size: 16px;
+        color: $botella;
+        margin-bottom: 14px;
+
+        @media only screen and (min-width: 860px) {
+            font-size: 17px;
+        }
+    }
+
+    // ── Size selector ────────────────────────────────────────────────────────
+    &__sizes {
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+        margin-bottom: 24px;
+    }
+
+    &__size-row {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 16px;
+    }
+
+    &__size-btn {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 48px;
+        width: 157px;
+        border-radius: 24px;
+        font-family: $halyard;
+        font-size: 18px;
+        font-weight: 400;
+        transition: $transition-short;
+        flex-shrink: 0;
+        cursor: pointer;
+        appearance: none;
+        outline: none;
+        border: none;
+
+        &--filled {
+            background: $esmeralda;
+            border: 1.5px solid $esmeralda;
+            color: $botella;
+
+            &:hover {
+                background: darken(#41d27d, 8%);
+                border-color: darken(#41d27d, 8%);
+            }
+        }
+
+        &--outline {
+            background: transparent;
+            border: 1.5px solid $botella;
+            color: $botella;
+
+            &:hover {
+                background: rgba(#144835, 0.06);
+            }
+        }
+    }
+
+    &__price {
+        font-family: $halyard;
+        font-size: 32px;
+        font-weight: 400;
+        color: $botella;
+        line-height: 1;
+        text-align: right;
+        flex-shrink: 0;
+    }
+
+    // ── CTA button ───────────────────────────────────────────────────────────
+    &__cta {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 48px;
+        border-radius: 24px;
+        background: $botella;
+        color: #fff;
+        font-family: $halyard;
+        font-size: 18px;
+        font-weight: 400;
+        text-decoration: none;
+        transition: $transition-short;
+        margin-bottom: 12px;
+
+        &:hover {
+            background: $esmeralda;
+            color: $botella;
+        }
+    }
+
+    &__disclaimer {
+        font-family: $halyard;
+        font-size: 12px;
+        color: #698e6a;
+        text-align: center;
+        line-height: 1.4;
+        margin-bottom: 40px;
+    }
+}
+
+// ─── DIVIDER ─────────────────────────────────────────────────────────────────
+
+.protector-hero__divider {
+    border: none;
+    border-top: 1px solid #000;
+    max-width: 480px;
+    margin: 0 auto 60px;
+
+    @media only screen and (min-width: 860px) {
+        max-width: 1100px;
+        margin-top: 60px;
+    }
+}
+
+// ─── MAIN PAGE WRAPPER ───────────────────────────────────────────────────────
+
 .protector-page {
     width: 70%;
     margin: 0 auto;
@@ -12,34 +266,6 @@
 
     @include media1200px {
         width: 90%;
-    }
-
-    h1 {
-        color: $botella;
-        text-align: center;
-        font-family: $halyard;
-        font-size: 130px;
-        font-style: normal;
-        font-weight: 400;
-        line-height: 100.905%;
-        margin-bottom: 40px;
-
-        span {
-            color: $esmeralda;
-        }
-
-        @include media1390px {
-            font-size: 90px;
-        }
-
-        @include media600px {
-            font-size: 60px;
-            margin-bottom: 50px;
-        }
-
-        @include media390px {
-            font-size: 13vw;
-        }
     }
 
     .content-block {
@@ -84,36 +310,54 @@
         }
 
         .cta-section {
-            margin-top: 60px;
-            text-align: center;
+            margin: 40px 0;
+            display: flex;
+            justify-content: center;
+        }
+    }
+}
 
-            .standardButton,
-            .emptyStandardButton {
+// ─── INLINE CTA BUTTON (article body) ────────────────────────────────────────
 
-                // Force consistent height and alignment for both buttons
-                height: 35px;
-                display: inline-flex;
-                align-items: center;
-                justify-content: center;
+.protector-cta-inline {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    height: 48px;
+    padding: 0 40px;
+    border-radius: 24px;
+    font-family: $halyard;
+    font-size: 18px;
+    font-weight: 400;
+    text-decoration: none;
+    transition: $transition-short;
 
-                p {
-                    margin-bottom: 0;
-                    color: $botella;
-                    line-height: normal; // Override fixed line-height from global styles
-                }
+    @include media600px {
+        height: 44px;
+        font-size: 16px;
+        padding: 0 28px;
+    }
 
-                @include media600px {
-                    height: 30px; // Match standardButton mobile height
+    &--filled {
+        background: $esmeralda;
+        border: 1.5px solid $esmeralda;
+        color: $botella;
 
-                    p {
-                        font-size: 16px;
-                    }
-                }
+        &:hover {
+            background: $botella;
+            border-color: $botella;
+            color: $esmeralda;
+        }
+    }
 
-                &:hover p {
-                    color: $esmeralda;
-                }
-            }
+    &--outline {
+        background: transparent;
+        border: 1.5px solid $botella;
+        color: $botella;
+
+        &:hover {
+            background: $botella;
+            color: $esmeralda;
         }
     }
 }

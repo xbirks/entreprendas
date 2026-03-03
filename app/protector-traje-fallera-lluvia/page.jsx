@@ -1,39 +1,110 @@
 "use client";
 
+import { useState } from 'react';
 import Image from 'next/image';
 import './style.scss';
-import StandardButton from '../buttons/standardButton';
 import FaqProtector from '../components/faq/faqProtector';
 
 // Importing images from the fallas folder
 import img1 from '../assets/img/fallas/fallas_ (1).jpeg';
 import img2 from '../assets/img/fallas/fallas_ (2).jpeg';
 import img3 from '../assets/img/fallas/fallas_ (3).jpeg';
-import img4 from '../assets/img/fallas/fallas_ (4).jpeg';
+import heroImg from '../assets/img/fallas/chubasquero_entre_prendas.png';
+
+const WA_BASE = 'https://api.whatsapp.com/message/MYIQ4MSADGWGP1?text=';
+
+const WA_MESSAGES = {
+    mujer: encodeURIComponent('Hola, quiero comprar el cubrefaldas impermeable talla Mujer (35€). ¿Cómo lo pedimos?'),
+    nina: encodeURIComponent('Hola, quiero comprar el cubrefaldas impermeable talla Niña (30€). ¿Cómo lo pedimos?'),
+    none: encodeURIComponent('Hola, quiero comprar el cubrefaldas impermeable para traje de fallera. ¿Cómo lo pedimos?'),
+};
 
 export default function ProtectorTrajeFalleraPage() {
+    const [talla, setTalla] = useState(null); // 'mujer' | 'nina' | null
+
+    const buyLink = `${WA_BASE}${WA_MESSAGES[talla ?? 'none']}`;
+
     return (
         <>
             <div className="protector-page">
-                <h1>Cómo <span>proteger tu traje</span> de fallera cuando llueve</h1>
 
+                {/* ─── HERO SECTION ───────────────────────────────────────────── */}
+                <section id="size-selector" className="protector-hero">
+
+                    {/* LEFT — image */}
+                    <div className="protector-hero__img-wrap">
+                        <Image
+                            src={heroImg}
+                            alt="Cubrefaldas impermeable para traje de fallera"
+                            placeholder="blur"
+                            className="protector-hero__img"
+                        />
+                        <div className="protector-hero__badge">
+                            <span className="protector-hero__badge-dot" />
+                            Disponible
+                        </div>
+                    </div>
+
+                    {/* RIGHT — product info */}
+                    <div className="protector-hero__info">
+
+                        <h1 className="protector-hero__title">
+                            Cubrefaldas impermeable y transparente{' '}
+                            <span>para trajes de fallera</span>
+                        </h1>
+
+                        <p className="protector-hero__features">
+                            Plástico PVC <strong>100% transparente</strong>.<br />
+                            Goma adaptable.<br />
+                            Remate de puntilla inferior.
+                        </p>
+
+                        <p className="protector-hero__label">Selecciona la talla…</p>
+
+                        <div className="protector-hero__sizes">
+                            <div className="protector-hero__size-row">
+                                <button
+                                    type="button"
+                                    onClick={() => setTalla(t => t === 'mujer' ? null : 'mujer')}
+                                    className={`protector-hero__size-btn ${talla === 'mujer' ? 'protector-hero__size-btn--filled' : 'protector-hero__size-btn--outline'}`}
+                                >
+                                    Mujer
+                                </button>
+                                <span className="protector-hero__price">35€</span>
+                            </div>
+                            <div className="protector-hero__size-row">
+                                <button
+                                    type="button"
+                                    onClick={() => setTalla(t => t === 'nina' ? null : 'nina')}
+                                    className={`protector-hero__size-btn ${talla === 'nina' ? 'protector-hero__size-btn--filled' : 'protector-hero__size-btn--outline'}`}
+                                >
+                                    Niña
+                                </button>
+                                <span className="protector-hero__price">30€</span>
+                            </div>
+                        </div>
+
+                        <a
+                            href={buyLink}
+                            className="protector-hero__cta"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            Comprar
+                        </a>
+
+                        <p className="protector-hero__disclaimer">
+                            Serás redirigida a nuestro Whatsapp para concertar una cita y finalizar la compra.
+                        </p>
+
+                    </div>
+                </section>
+
+                {/* ─── DIVIDER ────────────────────────────────────────────────── */}
+                <hr className="protector-hero__divider" />
+
+                {/* ─── ARTICLE CONTENT ────────────────────────────────────────── */}
                 <div className="content-block">
-                    <div className="cta-section" style={{ marginBottom: '50px', marginTop: '0', display: 'flex', gap: '10px', flexWrap: 'wrap', justifyContent: 'center' }}>
-                        <StandardButton
-                            link="https://api.whatsapp.com/message/MYIQ4MSADGWGP1"
-                            title="Comprar para adulto - 35€"
-                            style="standardButton"
-                        />
-                        <StandardButton
-                            link="https://api.whatsapp.com/message/MYIQ4MSADGWGP1"
-                            title="Comprar para niño - 30€"
-                            style="emptyStandardButton"
-                        />
-                    </div>
-
-                    <div className="img-container">
-                        <Image src={img4} alt="Fallera protegida de la lluvia" placeholder="blur" />
-                    </div>
 
                     <p>
                         Mirad, os lo digo tal cual porque el año pasado lo viví en el taller: fue empezar a caer cuatro gotas en Fallas y el <strong>teléfono echaba humo</strong>. Todo el mundo buscando algo para tapar el traje a última hora.
@@ -47,17 +118,10 @@ export default function ProtectorTrajeFalleraPage() {
                         Por eso os insisto tanto con este <strong>cubrefaldas impermeable</strong>. No tiene mucho misterio, pero <strong>os salva la vida</strong>.
                     </p>
 
-                    <div className="cta-section" style={{ margin: '30px 0', display: 'flex', gap: '10px', flexWrap: 'wrap', justifyContent: 'center' }}>
-                        <StandardButton
-                            link="https://api.whatsapp.com/message/MYIQ4MSADGWGP1"
-                            title="Comprar para adulto - 35€"
-                            style="standardButton"
-                        />
-                        <StandardButton
-                            link="https://api.whatsapp.com/message/MYIQ4MSADGWGP1"
-                            title="Comprar para niño - 30€"
-                            style="emptyStandardButton"
-                        />
+                    <div className="cta-section">
+                        <a href="#size-selector" className="protector-cta-inline protector-cta-inline--filled">
+                            Comprar
+                        </a>
                     </div>
 
                     <div className="img-container">
@@ -77,17 +141,10 @@ export default function ProtectorTrajeFalleraPage() {
                         Lleva <strong>goma en la cintura</strong> para que sea cómodo y una <strong>puntilla en el bajo</strong> para que quede fino.
                     </p>
 
-                    <div className="cta-section" style={{ margin: '30px 0', display: 'flex', gap: '10px', flexWrap: 'wrap', justifyContent: 'center' }}>
-                        <StandardButton
-                            link="https://api.whatsapp.com/message/MYIQ4MSADGWGP1"
-                            title="Comprar para adulto - 35€"
-                            style="standardButton"
-                        />
-                        <StandardButton
-                            link="https://api.whatsapp.com/message/MYIQ4MSADGWGP1"
-                            title="Comprar para niño - 30€"
-                            style="emptyStandardButton"
-                        />
+                    <div className="cta-section">
+                        <a href="#size-selector" className="protector-cta-inline protector-cta-inline--filled">
+                            Comprar
+                        </a>
                     </div>
 
                     <div className="img-container">
@@ -110,24 +167,15 @@ export default function ProtectorTrajeFalleraPage() {
                         Si queréis <strong>asegurar el vuestro</strong> o tenéis dudas con la medida, escribidme un WhatsApp aquí mismo o pasaos por la tienda y lo dejamos solucionado ya. Así, si llueve, que llueva.
                     </p>
 
-                    <div className="cta-section" style={{ display: 'flex', gap: '10px', flexWrap: 'wrap', justifyContent: 'center' }}>
-                        <StandardButton
-                            link="https://api.whatsapp.com/message/MYIQ4MSADGWGP1"
-                            title="Comprar para adulto - 35€"
-                            style="standardButton"
-                        />
-                        <StandardButton
-                            link="https://api.whatsapp.com/message/MYIQ4MSADGWGP1"
-                            title="Comprar para niño - 30€"
-                            style="emptyStandardButton"
-                        />
+                    <div className="cta-section">
+                        <a href="#size-selector" className="protector-cta-inline protector-cta-inline--filled">
+                            Comprar
+                        </a>
                     </div>
 
                 </div>
 
             </div>
-
-
 
             <div className="faq" style={{ marginBottom: '100px' }}>
                 <div className="masterFaq">

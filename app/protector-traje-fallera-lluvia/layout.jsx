@@ -3,7 +3,6 @@ import "../style.scss";
 const title = "Protector de traje de fallera para lluvia | Cubrefaldas impermeable";
 const description = "Evita que tu traje de fallera se manche de barro o agua. Cubrefaldas impermeable transparente, silencioso y ajustable. ¡Salva tu espolín esta Ofrenda! Entregas en Valencia.";
 const url = "https://www.entreprendas.es/protector-traje-fallera-lluvia";
-const price = "40.00";
 const currency = "EUR";
 
 export const metadata = {
@@ -33,8 +32,9 @@ export default function ProtectorLayout({ children }) {
         "@type": "Product",
         "name": "Cubrefaldas impermeable para traje de fallera",
         "image": [
-            "https://www.entreprendas.es/assets/img/fallas/fallas_ (4).jpeg",
-            "https://www.entreprendas.es/assets/img/fallas/fallas_ (1).jpeg"
+            "https://www.entreprendas.es/assets/img/fallas/chubasquero_entre_prendas.png",
+            "https://www.entreprendas.es/assets/img/fallas/fallas_ (1).jpeg",
+            "https://www.entreprendas.es/assets/img/fallas/fallas_ (4).jpeg"
         ],
         "description": description,
         "brand": {
@@ -44,7 +44,7 @@ export default function ProtectorLayout({ children }) {
         "offers": [
             {
                 "@type": "Offer",
-                "name": "Protector Talla Adulto",
+                "name": "Cubrefaldas Mujer",
                 "url": url,
                 "priceCurrency": currency,
                 "price": "35.00",
@@ -54,7 +54,7 @@ export default function ProtectorLayout({ children }) {
             },
             {
                 "@type": "Offer",
-                "name": "Protector Talla Niña",
+                "name": "Cubrefaldas Niña",
                 "url": url,
                 "priceCurrency": currency,
                 "price": "30.00",
@@ -70,18 +70,17 @@ export default function ProtectorLayout({ children }) {
         "@context": "https://schema.org",
         "@type": "FAQPage",
         "mainEntity": [
-
             {
                 "@type": "Question",
-                "name": "¿Sirve para cualquier talla de adulta o niña?",
+                "name": "¿Qué talla es el cubrefaldas fallera? ¿Sirve para niña?",
                 "acceptedAnswer": {
                     "@type": "Answer",
-                    "text": "Sí, al llevar goma elástica en la cintura se adapta perfectamente a diferentes contornos, tanto para falleras mayores como infantiles de cualquier edad (se hace a medida)."
+                    "text": "Es talla única pero totalmente adaptable. Al llevar goma elástica en la cintura y estar hecho a medida en nuestro taller, se ajusta a diferentes contornos, tanto para adultas como para niñas de todas las edades."
                 }
             },
             {
                 "@type": "Question",
-                "name": "¿Hace ruido al andar?",
+                "name": "¿Este protector lluvia traje fallera hace ruido al andar?",
                 "acceptedAnswer": {
                     "@type": "Answer",
                     "text": "No. Es un PVC especial de alta calidad que no cruje. Podrás desfilar en la Ofrenda o caminar por la calle sin que parezca que llevas una bolsa de plástico."
@@ -89,15 +88,23 @@ export default function ProtectorLayout({ children }) {
             },
             {
                 "@type": "Question",
-                "name": "¿Cubre el espolín entero o solo los bajos?",
+                "name": "¿Cubre el espolín entero o es solo un protector de falda fallera?",
                 "acceptedAnswer": {
                     "@type": "Answer",
-                    "text": "Está diseñado para cubrir la zona crítica que se mancha: los bajos y gran parte de la caída de la falda. Es lo suficientemente largo para proteger de salpicaduras pero sin arrastrar."
+                    "text": "Está diseñado para cubrir la zona crítica que se mancha: los bajos y gran parte de la caída de la falda. Es lo suficientemente largo para proteger del barro y la lluvia que salpica el suelo, pero sin arrastrar para que no te tropezarás."
                 }
             },
             {
                 "@type": "Question",
-                "name": "¿Cómo se limpia?",
+                "name": "¿Realizáis envíos del chubasquero fallera?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "No, no hacemos envíos. La recogida se realiza exclusivamente en nuestro taller de Manises (Valencia). Así nos aseguramos de que te lo llevas perfecto y te explicamos cómo colocarlo."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "¿Cómo se limpia el cubrefaldas impermeable?",
                 "acceptedAnswer": {
                     "@type": "Answer",
                     "text": "Muy fácil. Con un paño húmedo o una toallita se queda nuevo. Al ser impermeable, la suciedad no se incrusta."
