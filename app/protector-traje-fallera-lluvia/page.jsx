@@ -5,33 +5,22 @@ import Image from 'next/image';
 import './style.scss';
 import FaqProtector from '../components/faq/faqProtector';
 
-// Importing images from the fallas folder
 import img1 from '../assets/img/fallas/fallas_ (1).jpeg';
 import img2 from '../assets/img/fallas/fallas_ (2).jpeg';
 import img3 from '../assets/img/fallas/fallas_ (3).jpeg';
 import heroImg from '../assets/img/fallas/chubasquero_entre_prendas.png';
 
-const WA_BASE = 'https://api.whatsapp.com/message/MYIQ4MSADGWGP1?text=';
-
-const WA_MESSAGES = {
-    mujer: encodeURIComponent('Hola, quiero comprar el cubrefaldas impermeable talla Mujer (35€). ¿Cómo lo pedimos?'),
-    nina: encodeURIComponent('Hola, quiero comprar el cubrefaldas impermeable talla Niña (30€). ¿Cómo lo pedimos?'),
-    none: encodeURIComponent('Hola, quiero comprar el cubrefaldas impermeable para traje de fallera. ¿Cómo lo pedimos?'),
-};
+const WA = 'https://api.whatsapp.com/message/MYIQ4MSADGWGP1';
 
 export default function ProtectorTrajeFalleraPage() {
-    const [talla, setTalla] = useState(null); // 'mujer' | 'nina' | null
-
-    const buyLink = `${WA_BASE}${WA_MESSAGES[talla ?? 'none']}`;
+    const [talla, setTalla] = useState(null);
 
     return (
         <>
             <div className="protector-page">
 
-                {/* ─── HERO SECTION ───────────────────────────────────────────── */}
                 <section id="size-selector" className="protector-hero">
 
-                    {/* LEFT — image */}
                     <div className="protector-hero__img-wrap">
                         <Image
                             src={heroImg}
@@ -45,7 +34,6 @@ export default function ProtectorTrajeFalleraPage() {
                         </div>
                     </div>
 
-                    {/* RIGHT — product info */}
                     <div className="protector-hero__info">
 
                         <h1 className="protector-hero__title">
@@ -84,12 +72,7 @@ export default function ProtectorTrajeFalleraPage() {
                             </div>
                         </div>
 
-                        <a
-                            href={buyLink}
-                            className="protector-hero__cta"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                        >
+                        <a href={WA} className="protector-hero__cta">
                             Comprar
                         </a>
 
@@ -100,10 +83,8 @@ export default function ProtectorTrajeFalleraPage() {
                     </div>
                 </section>
 
-                {/* ─── DIVIDER ────────────────────────────────────────────────── */}
                 <hr className="protector-hero__divider" />
 
-                {/* ─── ARTICLE CONTENT ────────────────────────────────────────── */}
                 <div className="content-block">
 
                     <p>
@@ -119,9 +100,7 @@ export default function ProtectorTrajeFalleraPage() {
                     </p>
 
                     <div className="cta-section">
-                        <a href="#size-selector" className="protector-cta-inline protector-cta-inline--filled">
-                            Comprar
-                        </a>
+                        <a href="#size-selector" className="protector-cta-inline protector-cta-inline--filled">Comprar</a>
                     </div>
 
                     <div className="img-container">
@@ -142,9 +121,7 @@ export default function ProtectorTrajeFalleraPage() {
                     </p>
 
                     <div className="cta-section">
-                        <a href="#size-selector" className="protector-cta-inline protector-cta-inline--filled">
-                            Comprar
-                        </a>
+                        <a href="#size-selector" className="protector-cta-inline protector-cta-inline--filled">Comprar</a>
                     </div>
 
                     <div className="img-container">
@@ -168,9 +145,7 @@ export default function ProtectorTrajeFalleraPage() {
                     </p>
 
                     <div className="cta-section">
-                        <a href="#size-selector" className="protector-cta-inline protector-cta-inline--filled">
-                            Comprar
-                        </a>
+                        <a href="#size-selector" className="protector-cta-inline protector-cta-inline--filled">Comprar</a>
                     </div>
 
                 </div>
