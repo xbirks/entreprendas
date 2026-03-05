@@ -51,16 +51,6 @@ export default function ProtectorLayout({ children }) {
                 "priceValidUntil": "2026-03-20",
                 "availability": "https://schema.org/InStock",
                 "itemCondition": "https://schema.org/NewCondition"
-            },
-            {
-                "@type": "Offer",
-                "name": "Cubrefaldas Niña",
-                "url": url,
-                "priceCurrency": currency,
-                "price": "30.00",
-                "priceValidUntil": "2026-03-20",
-                "availability": "https://schema.org/InStock",
-                "itemCondition": "https://schema.org/NewCondition"
             }
         ]
     };

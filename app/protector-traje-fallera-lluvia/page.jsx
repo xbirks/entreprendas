@@ -47,8 +47,6 @@ export default function ProtectorTrajeFalleraPage() {
                             Remate de puntilla inferior.
                         </p>
 
-                        <p className="protector-hero__label">Selecciona la talla…</p>
-
                         <div className="protector-hero__sizes">
                             <div className="protector-hero__size-row">
                                 <button
@@ -59,16 +57,6 @@ export default function ProtectorTrajeFalleraPage() {
                                     Mujer
                                 </button>
                                 <span className="protector-hero__price">35€</span>
-                            </div>
-                            <div className="protector-hero__size-row">
-                                <button
-                                    type="button"
-                                    onClick={() => setTalla(t => t === 'nina' ? null : 'nina')}
-                                    className={`protector-hero__size-btn ${talla === 'nina' ? 'protector-hero__size-btn--filled' : 'protector-hero__size-btn--outline'}`}
-                                >
-                                    Niña
-                                </button>
-                                <span className="protector-hero__price">30€</span>
                             </div>
                         </div>
 
