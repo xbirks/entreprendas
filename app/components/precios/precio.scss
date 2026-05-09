@@ -42,14 +42,10 @@
     width: auto;
     height: auto;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
     justify-content: space-between;
     row-gap: 75px;
     column-gap: 125px;
-
-    @include media990px {
-        grid-template-columns: 1fr 1fr;
-    }
 
     @include media600px {
         grid-template-columns: 1fr;
@@ -90,6 +86,8 @@
 .precio{
     display: flex;
     justify-content: space-between;
+    align-items: baseline;
+    gap: 16px;
 
     p{
         color: $botella;
@@ -107,15 +105,18 @@
 
         @include media600px {
             font-size: 18px;
-            text-align: center;
-            max-width: 100%;
             line-height: 24px;
         }
+    }
+
+    .clothes{
+        text-align: left;
     }
 
     .price{
         color: $esmeralda;
         white-space: nowrap;
+        text-align: right;
     }
 }
 

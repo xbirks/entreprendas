@@ -11,43 +11,43 @@
     h1{
         color: $botella;
         font-family: $halyard;
-        font-size: 130px;
+        font-size: 110px;
         font-style: normal;
         font-weight: 400;
         line-height: 100.905%;
         margin-bottom: 35px;
 
         @include media1390px {
-            font-size: 90px;
+            font-size: 78px;
 		}
 
         @include media600px {
-            font-size: 60px;
+            font-size: 52px;
 		}
 
         @include media390px {
-            font-size: 17vw;
+            font-size: 14.5vw;
 		}
     }
 
     .intro__h1-high{
         color: $esmeralda;
         font-family: $halyard;
-        font-size: 130px;
+        font-size: 110px;
         font-style: normal;
         font-weight: 400;
         line-height: 100.905%;
 
         @include media1390px {
-            font-size: 90px;
+            font-size: 78px;
 		}
 
         @include media600px {
-            font-size: 60px;
+            font-size: 52px;
 		}
 
         @include media390px {
-            font-size: 17vw;
+            font-size: 14.5vw;
 		}
     }
 
