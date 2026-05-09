@@ -5,6 +5,7 @@ import './globals.css';
 
 
 export const metadata = {
+  metadataBase: new URL('https://www.entreprendas.es'),
 
   //GENERIC
   title: 'Arreglo de ropa BARATO en Valencia y alrededores | ENTRE PRENDAS',
@@ -68,7 +69,7 @@ export const metadata = {
     creator: '@entreprendas.es',
     title: 'Arreglo de ropa BARATO en Valencia y alrededores | ENTRE PRENDAS',
     description: '10 años de experiencia como modista en Valencia. Ofrecemos composturas de pantalones, camisas, faldas, vestidos de novia, trajes de fallera... Servicio barato y eficiente.',
-    image: 'https://www.entreprendas.es/seo/twitter-1200-600.jpg',
+    image: 'https://www.entreprendas.es/seo/twitter-1200x600.jpg',
     imageAlt: 'Jardinería integral en Valencia con 20 años de experiencia',
   },
 
@@ -106,8 +107,8 @@ export default function RootLayout({ children }) {
         <meta name="background-color" content="#0D403B" />
 
         <meta name="robots" content="index, follow" />
-        <link rel="icon" href="https://www.entreprendas.es/seo/favicon_500x500.jpg" title="Ícono de la pestaña" type="image/png" />
-        <link rel="apple-touch-icon" sizes="180x180" href="https://www.entreprendas.es/seo/ios_180x180.jpg" />
+        <link rel="icon" href="https://www.entreprendas.es/seo/favicon_500x500.png" title="Ícono de la pestaña" type="image/png" />
+        <link rel="apple-touch-icon" sizes="180x180" href="https://www.entreprendas.es/seo/ios_180x180.png" />
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{
@@ -124,13 +125,13 @@ export default function RootLayout({ children }) {
                 "name": "Entre Prendas",
                 "description": "Arreglo de ropa BARATO en Valencia con 10 años de experiencia",
                 "email": "hola@soyandres.es",
-                "logo": "https://www.entreprendas.es/seo/favicon_500x500.jpg",
+                "logo": "https://www.entreprendas.es/seo/favicon_500x500.png",
                 "url": "https://www.entreprendas.es"
               },
               {
                 "@context": "http://schema.org",
                 "@type": "LocalBusiness",
-                "logo": "https://www.entreprendas.es/seo/favicon_500x500.jpg",
+                "logo": "https://www.entreprendas.es/seo/favicon_500x500.png",
                 "name": "Entre Prendas",
                 "description": "Arreglo de ropa BARATO en Valencia con 10 años de experiencia",
                 "image": "https://www.entreprendas.es/seo/meta-1200x630.jpg",

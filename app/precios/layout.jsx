@@ -56,7 +56,7 @@ export const metadata = {
     title: "Precios de arreglos de ropa en Valencia | ENTRE PRENDAS",
     description:
       "10 años de experiencia como modista en Valencia. Composturas de pantalones, camisas, faldas, vestidos de novia, trajes de fallera...",
-    images: ["https://www.entreprendas.es/seo/twitter-1200-600.jpg"],
+    images: ["https://www.entreprendas.es/seo/twitter-1200x600.jpg"],
   },
   robots: { index: true, follow: true },
   icons: {
