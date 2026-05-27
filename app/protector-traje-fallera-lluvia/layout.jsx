@@ -8,6 +8,9 @@ const currency = "EUR";
 export const metadata = {
     title: title,
     description: description,
+    alternates: {
+        canonical: url,
+    },
     openGraph: {
         title: title,
         description: description,
@@ -15,7 +18,7 @@ export const metadata = {
         type: 'website',
         images: [
             {
-                url: 'https://www.entreprendas.es/assets/img/fallas/fallas_ (4).jpeg', // Asumiendo ruta pública, ajustar si es necesario
+                url: 'https://www.entreprendas.es/assets/img/fallas/fallas-4.jpeg',
                 width: 800,
                 height: 600,
                 alt: 'Protector de traje de fallera impermeable',
@@ -33,8 +36,8 @@ export default function ProtectorLayout({ children }) {
         "name": "Cubrefaldas impermeable para traje de fallera",
         "image": [
             "https://www.entreprendas.es/assets/img/fallas/chubasquero_entre_prendas.png",
-            "https://www.entreprendas.es/assets/img/fallas/fallas_ (1).jpeg",
-            "https://www.entreprendas.es/assets/img/fallas/fallas_ (4).jpeg"
+            "https://www.entreprendas.es/assets/img/fallas/fallas-1.jpeg",
+            "https://www.entreprendas.es/assets/img/fallas/fallas-4.jpeg"
         ],
         "description": description,
         "brand": {

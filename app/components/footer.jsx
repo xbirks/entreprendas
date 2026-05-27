@@ -91,6 +91,14 @@ function Footer() {
         <SeoAnchor link="/municipios/rocafort" pueblo="Rocafort"></SeoAnchor>
         <SeoAnchor link="/municipios/godella" pueblo="Godella"></SeoAnchor>
         <SeoAnchor link="/municipios/valencia" pueblo="Valencia"></SeoAnchor>
+        <SeoAnchor link="/municipios/alboraya" pueblo="Alboraya"></SeoAnchor>
+        <SeoAnchor link="/municipios/benetusser" pueblo="Benetússer"></SeoAnchor>
+        <SeoAnchor link="/municipios/catarroja" pueblo="Catarroja"></SeoAnchor>
+        <SeoAnchor link="/municipios/eliana" pueblo="La Eliana"></SeoAnchor>
+        <SeoAnchor link="/municipios/montcada" pueblo="Montcada"></SeoAnchor>
+        <SeoAnchor link="/municipios/picana" pueblo="Picaña"></SeoAnchor>
+        <SeoAnchor link="/municipios/ribarroja" pueblo="Riba Roja"></SeoAnchor>
+        <SeoAnchor link="/municipios/canada" pueblo="La Cañada"></SeoAnchor>
       </div>
 
       <div className="footer__politicas">

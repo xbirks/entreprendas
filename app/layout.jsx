@@ -6,6 +6,9 @@ import './globals.css';
 
 export const metadata = {
   metadataBase: new URL('https://www.entreprendas.es'),
+  alternates: {
+    canonical: 'https://www.entreprendas.es',
+  },
 
   //GENERIC
   title: 'Arreglo de ropa BARATO en Valencia y alrededores | ENTRE PRENDAS',
@@ -69,8 +72,7 @@ export const metadata = {
     creator: '@entreprendas.es',
     title: 'Arreglo de ropa BARATO en Valencia y alrededores | ENTRE PRENDAS',
     description: '10 años de experiencia como modista en Valencia. Ofrecemos composturas de pantalones, camisas, faldas, vestidos de novia, trajes de fallera... Servicio barato y eficiente.',
-    image: 'https://www.entreprendas.es/seo/twitter-1200x600.jpg',
-    imageAlt: 'Jardinería integral en Valencia con 20 años de experiencia',
+    images: ['https://www.entreprendas.es/seo/twitter-1200x600.jpg'],
   },
 
   //APPLE

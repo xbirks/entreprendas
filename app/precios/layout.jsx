@@ -1,7 +1,5 @@
 // app/precios/layout.jsx
 import "../style.scss";
-import Header from "../components/header.jsx";
-import Footer from "../components/footer.jsx";
 
 export const metadata = {
   // Host preferido con www para coherencia en todas las señales
@@ -233,57 +231,16 @@ export default function PreciosLayout({ children }) {
   };
 
   return (
-    <html lang="es">
-      <head>
-        <meta charSet="utf-8" />
-        <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <div className="master__gartalia">
+      {children}
 
-        {/* Tipografías */}
-        <link rel="preconnect" href="https://use.typekit.net" />
-        <link rel="stylesheet" href="https://use.typekit.net/usg7enf.css" />
-
-        {/* Theming */}
-        <meta name="theme-color" content="#6BDB8A" />
-        <meta name="background-color" content="#0D403B" />
-
-        {/* Favicon correcto */}
-        <link
-          rel="icon"
-          href="https://www.entreprendas.es/seo/favicon_500x500.png"
-          type="image/png"
-        />
-
-        {/* CSP razonable para tipografías e imágenes */}
-        <meta
-          httpEquiv="Content-Security-Policy"
-          content="
-            default-src 'self';
-            img-src 'self' https://www.entreprendas.es data:;
-            script-src 'self' https://apis.google.com;
-            style-src 'self' 'unsafe-inline' https://use.typekit.net;
-            font-src 'self' https://use.typekit.net data:;
-            connect-src 'self';
-            frame-ancestors 'none';
-            upgrade-insecure-requests;
-          "
-        />
-
-        {/* JSON-LD global */}
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{
-            __html: JSON.stringify([breadcrumbSchema, orgSchema, localBusinessSchema, servicesSchema]),
-          }}
-        />
-      </head>
-      <body>
-        <div className="master__gartalia">
-          {/* <Header /> */}
-          {children}
-          {/* <Footer /> */}
-        </div>
-      </body>
-    </html>
+      {/* JSON-LD: breadcrumb, organización, negocio local y servicios */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify([breadcrumbSchema, orgSchema, localBusinessSchema, servicesSchema]),
+        }}
+      />
+    </div>
   );
 }

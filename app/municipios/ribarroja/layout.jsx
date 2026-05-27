@@ -26,9 +26,9 @@ export const metadata = {
     `transformación de prendas en ${municipio}`
   ],
   alternates: {
-    canonical: "https://www.entreprendas.es/municipios/ribaroja",   // ✅ canonical correcto
+    canonical: "https://www.entreprendas.es/municipios/ribarroja",   // ✅ canonical correcto
     languages: {
-      "es-ES": "https://www.entreprendas.es/municipios/ribaroja",   // ✅ hreflang aquí
+      "es-ES": "https://www.entreprendas.es/municipios/ribarroja",   // ✅ hreflang aquí
     },
   },
 };

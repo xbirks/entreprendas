@@ -27,6 +27,13 @@ export default function sitemap() {
             changeFrequency: 'weekly',
             priority: 0.9,
         },
+        // Producto: protector de traje de fallera para lluvia
+        {
+            url: `${baseUrl}/protector-traje-fallera-lluvia`,
+            lastModified: currentDate,
+            changeFrequency: 'weekly',
+            priority: 0.9,
+        },
         // Páginas legales
         {
             url: `${baseUrl}/legal/privacidad`,
