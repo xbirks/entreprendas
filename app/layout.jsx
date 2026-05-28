@@ -24,7 +24,6 @@ export const metadata = {
     'reparación de cremalleras en Paterna',
     'arreglo de camisas en Alaquàs',
     'ajuste de faldas en Torrent',
-    'modista a domicilio en Picanya',
     'personalización de ropa en Paiporta',
     'reemplazo de botones en Riba-roja de Túria',
     'ajuste de chaquetas en Godella',

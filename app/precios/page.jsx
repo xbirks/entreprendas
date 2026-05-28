@@ -33,14 +33,6 @@ export default function HomePage() {
       },
       {
         "@type": "Question",
-        name: "¿Ofrecéis servicio a domicilio?",
-        acceptedAnswer: {
-          "@type": "Answer",
-          text: "Sí, en Valencia y alrededores. El desplazamiento se calcula desde Manises."
-        }
-      },
-      {
-        "@type": "Question",
         name: "¿Trabajáis vestidos de novia y trajes de fallera?",
         acceptedAnswer: {
           "@type": "Answer",

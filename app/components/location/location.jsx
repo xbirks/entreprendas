@@ -10,13 +10,13 @@ function Location(){
 
     return(
         <div className="location__master">
-            <h3 className="location__title">¿Dónde necesitas que vayamos?</h3>
+            <h3 className="location__title">¿Dónde estamos?</h3>
             <p className="location__description">
-                En <strong>nuestro servicio de arreglos de ropa</strong>, llegamos a donde nos necesites en la provincia de Valencia. Atendemos a clientes en <strong>Manises, Mislata, Quart de Poblet, Paterna, Burjassot, Aldaia, Xirivella, Torrent, Alaquàs y Paiporta</strong>. Nos desplazamos para ofrecerte un servicio cómodo y a medida, asegurándonos de que tu ropa tenga el ajuste perfecto sin que tengas que moverte de casa.  
+                En <strong>nuestro taller de arreglos de ropa en Manises</strong> atendemos a clientes de toda la provincia de Valencia. Trabajamos con prendas de <strong>Manises, Mislata, Quart de Poblet, Paterna, Burjassot, Aldaia, Xirivella, Torrent, Alaquàs y Paiporta</strong>, entre otras localidades cercanas.
                 <br></br><br></br>
-                Nuestro compromiso es hacer que el proceso de arreglos de ropa sea <strong>accesible y sin complicaciones</strong>. Nos encargamos de recoger las prendas, realizar las modificaciones necesarias y entregarlas listas para que las disfrutes. Así, puedes contar con un servicio rápido y eficiente sin salir de tu hogar.  
+                Nuestro compromiso es hacer que el proceso de arreglos de ropa sea <strong>sencillo y sin complicaciones</strong>. Revisamos cada prenda, realizamos las modificaciones necesarias y te la entregamos lista para que la disfrutes, con un acabado impecable.
                 <br></br><br></br>
-                Gracias a esta atención personalizada, nuestros clientes confían en nosotros para dar una segunda vida a sus prendas y garantizar un ajuste impecable en cada trabajo. Si necesitas un arreglo, <strong>nosotros nos encargamos de todo</strong>.  Consulta los precios del desplazamiento.
+                Gracias a esta atención personalizada, nuestros clientes confían en nosotros para dar una segunda vida a sus prendas y garantizar un ajuste perfecto en cada trabajo. Si necesitas un arreglo, <strong>nosotros nos encargamos de todo</strong>.
                 </p>
 
 

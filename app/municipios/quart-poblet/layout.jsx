@@ -16,7 +16,6 @@ export const metadata = {
     `reparación de cremalleras en ${municipio}`,
     `arreglo de camisas en ${municipio}`,
     `ajuste de faldas en ${municipio}`,
-    `modista a domicilio en ${municipio}`,
     `personalización de ropa en ${municipio}`,
     `reemplazo de botones en ${municipio}`,
     `ajuste de chaquetas en ${municipio}`,
